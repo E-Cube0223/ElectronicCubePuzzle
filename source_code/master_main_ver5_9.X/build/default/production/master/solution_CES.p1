@@ -1,0 +1,4639 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[v F27 `(v ~T0 @X0 0 tf1`uc ]
+"25 master/SerialLED_PIC18F25K22.h
+[; ;master/SerialLED_PIC18F25K22.h: 25: void OUT_WHITE(unsigned char);
+[v _OUT_WHITE `(v ~T0 @X0 0 ef1`uc ]
+"23
+[; ;master/SerialLED_PIC18F25K22.h: 23: void OUT_GREEN(unsigned char);
+[v _OUT_GREEN `(v ~T0 @X0 0 ef1`uc ]
+"22
+[; ;master/SerialLED_PIC18F25K22.h: 22: void OUT_RED(unsigned char);
+[v _OUT_RED `(v ~T0 @X0 0 ef1`uc ]
+"24
+[; ;master/SerialLED_PIC18F25K22.h: 24: void OUT_BLUE(unsigned char);
+[v _OUT_BLUE `(v ~T0 @X0 0 ef1`uc ]
+"27
+[; ;master/SerialLED_PIC18F25K22.h: 27: void OUT_ORANGE(unsigned char);
+[v _OUT_ORANGE `(v ~T0 @X0 0 ef1`uc ]
+"26
+[; ;master/SerialLED_PIC18F25K22.h: 26: void OUT_YELLOW(unsigned char);
+[v _OUT_YELLOW `(v ~T0 @X0 0 ef1`uc ]
+"21
+[; ;master/SerialLED_PIC18F25K22.h: 21: void OUT_NONE(unsigned char);
+[v _OUT_NONE `(v ~T0 @X0 0 ef1`uc ]
+[v F5757 `(v ~T0 @X0 0 tf ]
+"20 master/sound.h
+[; ;master/sound.h: 20: void do1(void);
+[v _do1 `(v ~T0 @X0 0 ef ]
+"21
+[; ;master/sound.h: 21: void re1(void);
+[v _re1 `(v ~T0 @X0 0 ef ]
+"22
+[; ;master/sound.h: 22: void mi1(void);
+[v _mi1 `(v ~T0 @X0 0 ef ]
+"24
+[; ;master/sound.h: 24: void so1(void);
+[v _so1 `(v ~T0 @X0 0 ef ]
+"25
+[; ;master/sound.h: 25: void ra1(void);
+[v _ra1 `(v ~T0 @X0 0 ef ]
+"26
+[; ;master/sound.h: 26: void si1(void);
+[v _si1 `(v ~T0 @X0 0 ef ]
+"27
+[; ;master/sound.h: 27: void do2(void);
+[v _do2 `(v ~T0 @X0 0 ef ]
+"37 master/animation.h
+[; ;master/animation.h: 37: extern char mode_cube_end;
+[v _mode_cube_end `uc ~T0 @X0 0 e ]
+"39
+[; ;master/animation.h: 39: extern char ARRAY_skip_CS;
+[v _ARRAY_skip_CS `uc ~T0 @X0 0 e ]
+"47 master/solution_CES.h
+[; ;master/solution_CES.h: 47: void operation_first(void);
+[v _operation_first `(v ~T0 @X0 0 ef ]
+"35 master/animation.h
+[; ;master/animation.h: 35: void command_turn_ARRAY_3_end(void);
+[v _command_turn_ARRAY_3_end `(v ~T0 @X0 0 ef ]
+"43 master/solution_CES.h
+[; ;master/solution_CES.h: 43: void make_justice_axis(void);
+[v _make_justice_axis `(v ~T0 @X0 0 ef ]
+"23
+[; ;master/solution_CES.h: 23: void make_up_white(void);
+[v _make_up_white `(v ~T0 @X0 0 ef ]
+"21
+[; ;master/solution_CES.h: 21: char if_perfect_white(void);
+[v _if_perfect_white `(uc ~T0 @X0 0 ef ]
+"24
+[; ;master/solution_CES.h: 24: void make_up_yellow(void);
+[v _make_up_yellow `(v ~T0 @X0 0 ef ]
+"17
+[; ;master/solution_CES.h: 17: void make_white_yellow_flower(void);
+[v _make_white_yellow_flower `(v ~T0 @X0 0 ef ]
+"16
+[; ;master/solution_CES.h: 16: void make_while_flower(void);
+[v _make_while_flower `(v ~T0 @X0 0 ef ]
+"20
+[; ;master/solution_CES.h: 20: void make_perfect_white(void);
+[v _make_perfect_white `(v ~T0 @X0 0 ef ]
+"27
+[; ;master/solution_CES.h: 27: char if_second_flower_perfect(void);
+[v _if_second_flower_perfect `(uc ~T0 @X0 0 ef ]
+"26
+[; ;master/solution_CES.h: 26: void make_second_flower_perfect(void);
+[v _make_second_flower_perfect `(v ~T0 @X0 0 ef ]
+"37
+[; ;master/solution_CES.h: 37: char if_perfect_yellow(void);
+[v _if_perfect_yellow `(uc ~T0 @X0 0 ef ]
+"29
+[; ;master/solution_CES.h: 29: void yellow_cross(void);
+[v _yellow_cross `(v ~T0 @X0 0 ef ]
+"33
+[; ;master/solution_CES.h: 33: void all_yellow(void);
+[v _all_yellow `(v ~T0 @X0 0 ef ]
+"38
+[; ;master/solution_CES.h: 38: char if_solution_end(void);
+[v _if_solution_end `(uc ~T0 @X0 0 ef ]
+"34
+[; ;master/solution_CES.h: 34: void make_step_7(void);
+[v _make_step_7 `(v ~T0 @X0 0 ef ]
+"40
+[; ;master/solution_CES.h: 40: char if_start_step8(void);
+[v _if_start_step8 `(uc ~T0 @X0 0 ef ]
+"34 master/animation.h
+[; ;master/animation.h: 34: void command_turn_ARRAY_3(const char *s);
+[v _command_turn_ARRAY_3 `(v ~T0 @X0 0 ef1`*Cuc ]
+"36 master/solution_CES.h
+[; ;master/solution_CES.h: 36: void make_step_8(void);
+[v _make_step_8 `(v ~T0 @X0 0 ef ]
+[v F5739 `(v ~T0 @X0 1 tf1`ul ]
+"183 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18.h
+[v __delay `JF5739 ~T0 @X0 0 e ]
+[p i __delay ]
+"26 master/operation_CES.h
+[; ;master/operation_CES.h: 26: typedef struct CE_2 {
+[s S826 `uc -> 8 `i `uc -> 8 `i `uc -> 12 `i `uc -> 12 `i `uc -> 6 `i ]
+[n S826 CE_2 cp co ep eo sp ]
+"37
+[; ;master/operation_CES.h: 37: extern CE state_CE;
+[v _state_CE `S826 ~T0 @X0 0 e ]
+"38
+[; ;master/operation_CES.h: 38: extern const CE deff_CE;
+[v _deff_CE `CS826 ~T0 @X0 0 e ]
+"46 master/solution_CES.h
+[; ;master/solution_CES.h: 46: char operation_setup(void);
+[v _operation_setup `(uc ~T0 @X0 0 ef ]
+"45
+[; ;master/solution_CES.h: 45: char operation_limit(const int count);
+[v _operation_limit `(uc ~T0 @X0 0 ef1`Ci ]
+"19
+[; ;master/solution_CES.h: 19: char if_EP(char check, char s_ep, char e_ep);
+[v _if_EP `(uc ~T0 @X0 0 ef3`uc`uc`uc ]
+"22
+[; ;master/solution_CES.h: 22: char make_flont_green(void);
+[v _make_flont_green `(uc ~T0 @X0 0 ef ]
+"30
+[; ;master/solution_CES.h: 30: char if_yellow_eo(const char eo[]);
+[v _if_yellow_eo `(uc ~T0 @X0 0 ef1`*Cuc ]
+"32
+[; ;master/solution_CES.h: 32: char if_yellow_co(const char co[]);
+[v _if_yellow_co `(uc ~T0 @X0 0 ef1`*Cuc ]
+"81 master/operation_CES.h
+[; ;master/operation_CES.h: 81: void set_C(void);
+[v _set_C `(v ~T0 @X0 0 ef ]
+[v F5810 `uc ~T0 @X0 -> 9 `i t ]
+"53
+[; ;master/operation_CES.h: 53: extern char LED_Light[6][9];
+[v _LED_Light `F5810 ~T0 @X0 -> 0 `x e ]
+"35 master/solution_CES.h
+[; ;master/solution_CES.h: 35: char if_2pair(void);
+[v _if_2pair `(uc ~T0 @X0 0 ef ]
+"34 master/SerialLED_PIC18F25K22.h
+[; ;master/SerialLED_PIC18F25K22.h: 34: void (*LED_COLOR[])(unsigned char) = {OUT_WHITE, OUT_GREEN, OUT_RED, OUT_BLUE, OUT_ORANGE, OUT_YELLOW, OUT_NONE};
+[v _LED_COLOR `*F27 ~T0 @X0 -> 7 `i e ]
+[i _LED_COLOR
+:U ..
+&U _OUT_WHITE
+&U _OUT_GREEN
+&U _OUT_RED
+&U _OUT_BLUE
+&U _OUT_ORANGE
+&U _OUT_YELLOW
+&U _OUT_NONE
+..
+]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 54: __asm("ANSELA equ 0F38h");
+[; <" ANSELA equ 0F38h ;# ">
+"99
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 99: __asm("ANSELB equ 0F39h");
+[; <" ANSELB equ 0F39h ;# ">
+"149
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 149: __asm("ANSELC equ 0F3Ah");
+[; <" ANSELC equ 0F3Ah ;# ">
+"200
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 200: __asm("PMD2 equ 0F3Dh");
+[; <" PMD2 equ 0F3Dh ;# ">
+"238
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 238: __asm("PMD1 equ 0F3Eh");
+[; <" PMD1 equ 0F3Eh ;# ">
+"303
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 303: __asm("PMD0 equ 0F3Fh");
+[; <" PMD0 equ 0F3Fh ;# ">
+"380
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 380: __asm("VREFCON2 equ 0F40h");
+[; <" VREFCON2 equ 0F40h ;# ">
+"385
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 385: __asm("DACCON1 equ 0F40h");
+[; <" DACCON1 equ 0F40h ;# ">
+"482
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 482: __asm("VREFCON1 equ 0F41h");
+[; <" VREFCON1 equ 0F41h ;# ">
+"487
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 487: __asm("DACCON0 equ 0F41h");
+[; <" DACCON0 equ 0F41h ;# ">
+"602
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 602: __asm("VREFCON0 equ 0F42h");
+[; <" VREFCON0 equ 0F42h ;# ">
+"607
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 607: __asm("FVRCON equ 0F42h");
+[; <" FVRCON equ 0F42h ;# ">
+"696
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 696: __asm("CTMUICON equ 0F43h");
+[; <" CTMUICON equ 0F43h ;# ">
+"701
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 701: __asm("CTMUICONH equ 0F43h");
+[; <" CTMUICONH equ 0F43h ;# ">
+"846
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 846: __asm("CTMUCONL equ 0F44h");
+[; <" CTMUCONL equ 0F44h ;# ">
+"851
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 851: __asm("CTMUCON1 equ 0F44h");
+[; <" CTMUCON1 equ 0F44h ;# ">
+"1000
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1000: __asm("CTMUCONH equ 0F45h");
+[; <" CTMUCONH equ 0F45h ;# ">
+"1005
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1005: __asm("CTMUCON0 equ 0F45h");
+[; <" CTMUCON0 equ 0F45h ;# ">
+"1112
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1112: __asm("SRCON1 equ 0F46h");
+[; <" SRCON1 equ 0F46h ;# ">
+"1174
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1174: __asm("SRCON0 equ 0F47h");
+[; <" SRCON0 equ 0F47h ;# ">
+"1245
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1245: __asm("CCPTMRS1 equ 0F48h");
+[; <" CCPTMRS1 equ 0F48h ;# ">
+"1297
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1297: __asm("CCPTMRS0 equ 0F49h");
+[; <" CCPTMRS0 equ 0F49h ;# ">
+"1371
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1371: __asm("T6CON equ 0F4Ah");
+[; <" T6CON equ 0F4Ah ;# ">
+"1442
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1442: __asm("PR6 equ 0F4Bh");
+[; <" PR6 equ 0F4Bh ;# ">
+"1462
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1462: __asm("TMR6 equ 0F4Ch");
+[; <" TMR6 equ 0F4Ch ;# ">
+"1482
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1482: __asm("T5GCON equ 0F4Dh");
+[; <" T5GCON equ 0F4Dh ;# ">
+"1577
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1577: __asm("T5CON equ 0F4Eh");
+[; <" T5CON equ 0F4Eh ;# ">
+"1686
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1686: __asm("TMR5 equ 0F4Fh");
+[; <" TMR5 equ 0F4Fh ;# ">
+"1693
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1693: __asm("TMR5L equ 0F4Fh");
+[; <" TMR5L equ 0F4Fh ;# ">
+"1713
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1713: __asm("TMR5H equ 0F50h");
+[; <" TMR5H equ 0F50h ;# ">
+"1733
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1733: __asm("T4CON equ 0F51h");
+[; <" T4CON equ 0F51h ;# ">
+"1804
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1804: __asm("PR4 equ 0F52h");
+[; <" PR4 equ 0F52h ;# ">
+"1824
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1824: __asm("TMR4 equ 0F53h");
+[; <" TMR4 equ 0F53h ;# ">
+"1844
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1844: __asm("CCP5CON equ 0F54h");
+[; <" CCP5CON equ 0F54h ;# ">
+"1908
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1908: __asm("CCPR5 equ 0F55h");
+[; <" CCPR5 equ 0F55h ;# ">
+"1915
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1915: __asm("CCPR5L equ 0F55h");
+[; <" CCPR5L equ 0F55h ;# ">
+"1935
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1935: __asm("CCPR5H equ 0F56h");
+[; <" CCPR5H equ 0F56h ;# ">
+"1955
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 1955: __asm("CCP4CON equ 0F57h");
+[; <" CCP4CON equ 0F57h ;# ">
+"2019
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2019: __asm("CCPR4 equ 0F58h");
+[; <" CCPR4 equ 0F58h ;# ">
+"2026
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2026: __asm("CCPR4L equ 0F58h");
+[; <" CCPR4L equ 0F58h ;# ">
+"2046
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2046: __asm("CCPR4H equ 0F59h");
+[; <" CCPR4H equ 0F59h ;# ">
+"2066
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2066: __asm("PSTR3CON equ 0F5Ah");
+[; <" PSTR3CON equ 0F5Ah ;# ">
+"2142
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2142: __asm("ECCP3AS equ 0F5Bh");
+[; <" ECCP3AS equ 0F5Bh ;# ">
+"2147
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2147: __asm("CCP3AS equ 0F5Bh");
+[; <" CCP3AS equ 0F5Bh ;# ">
+"2384
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2384: __asm("PWM3CON equ 0F5Ch");
+[; <" PWM3CON equ 0F5Ch ;# ">
+"2454
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2454: __asm("CCP3CON equ 0F5Dh");
+[; <" CCP3CON equ 0F5Dh ;# ">
+"2536
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2536: __asm("CCPR3 equ 0F5Eh");
+[; <" CCPR3 equ 0F5Eh ;# ">
+"2543
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2543: __asm("CCPR3L equ 0F5Eh");
+[; <" CCPR3L equ 0F5Eh ;# ">
+"2563
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2563: __asm("CCPR3H equ 0F5Fh");
+[; <" CCPR3H equ 0F5Fh ;# ">
+"2583
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2583: __asm("SLRCON equ 0F60h");
+[; <" SLRCON equ 0F60h ;# ">
+"2615
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2615: __asm("WPUB equ 0F61h");
+[; <" WPUB equ 0F61h ;# ">
+"2677
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2677: __asm("IOCB equ 0F62h");
+[; <" IOCB equ 0F62h ;# ">
+"2716
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2716: __asm("PSTR2CON equ 0F63h");
+[; <" PSTR2CON equ 0F63h ;# ">
+"2856
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2856: __asm("ECCP2AS equ 0F64h");
+[; <" ECCP2AS equ 0F64h ;# ">
+"2861
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 2861: __asm("CCP2AS equ 0F64h");
+[; <" CCP2AS equ 0F64h ;# ">
+"3098
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 3098: __asm("PWM2CON equ 0F65h");
+[; <" PWM2CON equ 0F65h ;# ">
+"3168
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 3168: __asm("CCP2CON equ 0F66h");
+[; <" CCP2CON equ 0F66h ;# ">
+"3250
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 3250: __asm("CCPR2 equ 0F67h");
+[; <" CCPR2 equ 0F67h ;# ">
+"3257
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 3257: __asm("CCPR2L equ 0F67h");
+[; <" CCPR2L equ 0F67h ;# ">
+"3277
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 3277: __asm("CCPR2H equ 0F68h");
+[; <" CCPR2H equ 0F68h ;# ">
+"3297
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 3297: __asm("SSP2CON3 equ 0F69h");
+[; <" SSP2CON3 equ 0F69h ;# ">
+"3359
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 3359: __asm("SSP2MSK equ 0F6Ah");
+[; <" SSP2MSK equ 0F6Ah ;# ">
+"3429
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 3429: __asm("SSP2CON2 equ 0F6Bh");
+[; <" SSP2CON2 equ 0F6Bh ;# ">
+"3574
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 3574: __asm("SSP2CON1 equ 0F6Ch");
+[; <" SSP2CON1 equ 0F6Ch ;# ">
+"3694
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 3694: __asm("SSP2STAT equ 0F6Dh");
+[; <" SSP2STAT equ 0F6Dh ;# ">
+"4094
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 4094: __asm("SSP2ADD equ 0F6Eh");
+[; <" SSP2ADD equ 0F6Eh ;# ">
+"4164
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 4164: __asm("SSP2BUF equ 0F6Fh");
+[; <" SSP2BUF equ 0F6Fh ;# ">
+"4184
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 4184: __asm("BAUDCON2 equ 0F70h");
+[; <" BAUDCON2 equ 0F70h ;# ">
+"4189
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 4189: __asm("BAUD2CON equ 0F70h");
+[; <" BAUD2CON equ 0F70h ;# ">
+"4446
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 4446: __asm("RCSTA2 equ 0F71h");
+[; <" RCSTA2 equ 0F71h ;# ">
+"4451
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 4451: __asm("RC2STA equ 0F71h");
+[; <" RC2STA equ 0F71h ;# ">
+"4734
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 4734: __asm("TXSTA2 equ 0F72h");
+[; <" TXSTA2 equ 0F72h ;# ">
+"4739
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 4739: __asm("TX2STA equ 0F72h");
+[; <" TX2STA equ 0F72h ;# ">
+"4986
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 4986: __asm("TXREG2 equ 0F73h");
+[; <" TXREG2 equ 0F73h ;# ">
+"4991
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 4991: __asm("TX2REG equ 0F73h");
+[; <" TX2REG equ 0F73h ;# ">
+"5024
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 5024: __asm("RCREG2 equ 0F74h");
+[; <" RCREG2 equ 0F74h ;# ">
+"5029
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 5029: __asm("RC2REG equ 0F74h");
+[; <" RC2REG equ 0F74h ;# ">
+"5062
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 5062: __asm("SPBRG2 equ 0F75h");
+[; <" SPBRG2 equ 0F75h ;# ">
+"5067
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 5067: __asm("SP2BRG equ 0F75h");
+[; <" SP2BRG equ 0F75h ;# ">
+"5100
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 5100: __asm("SPBRGH2 equ 0F76h");
+[; <" SPBRGH2 equ 0F76h ;# ">
+"5105
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 5105: __asm("SP2BRGH equ 0F76h");
+[; <" SP2BRGH equ 0F76h ;# ">
+"5138
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 5138: __asm("CM2CON1 equ 0F77h");
+[; <" CM2CON1 equ 0F77h ;# ">
+"5143
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 5143: __asm("CM12CON equ 0F77h");
+[; <" CM12CON equ 0F77h ;# ">
+"5260
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 5260: __asm("CM2CON0 equ 0F78h");
+[; <" CM2CON0 equ 0F78h ;# ">
+"5265
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 5265: __asm("CM2CON equ 0F78h");
+[; <" CM2CON equ 0F78h ;# ">
+"5540
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 5540: __asm("CM1CON0 equ 0F79h");
+[; <" CM1CON0 equ 0F79h ;# ">
+"5545
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 5545: __asm("CM1CON equ 0F79h");
+[; <" CM1CON equ 0F79h ;# ">
+"5962
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 5962: __asm("PIE4 equ 0F7Ah");
+[; <" PIE4 equ 0F7Ah ;# ">
+"5994
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 5994: __asm("PIR4 equ 0F7Bh");
+[; <" PIR4 equ 0F7Bh ;# ">
+"6026
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 6026: __asm("IPR4 equ 0F7Ch");
+[; <" IPR4 equ 0F7Ch ;# ">
+"6066
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 6066: __asm("PIE5 equ 0F7Dh");
+[; <" PIE5 equ 0F7Dh ;# ">
+"6098
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 6098: __asm("PIR5 equ 0F7Eh");
+[; <" PIR5 equ 0F7Eh ;# ">
+"6130
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 6130: __asm("IPR5 equ 0F7Fh");
+[; <" IPR5 equ 0F7Fh ;# ">
+"6176
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 6176: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"6467
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 6467: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"6840
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 6840: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"7171
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 7171: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"7246
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 7246: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"7358
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 7358: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"7470
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 7470: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"7582
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 7582: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"7587
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 7587: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"7804
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 7804: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"7809
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 7809: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"8026
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 8026: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"8031
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 8031: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"8248
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 8248: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"8269
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 8269: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"8339
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 8339: __asm("HLVDCON equ 0F9Ch");
+[; <" HLVDCON equ 0F9Ch ;# ">
+"8344
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 8344: __asm("LVDCON equ 0F9Ch");
+[; <" LVDCON equ 0F9Ch ;# ">
+"8619
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 8619: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"8696
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 8696: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"8773
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 8773: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"8850
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 8850: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"8936
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 8936: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"9022
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 9022: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"9108
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 9108: __asm("PIE3 equ 0FA3h");
+[; <" PIE3 equ 0FA3h ;# ">
+"9218
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 9218: __asm("PIR3 equ 0FA4h");
+[; <" PIR3 equ 0FA4h ;# ">
+"9296
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 9296: __asm("IPR3 equ 0FA5h");
+[; <" IPR3 equ 0FA5h ;# ">
+"9374
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 9374: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"9440
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 9440: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"9460
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 9460: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"9480
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 9480: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"9550
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 9550: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"9555
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 9555: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"9559
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 9559: __asm("RC1STA equ 0FABh");
+[; <" RC1STA equ 0FABh ;# ">
+"10006
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10006: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"10011
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10011: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"10015
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10015: __asm("TX1STA equ 0FACh");
+[; <" TX1STA equ 0FACh ;# ">
+"10381
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10381: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"10386
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10386: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"10390
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10390: __asm("TX1REG equ 0FADh");
+[; <" TX1REG equ 0FADh ;# ">
+"10459
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10459: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"10464
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10464: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"10468
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10468: __asm("RC1REG equ 0FAEh");
+[; <" RC1REG equ 0FAEh ;# ">
+"10537
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10537: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"10542
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10542: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"10546
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10546: __asm("SP1BRG equ 0FAFh");
+[; <" SP1BRG equ 0FAFh ;# ">
+"10615
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10615: __asm("SPBRGH1 equ 0FB0h");
+[; <" SPBRGH1 equ 0FB0h ;# ">
+"10620
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10620: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"10624
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10624: __asm("SP1BRGH equ 0FB0h");
+[; <" SP1BRGH equ 0FB0h ;# ">
+"10693
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10693: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"10801
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10801: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"10808
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10808: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"10828
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10828: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"10848
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10848: __asm("T3GCON equ 0FB4h");
+[; <" T3GCON equ 0FB4h ;# ">
+"10943
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10943: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"10948
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 10948: __asm("ECCPAS equ 0FB6h");
+[; <" ECCPAS equ 0FB6h ;# ">
+"11325
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 11325: __asm("PWM1CON equ 0FB7h");
+[; <" PWM1CON equ 0FB7h ;# ">
+"11330
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 11330: __asm("PWMCON equ 0FB7h");
+[; <" PWMCON equ 0FB7h ;# ">
+"11579
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 11579: __asm("BAUDCON1 equ 0FB8h");
+[; <" BAUDCON1 equ 0FB8h ;# ">
+"11584
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 11584: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"11588
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 11588: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"11592
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 11592: __asm("BAUD1CON equ 0FB8h");
+[; <" BAUD1CON equ 0FB8h ;# ">
+"12253
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12253: __asm("PSTR1CON equ 0FB9h");
+[; <" PSTR1CON equ 0FB9h ;# ">
+"12258
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12258: __asm("PSTRCON equ 0FB9h");
+[; <" PSTRCON equ 0FB9h ;# ">
+"12403
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12403: __asm("T2CON equ 0FBAh");
+[; <" T2CON equ 0FBAh ;# ">
+"12474
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12474: __asm("PR2 equ 0FBBh");
+[; <" PR2 equ 0FBBh ;# ">
+"12494
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12494: __asm("TMR2 equ 0FBCh");
+[; <" TMR2 equ 0FBCh ;# ">
+"12514
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12514: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"12596
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12596: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"12603
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12603: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"12623
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12623: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"12643
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12643: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"12714
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12714: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"12782
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12782: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"12907
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12907: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"12914
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12914: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"12934
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12934: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"12954
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12954: __asm("SSP1CON2 equ 0FC5h");
+[; <" SSP1CON2 equ 0FC5h ;# ">
+"12959
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 12959: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"13308
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 13308: __asm("SSP1CON1 equ 0FC6h");
+[; <" SSP1CON1 equ 0FC6h ;# ">
+"13313
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 13313: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"13546
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 13546: __asm("SSP1STAT equ 0FC7h");
+[; <" SSP1STAT equ 0FC7h ;# ">
+"13551
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 13551: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"14176
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 14176: __asm("SSP1ADD equ 0FC8h");
+[; <" SSP1ADD equ 0FC8h ;# ">
+"14181
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 14181: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"14430
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 14430: __asm("SSP1BUF equ 0FC9h");
+[; <" SSP1BUF equ 0FC9h ;# ">
+"14435
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 14435: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"14484
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 14484: __asm("SSP1MSK equ 0FCAh");
+[; <" SSP1MSK equ 0FCAh ;# ">
+"14489
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 14489: __asm("SSPMSK equ 0FCAh");
+[; <" SSPMSK equ 0FCAh ;# ">
+"14622
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 14622: __asm("SSP1CON3 equ 0FCBh");
+[; <" SSP1CON3 equ 0FCBh ;# ">
+"14627
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 14627: __asm("SSPCON3 equ 0FCBh");
+[; <" SSPCON3 equ 0FCBh ;# ">
+"14744
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 14744: __asm("T1GCON equ 0FCCh");
+[; <" T1GCON equ 0FCCh ;# ">
+"14839
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 14839: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"14952
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 14952: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"14959
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 14959: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"14979
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 14979: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"14999
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 14999: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"15132
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15132: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"15160
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15160: __asm("OSCCON2 equ 0FD2h");
+[; <" OSCCON2 equ 0FD2h ;# ">
+"15217
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15217: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"15300
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15300: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"15370
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15370: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"15377
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15377: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"15397
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15397: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"15417
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15417: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"15488
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15488: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"15495
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15495: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"15515
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15515: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"15522
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15522: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"15542
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15542: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"15562
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15562: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"15582
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15582: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"15602
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15602: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"15622
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15622: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"15629
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15629: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"15636
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15636: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"15656
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15656: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"15663
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15663: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"15683
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15683: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"15703
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15703: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"15723
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15723: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"15743
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15743: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"15763
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15763: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"15801
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15801: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"15808
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15808: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"15828
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15828: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"15835
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15835: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"15855
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15855: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"15875
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15875: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"15895
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15895: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"15915
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15915: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"15935
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 15935: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"16027
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16027: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"16097
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16097: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"16214
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16214: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"16221
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16221: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"16241
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16241: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"16261
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16261: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"16283
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16283: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"16290
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16290: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"16310
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16310: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"16330
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16330: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"16361
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16361: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"16368
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16368: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"16375
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16375: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"16395
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16395: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"16415
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16415: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"16422
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16422: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"16528
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16528: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"16535
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16535: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"16555
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16555: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"16575
+[; ;C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h: 16575: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"29 master/sound.h
+[; ;master/sound.h: 29: void (*SOUND_NOTE[])(void) = {do1, re1, mi1, so1, ra1, si1, do2};
+[v _SOUND_NOTE `*F5757 ~T0 @X0 -> 7 `i e ]
+[i _SOUND_NOTE
+:U ..
+&U _do1
+&U _re1
+&U _mi1
+&U _so1
+&U _ra1
+&U _si1
+&U _do2
+..
+]
+"32 master/animation.h
+[; ;master/animation.h: 32: char past_command_3 = 0;
+[v _past_command_3 `uc ~T0 @X0 1 e ]
+[i _past_command_3
+-> -> 0 `i `uc
+]
+"33
+[; ;master/animation.h: 33: char past_command_count_3 = 0;
+[v _past_command_count_3 `uc ~T0 @X0 1 e ]
+[i _past_command_count_3
+-> -> 0 `i `uc
+]
+"4 master/solution_CES.c
+[; ;master/solution_CES.c: 4: int opereation_count;
+[v _opereation_count `i ~T0 @X0 1 e ]
+"5
+[; ;master/solution_CES.c: 5: char opereation_over_flag;
+[v _opereation_over_flag `uc ~T0 @X0 1 e ]
+"6
+[; ;master/solution_CES.c: 6: char limit_count;
+[v _limit_count `uc ~T0 @X0 1 e ]
+"8
+[; ;master/solution_CES.c: 8: void made_cube(char Light_ON_OFF, const char skip_CS)
+[v _made_cube `(v ~T0 @X0 1 ef2`uc`Cuc ]
+"9
+[; ;master/solution_CES.c: 9: {
+{
+[e :U _made_cube ]
+"8
+[; ;master/solution_CES.c: 8: void made_cube(char Light_ON_OFF, const char skip_CS)
+[v _Light_ON_OFF `uc ~T0 @X0 1 r1 ]
+[v _skip_CS `Cuc ~T0 @X0 1 r2 ]
+"9
+[; ;master/solution_CES.c: 9: {
+[f ]
+"10
+[; ;master/solution_CES.c: 10:  char i;
+[v _i `uc ~T0 @X0 1 a ]
+[v F5925 `Cuc ~T0 @X0 -> 3 `i t ]
+"11
+[; ;master/solution_CES.c: 11:  const char start8[14][3] = {
+[v F5924 `F5925 ~T0 @X0 -> 14 `i s start8 ]
+[i F5924
+:U ..
+:U ..
+-> 76 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 76 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 76 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 50 `c
+-> 0 `c
+..
+:U ..
+-> 76 `c
+-> 0 `c
+..
+:U ..
+-> 66 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 0 `c
+..
+:U ..
+-> 66 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 0 `c
+..
+:U ..
+-> 66 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 50 `c
+-> 0 `c
+..
+:U ..
+-> 66 `c
+-> 39 `c
+-> 0 `c
+..
+..
+]
+"15
+[; ;master/solution_CES.c: 15:  char test_flag = 0;
+[v _test_flag `uc ~T0 @X0 1 a ]
+[e = _test_flag -> -> 0 `i `uc ]
+"17
+[; ;master/solution_CES.c: 17:  mode_cube_end = Light_ON_OFF;
+[e = _mode_cube_end _Light_ON_OFF ]
+"18
+[; ;master/solution_CES.c: 18:  ARRAY_skip_CS = skip_CS;
+[e = _ARRAY_skip_CS _skip_CS ]
+"20
+[; ;master/solution_CES.c: 20:  do
+[e :U 832 ]
+"21
+[; ;master/solution_CES.c: 21:  {
+{
+"22
+[; ;master/solution_CES.c: 22:   operation_first();
+[e ( _operation_first ..  ]
+"23
+[; ;master/solution_CES.c: 23:   command_turn_ARRAY_3_end();
+[e ( _command_turn_ARRAY_3_end ..  ]
+"24
+[; ;master/solution_CES.c: 24:   make_justice_axis();
+[e ( _make_justice_axis ..  ]
+"25
+[; ;master/solution_CES.c: 25:  } while (opereation_over_flag == 1);
+}
+[e $ == -> _opereation_over_flag `i -> 1 `i 832  ]
+[e :U 831 ]
+"26
+[; ;master/solution_CES.c: 26:  operation_first();
+[e ( _operation_first ..  ]
+"27
+[; ;master/solution_CES.c: 27:  limit_count = 0;
+[e = _limit_count -> -> 0 `i `uc ]
+"29
+[; ;master/solution_CES.c: 29:  while (test_flag != 4)
+[e $U 833  ]
+[e :U 834 ]
+"30
+[; ;master/solution_CES.c: 30:  {
+{
+"32
+[; ;master/solution_CES.c: 32:   switch (test_flag)
+[e $U 837  ]
+"33
+[; ;master/solution_CES.c: 33:   {
+{
+"34
+[; ;master/solution_CES.c: 34:   case 0:
+[e :U 838 ]
+"35
+[; ;master/solution_CES.c: 35:    make_up_white();
+[e ( _make_up_white ..  ]
+"36
+[; ;master/solution_CES.c: 36:    if (if_perfect_white() == 1)
+[e $ ! == -> ( _if_perfect_white ..  `i -> 1 `i 839  ]
+"37
+[; ;master/solution_CES.c: 37:    {
+{
+"38
+[; ;master/solution_CES.c: 38:     make_up_yellow();
+[e ( _make_up_yellow ..  ]
+"39
+[; ;master/solution_CES.c: 39:     make_white_yellow_flower();
+[e ( _make_white_yellow_flower ..  ]
+"40
+[; ;master/solution_CES.c: 40:     make_while_flower();
+[e ( _make_while_flower ..  ]
+"41
+[; ;master/solution_CES.c: 41:     make_up_white();
+[e ( _make_up_white ..  ]
+"42
+[; ;master/solution_CES.c: 42:     make_perfect_white();
+[e ( _make_perfect_white ..  ]
+"43
+[; ;master/solution_CES.c: 43:    }
+}
+[e :U 839 ]
+"44
+[; ;master/solution_CES.c: 44:    test_flag = 1;
+[e = _test_flag -> -> 1 `i `uc ]
+"45
+[; ;master/solution_CES.c: 45:    break;
+[e $U 836  ]
+"46
+[; ;master/solution_CES.c: 46:   case 1:
+[e :U 840 ]
+"48
+[; ;master/solution_CES.c: 48:    if (if_second_flower_perfect() != 0)
+[e $ ! != -> ( _if_second_flower_perfect ..  `i -> 0 `i 841  ]
+"49
+[; ;master/solution_CES.c: 49:    {
+{
+"50
+[; ;master/solution_CES.c: 50:     make_up_yellow();
+[e ( _make_up_yellow ..  ]
+"51
+[; ;master/solution_CES.c: 51:     make_second_flower_perfect();
+[e ( _make_second_flower_perfect ..  ]
+"52
+[; ;master/solution_CES.c: 52:     make_up_white();
+[e ( _make_up_white ..  ]
+"53
+[; ;master/solution_CES.c: 53:    }
+}
+[e :U 841 ]
+"54
+[; ;master/solution_CES.c: 54:    test_flag = 2;
+[e = _test_flag -> -> 2 `i `uc ]
+"55
+[; ;master/solution_CES.c: 55:    break;
+[e $U 836  ]
+"56
+[; ;master/solution_CES.c: 56:   case 2:
+[e :U 842 ]
+"58
+[; ;master/solution_CES.c: 58:    if (if_perfect_yellow() != 0)
+[e $ ! != -> ( _if_perfect_yellow ..  `i -> 0 `i 843  ]
+"59
+[; ;master/solution_CES.c: 59:    {
+{
+"60
+[; ;master/solution_CES.c: 60:     yellow_cross();
+[e ( _yellow_cross ..  ]
+"61
+[; ;master/solution_CES.c: 61:     all_yellow();
+[e ( _all_yellow ..  ]
+"62
+[; ;master/solution_CES.c: 62:    }
+}
+[e :U 843 ]
+"63
+[; ;master/solution_CES.c: 63:    test_flag = 3;
+[e = _test_flag -> -> 3 `i `uc ]
+"64
+[; ;master/solution_CES.c: 64:    break;
+[e $U 836  ]
+"65
+[; ;master/solution_CES.c: 65:   case 3:
+[e :U 844 ]
+"66
+[; ;master/solution_CES.c: 66:    if (if_solution_end() != 0)
+[e $ ! != -> ( _if_solution_end ..  `i -> 0 `i 845  ]
+"67
+[; ;master/solution_CES.c: 67:    {
+{
+"68
+[; ;master/solution_CES.c: 68:     make_step_7();
+[e ( _make_step_7 ..  ]
+"69
+[; ;master/solution_CES.c: 69:     if (if_start_step8() == 1)
+[e $ ! == -> ( _if_start_step8 ..  `i -> 1 `i 846  ]
+"70
+[; ;master/solution_CES.c: 70:     {
+{
+"71
+[; ;master/solution_CES.c: 71:      for (i = 0; i < 14; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 14 `i 847  ]
+[e $U 848  ]
+[e :U 847 ]
+"72
+[; ;master/solution_CES.c: 72:      {
+{
+"73
+[; ;master/solution_CES.c: 73:       command_turn_ARRAY_3(start8[i]);
+[e ( _command_turn_ARRAY_3 (1 &U *U + &U F5924 * -> _i `ux -> * -> # *U &U *U &U F5924 `ui -> -> 3 `i `ui `ux ]
+"74
+[; ;master/solution_CES.c: 74:      }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 14 `i 847  ]
+[e :U 848 ]
+}
+"75
+[; ;master/solution_CES.c: 75:     }
+}
+[e :U 846 ]
+"77
+[; ;master/solution_CES.c: 77:     make_step_8();
+[e ( _make_step_8 ..  ]
+"78
+[; ;master/solution_CES.c: 78:    }
+}
+[e :U 845 ]
+"80
+[; ;master/solution_CES.c: 80:    if (if_solution_end() != 0)
+[e $ ! != -> ( _if_solution_end ..  `i -> 0 `i 850  ]
+"81
+[; ;master/solution_CES.c: 81:    {
+{
+"82
+[; ;master/solution_CES.c: 82:     test_flag = 0;
+[e = _test_flag -> -> 0 `i `uc ]
+"83
+[; ;master/solution_CES.c: 83:     limit_count++;
+[e ++ _limit_count -> -> 1 `i `uc ]
+"84
+[; ;master/solution_CES.c: 84:     command_turn_ARRAY_3("R");
+[e ( _command_turn_ARRAY_3 (1 :s 1C ]
+"85
+[; ;master/solution_CES.c: 85:     command_turn_ARRAY_3("L");
+[e ( _command_turn_ARRAY_3 (1 :s 2C ]
+"86
+[; ;master/solution_CES.c: 86:     command_turn_ARRAY_3("U");
+[e ( _command_turn_ARRAY_3 (1 :s 3C ]
+"87
+[; ;master/solution_CES.c: 87:     command_turn_ARRAY_3("B");
+[e ( _command_turn_ARRAY_3 (1 :s 4C ]
+"88
+[; ;master/solution_CES.c: 88:    }
+}
+[e $U 851  ]
+"89
+[; ;master/solution_CES.c: 89:    else
+[e :U 850 ]
+"90
+[; ;master/solution_CES.c: 90:    {
+{
+"91
+[; ;master/solution_CES.c: 91:     make_justice_axis();
+[e ( _make_justice_axis ..  ]
+"92
+[; ;master/solution_CES.c: 92:     test_flag = 4;
+[e = _test_flag -> -> 4 `i `uc ]
+"93
+[; ;master/solution_CES.c: 93:    }
+}
+[e :U 851 ]
+"94
+[; ;master/solution_CES.c: 94:    break;
+[e $U 836  ]
+"95
+[; ;master/solution_CES.c: 95:   default:
+[e :U 852 ]
+"96
+[; ;master/solution_CES.c: 96:    break;
+[e $U 836  ]
+"97
+[; ;master/solution_CES.c: 97:   }
+}
+[e $U 836  ]
+[e :U 837 ]
+[e [\ -> _test_flag `i , $ -> 0 `i 838
+ , $ -> 1 `i 840
+ , $ -> 2 `i 842
+ , $ -> 3 `i 844
+ 852 ]
+[e :U 836 ]
+"99
+[; ;master/solution_CES.c: 99:   if (opereation_over_flag == 1 || limit_count > 5)
+[e $ ! || == -> _opereation_over_flag `i -> 1 `i > -> _limit_count `i -> 5 `i 853  ]
+"100
+[; ;master/solution_CES.c: 100:   {
+{
+"101
+[; ;master/solution_CES.c: 101:    operation_first();
+[e ( _operation_first ..  ]
+"102
+[; ;master/solution_CES.c: 102:    limit_count++;
+[e ++ _limit_count -> -> 1 `i `uc ]
+"104
+[; ;master/solution_CES.c: 104:    if (limit_count > 5)
+[e $ ! > -> _limit_count `i -> 5 `i 854  ]
+"105
+[; ;master/solution_CES.c: 105:    {
+{
+"106
+[; ;master/solution_CES.c: 106:     return;
+[e $UE 829  ]
+"107
+[; ;master/solution_CES.c: 107:    }
+}
+[e :U 854 ]
+"108
+[; ;master/solution_CES.c: 108:    command_turn_ARRAY_3("R");
+[e ( _command_turn_ARRAY_3 (1 :s 5C ]
+"109
+[; ;master/solution_CES.c: 109:    command_turn_ARRAY_3("L");
+[e ( _command_turn_ARRAY_3 (1 :s 6C ]
+"110
+[; ;master/solution_CES.c: 110:    command_turn_ARRAY_3("U");
+[e ( _command_turn_ARRAY_3 (1 :s 7C ]
+"111
+[; ;master/solution_CES.c: 111:    command_turn_ARRAY_3("B");
+[e ( _command_turn_ARRAY_3 (1 :s 8C ]
+"112
+[; ;master/solution_CES.c: 112:    make_justice_axis();
+[e ( _make_justice_axis ..  ]
+"113
+[; ;master/solution_CES.c: 113:    test_flag = 0;
+[e = _test_flag -> -> 0 `i `uc ]
+"114
+[; ;master/solution_CES.c: 114:   }
+}
+[e :U 853 ]
+"115
+[; ;master/solution_CES.c: 115:  }
+}
+[e :U 833 ]
+"29
+[; ;master/solution_CES.c: 29:  while (test_flag != 4)
+[e $ != -> _test_flag `i -> 4 `i 834  ]
+[e :U 835 ]
+"116
+[; ;master/solution_CES.c: 116:  command_turn_ARRAY_3_end();
+[e ( _command_turn_ARRAY_3_end ..  ]
+"117
+[; ;master/solution_CES.c: 117:  _delay((unsigned long)((100)*(64000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 64000000 `l `d .4000.0 `ul ]
+"118
+[; ;master/solution_CES.c: 118: }
+[e :UE 829 ]
+}
+"120
+[; ;master/solution_CES.c: 120: char if_solution_end(void)
+[v _if_solution_end `(uc ~T0 @X0 1 ef ]
+"121
+[; ;master/solution_CES.c: 121: {
+{
+[e :U _if_solution_end ]
+[f ]
+"122
+[; ;master/solution_CES.c: 122:  char i, xo = 0, p_start, j;
+[v _i `uc ~T0 @X0 1 a ]
+[v _xo `uc ~T0 @X0 1 a ]
+[e = _xo -> -> 0 `i `uc ]
+[v _p_start `uc ~T0 @X0 1 a ]
+[v _j `uc ~T0 @X0 1 a ]
+"124
+[; ;master/solution_CES.c: 124:  for (p_start = 0; p_start < 8; p_start++)
+{
+[e = _p_start -> -> 0 `i `uc ]
+[e $ < -> _p_start `i -> 8 `i 856  ]
+[e $U 857  ]
+[e :U 856 ]
+"125
+[; ;master/solution_CES.c: 125:  {
+{
+"126
+[; ;master/solution_CES.c: 126:   if (state_CE.cp[p_start] == 0)
+[e $ ! == -> *U + &U . _state_CE 0 * -> _p_start `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> 0 `i 859  ]
+"127
+[; ;master/solution_CES.c: 127:   {
+{
+"128
+[; ;master/solution_CES.c: 128:    break;
+[e $U 857  ]
+"129
+[; ;master/solution_CES.c: 129:   }
+}
+[e :U 859 ]
+"130
+[; ;master/solution_CES.c: 130:  }
+}
+[e ++ _p_start -> -> 1 `i `uc ]
+[e $ < -> _p_start `i -> 8 `i 856  ]
+[e :U 857 ]
+}
+"131
+[; ;master/solution_CES.c: 131:  for (j = 0; j < 2; j++)
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 2 `i 860  ]
+[e $U 861  ]
+[e :U 860 ]
+"132
+[; ;master/solution_CES.c: 132:  {
+{
+"133
+[; ;master/solution_CES.c: 133:   for (i = j * 4; i < (1 + j) * 4; i++)
+{
+[e = _i -> * -> _j `i -> 4 `i `uc ]
+[e $U 866  ]
+[e :U 863 ]
+"134
+[; ;master/solution_CES.c: 134:   {
+{
+"136
+[; ;master/solution_CES.c: 136:    if (state_CE.cp[(i + p_start) % 4 + j * 4] != deff_CE.cp[i])
+[e $ ! != -> *U + &U . _state_CE 0 * -> -> + % + -> _i `i -> _p_start `i -> 4 `i * -> _j `i -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> *U + &U . _deff_CE 0 * -> _i `ux -> -> # *U &U . _deff_CE 0 `ui `ux `i 867  ]
+"137
+[; ;master/solution_CES.c: 137:     return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 855  ]
+[e :U 867 ]
+"138
+[; ;master/solution_CES.c: 138:    xo += state_CE.co[i];
+[e =+ _xo -> *U + &U . _state_CE 1 * -> _i `ux -> -> # *U &U . _state_CE 1 `ui `ux `uc ]
+"139
+[; ;master/solution_CES.c: 139:   }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 866 ]
+[e $ < -> _i `i * + -> 1 `i -> _j `i -> 4 `i 863  ]
+[e :U 864 ]
+}
+"140
+[; ;master/solution_CES.c: 140:  }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 2 `i 860  ]
+[e :U 861 ]
+}
+"142
+[; ;master/solution_CES.c: 142:  if (xo != 0)
+[e $ ! != -> _xo `i -> 0 `i 868  ]
+"143
+[; ;master/solution_CES.c: 143:   return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 855  ]
+[e :U 868 ]
+"145
+[; ;master/solution_CES.c: 145:  for (p_start = 0; p_start < 12; p_start++)
+{
+[e = _p_start -> -> 0 `i `uc ]
+[e $ < -> _p_start `i -> 12 `i 869  ]
+[e $U 870  ]
+[e :U 869 ]
+"146
+[; ;master/solution_CES.c: 146:  {
+{
+"147
+[; ;master/solution_CES.c: 147:   if (state_CE.ep[p_start] == 0)
+[e $ ! == -> *U + &U . _state_CE 2 * -> _p_start `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> 0 `i 872  ]
+"148
+[; ;master/solution_CES.c: 148:   {
+{
+"149
+[; ;master/solution_CES.c: 149:    break;
+[e $U 870  ]
+"150
+[; ;master/solution_CES.c: 150:   }
+}
+[e :U 872 ]
+"151
+[; ;master/solution_CES.c: 151:  }
+}
+[e ++ _p_start -> -> 1 `i `uc ]
+[e $ < -> _p_start `i -> 12 `i 869  ]
+[e :U 870 ]
+}
+"152
+[; ;master/solution_CES.c: 152:  xo = 0;
+[e = _xo -> -> 0 `i `uc ]
+"153
+[; ;master/solution_CES.c: 153:  for (j = 0; j < 3; j++)
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 3 `i 873  ]
+[e $U 874  ]
+[e :U 873 ]
+"154
+[; ;master/solution_CES.c: 154:  {
+{
+"155
+[; ;master/solution_CES.c: 155:   for (i = j * 4; i < (1 + j) * 4; i++)
+{
+[e = _i -> * -> _j `i -> 4 `i `uc ]
+[e $U 879  ]
+[e :U 876 ]
+"156
+[; ;master/solution_CES.c: 156:   {
+{
+"158
+[; ;master/solution_CES.c: 158:    if (state_CE.ep[(i + p_start) % 4 + j * 4] != deff_CE.ep[i])
+[e $ ! != -> *U + &U . _state_CE 2 * -> -> + % + -> _i `i -> _p_start `i -> 4 `i * -> _j `i -> 4 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> *U + &U . _deff_CE 2 * -> _i `ux -> -> # *U &U . _deff_CE 2 `ui `ux `i 880  ]
+"159
+[; ;master/solution_CES.c: 159:     return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 855  ]
+[e :U 880 ]
+"160
+[; ;master/solution_CES.c: 160:    xo += state_CE.eo[i];
+[e =+ _xo -> *U + &U . _state_CE 3 * -> _i `ux -> -> # *U &U . _state_CE 3 `ui `ux `uc ]
+"161
+[; ;master/solution_CES.c: 161:   }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 879 ]
+[e $ < -> _i `i * + -> 1 `i -> _j `i -> 4 `i 876  ]
+[e :U 877 ]
+}
+"162
+[; ;master/solution_CES.c: 162:  }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 3 `i 873  ]
+[e :U 874 ]
+}
+"163
+[; ;master/solution_CES.c: 163:  if (xo != 0 && xo != 4)
+[e $ ! && != -> _xo `i -> 0 `i != -> _xo `i -> 4 `i 881  ]
+"164
+[; ;master/solution_CES.c: 164:   return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 855  ]
+[e :U 881 ]
+"166
+[; ;master/solution_CES.c: 166:  return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 855  ]
+"167
+[; ;master/solution_CES.c: 167: }
+[e :UE 855 ]
+}
+"169
+[; ;master/solution_CES.c: 169: char if_start_step8(void)
+[v _if_start_step8 `(uc ~T0 @X0 1 ef ]
+"170
+[; ;master/solution_CES.c: 170: {
+{
+[e :U _if_start_step8 ]
+[f ]
+"171
+[; ;master/solution_CES.c: 171:  char i, j = 0;
+[v _i `uc ~T0 @X0 1 a ]
+[v _j `uc ~T0 @X0 1 a ]
+[e = _j -> -> 0 `i `uc ]
+"172
+[; ;master/solution_CES.c: 172:  for (i = 0; i < 4; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 883  ]
+[e $U 884  ]
+[e :U 883 ]
+"173
+[; ;master/solution_CES.c: 173:  {
+{
+"174
+[; ;master/solution_CES.c: 174:   if (state_CE.ep[8] - state_CE.cp[4] == 4)
+[e $ ! == - -> *U + &U . _state_CE 2 * -> -> -> 8 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> *U + &U . _state_CE 0 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> 4 `i 886  ]
+"175
+[; ;master/solution_CES.c: 175:   {
+{
+"176
+[; ;master/solution_CES.c: 176:    return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 882  ]
+"177
+[; ;master/solution_CES.c: 177:   }
+}
+[e :U 886 ]
+"178
+[; ;master/solution_CES.c: 178:   command_turn_ARRAY_3("Y");
+[e ( _command_turn_ARRAY_3 (1 :s 9C ]
+"179
+[; ;master/solution_CES.c: 179:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 883  ]
+[e :U 884 ]
+}
+"180
+[; ;master/solution_CES.c: 180:  command_turn_ARRAY_3("Y");
+[e ( _command_turn_ARRAY_3 (1 :s 10C ]
+"181
+[; ;master/solution_CES.c: 181:  return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 882  ]
+"182
+[; ;master/solution_CES.c: 182: }
+[e :UE 882 ]
+}
+"184
+[; ;master/solution_CES.c: 184: char if_perfect_yellow(void)
+[v _if_perfect_yellow `(uc ~T0 @X0 1 ef ]
+"185
+[; ;master/solution_CES.c: 185: {
+{
+[e :U _if_perfect_yellow ]
+[f ]
+"186
+[; ;master/solution_CES.c: 186:  char i, distortion = 0;
+[v _i `uc ~T0 @X0 1 a ]
+[v _distortion `uc ~T0 @X0 1 a ]
+[e = _distortion -> -> 0 `i `uc ]
+"187
+[; ;master/solution_CES.c: 187:  for (i = 0; i < 4; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 888  ]
+[e $U 889  ]
+[e :U 888 ]
+"188
+[; ;master/solution_CES.c: 188:  {
+{
+"189
+[; ;master/solution_CES.c: 189:   if (state_CE.cp[i + 4] != i + 4)
+[e $ ! != -> *U + &U . _state_CE 0 * -> -> + -> _i `i -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i + -> _i `i -> 4 `i 891  ]
+"190
+[; ;master/solution_CES.c: 190:    return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 887  ]
+[e :U 891 ]
+"191
+[; ;master/solution_CES.c: 191:   distortion += state_CE.co[i + 4];
+[e =+ _distortion -> *U + &U . _state_CE 1 * -> -> + -> _i `i -> 4 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `uc ]
+"192
+[; ;master/solution_CES.c: 192:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 888  ]
+[e :U 889 ]
+}
+"193
+[; ;master/solution_CES.c: 193:  for (i = 0; i < 4; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 892  ]
+[e $U 893  ]
+[e :U 892 ]
+"194
+[; ;master/solution_CES.c: 194:  {
+{
+"195
+[; ;master/solution_CES.c: 195:   if (state_CE.ep[i + 8] != i + 8)
+[e $ ! != -> *U + &U . _state_CE 2 * -> -> + -> _i `i -> 8 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i + -> _i `i -> 8 `i 895  ]
+"196
+[; ;master/solution_CES.c: 196:    return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 887  ]
+[e :U 895 ]
+"197
+[; ;master/solution_CES.c: 197:   distortion += state_CE.eo[i + 8];
+[e =+ _distortion -> *U + &U . _state_CE 3 * -> -> + -> _i `i -> 8 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `uc ]
+"198
+[; ;master/solution_CES.c: 198:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 892  ]
+[e :U 893 ]
+}
+"199
+[; ;master/solution_CES.c: 199:  if (distortion != 0)
+[e $ ! != -> _distortion `i -> 0 `i 896  ]
+"200
+[; ;master/solution_CES.c: 200:   return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 887  ]
+[e :U 896 ]
+"201
+[; ;master/solution_CES.c: 201:  return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 887  ]
+"202
+[; ;master/solution_CES.c: 202: }
+[e :UE 887 ]
+}
+"205
+[; ;master/solution_CES.c: 205: void make_while_flower(void)
+[v _make_while_flower `(v ~T0 @X0 1 ef ]
+"206
+[; ;master/solution_CES.c: 206: {
+{
+[e :U _make_while_flower ]
+[f ]
+"207
+[; ;master/solution_CES.c: 207:  char i;
+[v _i `uc ~T0 @X0 1 a ]
+"208
+[; ;master/solution_CES.c: 208:  if (operation_setup() == 1)
+[e $ ! == -> ( _operation_setup ..  `i -> 1 `i 898  ]
+"209
+[; ;master/solution_CES.c: 209:   return;
+[e $UE 897  ]
+[e :U 898 ]
+"211
+[; ;master/solution_CES.c: 211:  for (i = 0; i < 4;)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 899  ]
+[e $U 900  ]
+[e :U 899 ]
+"212
+[; ;master/solution_CES.c: 212:  {
+{
+"213
+[; ;master/solution_CES.c: 213:   if (operation_limit(20) == 1)
+[e $ ! == -> ( _operation_limit (1 -> 20 `i `i -> 1 `i 902  ]
+"214
+[; ;master/solution_CES.c: 214:    return;
+[e $UE 897  ]
+[e :U 902 ]
+"216
+[; ;master/solution_CES.c: 216:   if ((state_CE.ep[4] == 4 && state_CE.sp[3] == 3) || (state_CE.ep[4] == 5 && state_CE.sp[3] == 2) || (state_CE.ep[4] == 6 && state_CE.sp[3] == 1) || (state_CE.ep[4] == 7 && state_CE.sp[3] == 4))
+[e $ ! || || || && == -> *U + &U . _state_CE 2 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> 4 `i == -> *U + &U . _state_CE 4 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 3 `i && == -> *U + &U . _state_CE 2 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> 5 `i == -> *U + &U . _state_CE 4 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 2 `i && == -> *U + &U . _state_CE 2 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> 6 `i == -> *U + &U . _state_CE 4 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 1 `i && == -> *U + &U . _state_CE 2 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> 7 `i == -> *U + &U . _state_CE 4 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 4 `i 903  ]
+"217
+[; ;master/solution_CES.c: 217:   {
+{
+"218
+[; ;master/solution_CES.c: 218:    i++;
+[e ++ _i -> -> 1 `i `uc ]
+"219
+[; ;master/solution_CES.c: 219:    command_turn_ARRAY_3("B2");
+[e ( _command_turn_ARRAY_3 (1 :s 11C ]
+"220
+[; ;master/solution_CES.c: 220:    command_turn_ARRAY_3("Y");
+[e ( _command_turn_ARRAY_3 (1 :s 12C ]
+"221
+[; ;master/solution_CES.c: 221:   }
+}
+[e $U 904  ]
+"222
+[; ;master/solution_CES.c: 222:   else
+[e :U 903 ]
+"223
+[; ;master/solution_CES.c: 223:   {
+{
+"224
+[; ;master/solution_CES.c: 224:    command_turn_ARRAY_3("U");
+[e ( _command_turn_ARRAY_3 (1 :s 13C ]
+"225
+[; ;master/solution_CES.c: 225:   }
+}
+[e :U 904 ]
+"226
+[; ;master/solution_CES.c: 226:  }
+}
+[e $ < -> _i `i -> 4 `i 899  ]
+[e :U 900 ]
+}
+"227
+[; ;master/solution_CES.c: 227: }
+[e :UE 897 ]
+}
+"229
+[; ;master/solution_CES.c: 229: void make_white_yellow_flower(void)
+[v _make_white_yellow_flower `(v ~T0 @X0 1 ef ]
+"230
+[; ;master/solution_CES.c: 230: {
+{
+[e :U _make_white_yellow_flower ]
+[f ]
+"231
+[; ;master/solution_CES.c: 231:  char i = 0;
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+"232
+[; ;master/solution_CES.c: 232:  char mark_count = 0;
+[v _mark_count `uc ~T0 @X0 1 a ]
+[e = _mark_count -> -> 0 `i `uc ]
+[v F5946 `Cuc ~T0 @X0 -> 3 `i t ]
+[v F5945 `F5946 ~T0 @X0 -> 6 `i t ]
+"233
+[; ;master/solution_CES.c: 233:  const char command[3][6][3] = {
+[v F5944 `F5945 ~T0 @X0 -> 3 `i s command ]
+[i F5944
+:U ..
+:U ..
+:U ..
+-> 70 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 69 `c
+-> 0 `c
+..
+:U ..
+-> 70 `c
+-> 0 `c
+..
+:U ..
+-> 77 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 50 `c
+-> 0 `c
+..
+:U ..
+-> 77 `c
+-> 39 `c
+-> 0 `c
+..
+..
+:U ..
+:U ..
+-> 69 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 70 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 69 `c
+-> 0 `c
+..
+:U ..
+-> 70 `c
+-> 0 `c
+..
+..
+..
+]
+"236
+[; ;master/solution_CES.c: 236:  char t;
+[v _t `uc ~T0 @X0 1 a ]
+"237
+[; ;master/solution_CES.c: 237:  while (mark_count < 4)
+[e $U 906  ]
+[e :U 907 ]
+"238
+[; ;master/solution_CES.c: 238:  {
+{
+"239
+[; ;master/solution_CES.c: 239:   if (if_EP(6, 4, 7) == 1)
+[e $ ! == -> ( _if_EP (3 , , -> -> 6 `i `uc -> -> 4 `i `uc -> -> 7 `i `uc `i -> 1 `i 909  ]
+"240
+[; ;master/solution_CES.c: 240:   {
+{
+"241
+[; ;master/solution_CES.c: 241:    if (state_CE.eo[6] != 0)
+[e $ ! != -> *U + &U . _state_CE 3 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 0 `i 910  ]
+"242
+[; ;master/solution_CES.c: 242:    {
+{
+"244
+[; ;master/solution_CES.c: 244:     for (t = 0; t < 6; t++)
+{
+[e = _t -> -> 0 `i `uc ]
+[e $ < -> _t `i -> 6 `i 911  ]
+[e $U 912  ]
+[e :U 911 ]
+"245
+[; ;master/solution_CES.c: 245:      command_turn_ARRAY_3(command[0][t]);
+[e ( _command_turn_ARRAY_3 (1 &U *U + &U *U + &U F5944 * -> -> -> 0 `i `ui `ux -> * * -> # *U &U *U &U F5944 `ui -> -> 6 `i `ui -> -> 3 `i `ui `ux * -> _t `ux -> * -> # *U &U *U &U *U + &U F5944 * -> -> -> 0 `i `ui `ux -> * * -> # *U &U *U &U F5944 `ui -> -> 6 `i `ui -> -> 3 `i `ui `ux `ui -> -> 3 `i `ui `ux ]
+[e ++ _t -> -> 1 `i `uc ]
+[e $ < -> _t `i -> 6 `i 911  ]
+[e :U 912 ]
+}
+"246
+[; ;master/solution_CES.c: 246:    }
+}
+[e :U 910 ]
+"247
+[; ;master/solution_CES.c: 247:    mark_count++;
+[e ++ _mark_count -> -> 1 `i `uc ]
+"248
+[; ;master/solution_CES.c: 248:    command_turn_ARRAY_3("Y");
+[e ( _command_turn_ARRAY_3 (1 :s 14C ]
+"249
+[; ;master/solution_CES.c: 249:    continue;
+[e $U 906  ]
+"250
+[; ;master/solution_CES.c: 250:   }
+}
+[e $U 914  ]
+"251
+[; ;master/solution_CES.c: 251:   else if (if_EP(3, 4, 7) == 1)
+[e :U 909 ]
+[e $ ! == -> ( _if_EP (3 , , -> -> 3 `i `uc -> -> 4 `i `uc -> -> 7 `i `uc `i -> 1 `i 915  ]
+"252
+[; ;master/solution_CES.c: 252:   {
+{
+"254
+[; ;master/solution_CES.c: 254:    for (t = 0; t < 4; t++)
+{
+[e = _t -> -> 0 `i `uc ]
+[e $ < -> _t `i -> 4 `i 916  ]
+[e $U 917  ]
+[e :U 916 ]
+"255
+[; ;master/solution_CES.c: 255:     command_turn_ARRAY_3(command[1][t]);
+[e ( _command_turn_ARRAY_3 (1 &U *U + &U *U + &U F5944 * -> -> -> 1 `i `ui `ux -> * * -> # *U &U *U &U F5944 `ui -> -> 6 `i `ui -> -> 3 `i `ui `ux * -> _t `ux -> * -> # *U &U *U &U *U + &U F5944 * -> -> -> 1 `i `ui `ux -> * * -> # *U &U *U &U F5944 `ui -> -> 6 `i `ui -> -> 3 `i `ui `ux `ui -> -> 3 `i `ui `ux ]
+[e ++ _t -> -> 1 `i `uc ]
+[e $ < -> _t `i -> 4 `i 916  ]
+[e :U 917 ]
+}
+"256
+[; ;master/solution_CES.c: 256:    continue;
+[e $U 906  ]
+"257
+[; ;master/solution_CES.c: 257:   }
+}
+[e $U 919  ]
+"258
+[; ;master/solution_CES.c: 258:   else if (if_EP(10, 4, 7) == 1)
+[e :U 915 ]
+[e $ ! == -> ( _if_EP (3 , , -> -> 10 `i `uc -> -> 4 `i `uc -> -> 7 `i `uc `i -> 1 `i 920  ]
+"259
+[; ;master/solution_CES.c: 259:   {
+{
+"261
+[; ;master/solution_CES.c: 261:    command_turn_ARRAY_3("M");
+[e ( _command_turn_ARRAY_3 (1 :s 15C ]
+"262
+[; ;master/solution_CES.c: 262:    command_turn_ARRAY_3("D2");
+[e ( _command_turn_ARRAY_3 (1 :s 16C ]
+"263
+[; ;master/solution_CES.c: 263:    command_turn_ARRAY_3("M'");
+[e ( _command_turn_ARRAY_3 (1 :s 17C ]
+"264
+[; ;master/solution_CES.c: 264:    continue;
+[e $U 906  ]
+"265
+[; ;master/solution_CES.c: 265:   }
+}
+[e :U 920 ]
+[e :U 919 ]
+[e :U 914 ]
+"266
+[; ;master/solution_CES.c: 266:   command_turn_ARRAY_3("E'");
+[e ( _command_turn_ARRAY_3 (1 :s 18C ]
+"267
+[; ;master/solution_CES.c: 267:   command_turn_ARRAY_3("D'");
+[e ( _command_turn_ARRAY_3 (1 :s 19C ]
+"268
+[; ;master/solution_CES.c: 268:  }
+}
+[e :U 906 ]
+"237
+[; ;master/solution_CES.c: 237:  while (mark_count < 4)
+[e $ < -> _mark_count `i -> 4 `i 907  ]
+[e :U 908 ]
+"269
+[; ;master/solution_CES.c: 269: }
+[e :UE 905 ]
+}
+"271
+[; ;master/solution_CES.c: 271: char if_CP(char check, char s_cp, char e_cp)
+[v _if_CP `(uc ~T0 @X0 1 ef3`uc`uc`uc ]
+"272
+[; ;master/solution_CES.c: 272: {
+{
+[e :U _if_CP ]
+"271
+[; ;master/solution_CES.c: 271: char if_CP(char check, char s_cp, char e_cp)
+[v _check `uc ~T0 @X0 1 r1 ]
+[v _s_cp `uc ~T0 @X0 1 r2 ]
+[v _e_cp `uc ~T0 @X0 1 r3 ]
+"272
+[; ;master/solution_CES.c: 272: {
+[f ]
+"273
+[; ;master/solution_CES.c: 273:  char i, DATA = 0;
+[v _i `uc ~T0 @X0 1 a ]
+[v _DATA `uc ~T0 @X0 1 a ]
+[e = _DATA -> -> 0 `i `uc ]
+"274
+[; ;master/solution_CES.c: 274:  for (i = s_cp; i <= e_cp; i++)
+{
+[e = _i _s_cp ]
+[e $U 925  ]
+[e :U 922 ]
+"275
+[; ;master/solution_CES.c: 275:  {
+{
+"276
+[; ;master/solution_CES.c: 276:   if (state_CE.cp[check] == i)
+[e $ ! == -> *U + &U . _state_CE 0 * -> _check `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> _i `i 926  ]
+"277
+[; ;master/solution_CES.c: 277:   {
+{
+"278
+[; ;master/solution_CES.c: 278:    DATA = 1;
+[e = _DATA -> -> 1 `i `uc ]
+"279
+[; ;master/solution_CES.c: 279:    break;
+[e $U 923  ]
+"280
+[; ;master/solution_CES.c: 280:   }
+}
+[e :U 926 ]
+"281
+[; ;master/solution_CES.c: 281:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 925 ]
+[e $ <= -> _i `i -> _e_cp `i 922  ]
+[e :U 923 ]
+}
+"282
+[; ;master/solution_CES.c: 282:  return DATA;
+[e ) _DATA ]
+[e $UE 921  ]
+"283
+[; ;master/solution_CES.c: 283: }
+[e :UE 921 ]
+}
+"285
+[; ;master/solution_CES.c: 285: char if_EP(char check, char s_ep, char e_ep)
+[v _if_EP `(uc ~T0 @X0 1 ef3`uc`uc`uc ]
+"286
+[; ;master/solution_CES.c: 286: {
+{
+[e :U _if_EP ]
+"285
+[; ;master/solution_CES.c: 285: char if_EP(char check, char s_ep, char e_ep)
+[v _check `uc ~T0 @X0 1 r1 ]
+[v _s_ep `uc ~T0 @X0 1 r2 ]
+[v _e_ep `uc ~T0 @X0 1 r3 ]
+"286
+[; ;master/solution_CES.c: 286: {
+[f ]
+"287
+[; ;master/solution_CES.c: 287:  char i;
+[v _i `uc ~T0 @X0 1 a ]
+"288
+[; ;master/solution_CES.c: 288:  for (i = s_ep; i <= e_ep; i++)
+{
+[e = _i _s_ep ]
+[e $U 931  ]
+[e :U 928 ]
+"289
+[; ;master/solution_CES.c: 289:  {
+{
+"290
+[; ;master/solution_CES.c: 290:   if (state_CE.ep[check] == i)
+[e $ ! == -> *U + &U . _state_CE 2 * -> _check `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> _i `i 932  ]
+"291
+[; ;master/solution_CES.c: 291:   {
+{
+"292
+[; ;master/solution_CES.c: 292:    return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 927  ]
+"293
+[; ;master/solution_CES.c: 293:   }
+}
+[e :U 932 ]
+"294
+[; ;master/solution_CES.c: 294:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 931 ]
+[e $ <= -> _i `i -> _e_ep `i 928  ]
+[e :U 929 ]
+}
+"295
+[; ;master/solution_CES.c: 295:  return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 927  ]
+"296
+[; ;master/solution_CES.c: 296: }
+[e :UE 927 ]
+}
+"298
+[; ;master/solution_CES.c: 298: char if_perfect_white(void)
+[v _if_perfect_white `(uc ~T0 @X0 1 ef ]
+"299
+[; ;master/solution_CES.c: 299: {
+{
+[e :U _if_perfect_white ]
+[f ]
+"300
+[; ;master/solution_CES.c: 300:  signed char j, i;
+[v _j `c ~T0 @X0 1 a ]
+[v _i `c ~T0 @X0 1 a ]
+"301
+[; ;master/solution_CES.c: 301:  command_turn_ARRAY_3_end();
+[e ( _command_turn_ARRAY_3_end ..  ]
+"302
+[; ;master/solution_CES.c: 302:  for (i = 0; i < 4; i++)
+{
+[e = _i -> -> 0 `i `c ]
+[e $ < -> _i `i -> 4 `i 934  ]
+[e $U 935  ]
+[e :U 934 ]
+"303
+[; ;master/solution_CES.c: 303:  {
+{
+"304
+[; ;master/solution_CES.c: 304:   if (if_CP(i, 0, 3) != 1)
+[e $ ! != -> ( _if_CP (3 , , -> _i `uc -> -> 0 `i `uc -> -> 3 `i `uc `i -> 1 `i 937  ]
+"305
+[; ;master/solution_CES.c: 305:    return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 933  ]
+[e :U 937 ]
+"306
+[; ;master/solution_CES.c: 306:  }
+}
+[e ++ _i -> -> 1 `i `c ]
+[e $ < -> _i `i -> 4 `i 934  ]
+[e :U 935 ]
+}
+"307
+[; ;master/solution_CES.c: 307:  for (i = 0; i < 4; i++)
+{
+[e = _i -> -> 0 `i `c ]
+[e $ < -> _i `i -> 4 `i 938  ]
+[e $U 939  ]
+[e :U 938 ]
+"308
+[; ;master/solution_CES.c: 308:  {
+{
+"309
+[; ;master/solution_CES.c: 309:   if (state_CE.co[i] != 0)
+[e $ ! != -> *U + &U . _state_CE 1 * -> -> _i `uc `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 0 `i 941  ]
+"310
+[; ;master/solution_CES.c: 310:    return 2;
+[e ) -> -> 2 `i `uc ]
+[e $UE 933  ]
+[e :U 941 ]
+"311
+[; ;master/solution_CES.c: 311:  }
+}
+[e ++ _i -> -> 1 `i `c ]
+[e $ < -> _i `i -> 4 `i 938  ]
+[e :U 939 ]
+}
+"313
+[; ;master/solution_CES.c: 313:  for (i = 3; i >= 0; i--)
+{
+[e = _i -> -> 3 `i `c ]
+[e $ >= -> _i `i -> 0 `i 942  ]
+[e $U 943  ]
+[e :U 942 ]
+"314
+[; ;master/solution_CES.c: 314:  {
+{
+"315
+[; ;master/solution_CES.c: 315:   if (state_CE.cp[i] == 3)
+[e $ ! == -> *U + &U . _state_CE 0 * -> -> _i `uc `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> 3 `i 945  ]
+"316
+[; ;master/solution_CES.c: 316:    break;
+[e $U 943  ]
+[e :U 945 ]
+"317
+[; ;master/solution_CES.c: 317:  }
+}
+[e -- _i -> -> 1 `i `c ]
+[e $ >= -> _i `i -> 0 `i 942  ]
+[e :U 943 ]
+}
+"318
+[; ;master/solution_CES.c: 318:  for (j = 0; j < 4; j++)
+{
+[e = _j -> -> 0 `i `c ]
+[e $ < -> _j `i -> 4 `i 946  ]
+[e $U 947  ]
+[e :U 946 ]
+"319
+[; ;master/solution_CES.c: 319:  {
+{
+"320
+[; ;master/solution_CES.c: 320:   if (state_CE.cp[(i - j + 4) % 4] != 3 - j)
+[e $ ! != -> *U + &U . _state_CE 0 * -> -> % + - -> _i `i -> _j `i -> 4 `i -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i - -> 3 `i -> _j `i 949  ]
+"321
+[; ;master/solution_CES.c: 321:    return 3;
+[e ) -> -> 3 `i `uc ]
+[e $UE 933  ]
+[e :U 949 ]
+"322
+[; ;master/solution_CES.c: 322:  }
+}
+[e ++ _j -> -> 1 `i `c ]
+[e $ < -> _j `i -> 4 `i 946  ]
+[e :U 947 ]
+}
+"323
+[; ;master/solution_CES.c: 323:  return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 933  ]
+"324
+[; ;master/solution_CES.c: 324: }
+[e :UE 933 ]
+}
+"326
+[; ;master/solution_CES.c: 326: char if_second_flower_perfect(void)
+[v _if_second_flower_perfect `(uc ~T0 @X0 1 ef ]
+"327
+[; ;master/solution_CES.c: 327: {
+{
+[e :U _if_second_flower_perfect ]
+[f ]
+"328
+[; ;master/solution_CES.c: 328:  signed char i, j;
+[v _i `c ~T0 @X0 1 a ]
+[v _j `c ~T0 @X0 1 a ]
+"329
+[; ;master/solution_CES.c: 329:  for (i = 0; i < 4; i++)
+{
+[e = _i -> -> 0 `i `c ]
+[e $ < -> _i `i -> 4 `i 951  ]
+[e $U 952  ]
+[e :U 951 ]
+"330
+[; ;master/solution_CES.c: 330:  {
+{
+"331
+[; ;master/solution_CES.c: 331:   if (if_EP(i, 0, 3) != 1)
+[e $ ! != -> ( _if_EP (3 , , -> _i `uc -> -> 0 `i `uc -> -> 3 `i `uc `i -> 1 `i 954  ]
+"332
+[; ;master/solution_CES.c: 332:    return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 950  ]
+[e :U 954 ]
+"333
+[; ;master/solution_CES.c: 333:  }
+}
+[e ++ _i -> -> 1 `i `c ]
+[e $ < -> _i `i -> 4 `i 951  ]
+[e :U 952 ]
+}
+"335
+[; ;master/solution_CES.c: 335:  j = 0;
+[e = _j -> -> 0 `i `c ]
+"336
+[; ;master/solution_CES.c: 336:  for (i = 0; i < 4; i++)
+{
+[e = _i -> -> 0 `i `c ]
+[e $ < -> _i `i -> 4 `i 955  ]
+[e $U 956  ]
+[e :U 955 ]
+"337
+[; ;master/solution_CES.c: 337:  {
+{
+"338
+[; ;master/solution_CES.c: 338:   j += state_CE.eo[i];
+[e =+ _j -> *U + &U . _state_CE 3 * -> -> _i `uc `ux -> -> # *U &U . _state_CE 3 `ui `ux `c ]
+"339
+[; ;master/solution_CES.c: 339:  }
+}
+[e ++ _i -> -> 1 `i `c ]
+[e $ < -> _i `i -> 4 `i 955  ]
+[e :U 956 ]
+}
+"340
+[; ;master/solution_CES.c: 340:  if (j != 0 && j != 4)
+[e $ ! && != -> _j `i -> 0 `i != -> _j `i -> 4 `i 958  ]
+"341
+[; ;master/solution_CES.c: 341:   return 2;
+[e ) -> -> 2 `i `uc ]
+[e $UE 950  ]
+[e :U 958 ]
+"343
+[; ;master/solution_CES.c: 343:  for (i = 3; i >= 0; i--)
+{
+[e = _i -> -> 3 `i `c ]
+[e $ >= -> _i `i -> 0 `i 959  ]
+[e $U 960  ]
+[e :U 959 ]
+"344
+[; ;master/solution_CES.c: 344:  {
+{
+"345
+[; ;master/solution_CES.c: 345:   if (state_CE.ep[i] == 0)
+[e $ ! == -> *U + &U . _state_CE 2 * -> -> _i `uc `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> 0 `i 962  ]
+"346
+[; ;master/solution_CES.c: 346:    break;
+[e $U 960  ]
+[e :U 962 ]
+"347
+[; ;master/solution_CES.c: 347:  }
+}
+[e -- _i -> -> 1 `i `c ]
+[e $ >= -> _i `i -> 0 `i 959  ]
+[e :U 960 ]
+}
+"348
+[; ;master/solution_CES.c: 348:  for (j = 0; j < 4; j++)
+{
+[e = _j -> -> 0 `i `c ]
+[e $ < -> _j `i -> 4 `i 963  ]
+[e $U 964  ]
+[e :U 963 ]
+"349
+[; ;master/solution_CES.c: 349:  {
+{
+"350
+[; ;master/solution_CES.c: 350:   if (state_CE.cp[4 + j] - state_CE.ep[j] != 0)
+[e $ ! != - -> *U + &U . _state_CE 0 * -> -> + -> 4 `i -> _j `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> *U + &U . _state_CE 2 * -> -> _j `uc `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> 0 `i 966  ]
+"351
+[; ;master/solution_CES.c: 351:    return 3;
+[e ) -> -> 3 `i `uc ]
+[e $UE 950  ]
+[e :U 966 ]
+"352
+[; ;master/solution_CES.c: 352:  }
+}
+[e ++ _j -> -> 1 `i `c ]
+[e $ < -> _j `i -> 4 `i 963  ]
+[e :U 964 ]
+}
+"353
+[; ;master/solution_CES.c: 353:  return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 950  ]
+"354
+[; ;master/solution_CES.c: 354: }
+[e :UE 950 ]
+}
+"366
+[; ;master/solution_CES.c: 366: void make_second_flower_perfect(void)
+[v _make_second_flower_perfect `(v ~T0 @X0 1 ef ]
+"367
+[; ;master/solution_CES.c: 367: {
+{
+[e :U _make_second_flower_perfect ]
+[f ]
+"368
+[; ;master/solution_CES.c: 368:  char i, flont_0 = 0, search_ep, j;
+[v _i `uc ~T0 @X0 1 a ]
+[v _flont_0 `uc ~T0 @X0 1 a ]
+[e = _flont_0 -> -> 0 `i `uc ]
+[v _search_ep `uc ~T0 @X0 1 a ]
+[v _j `uc ~T0 @X0 1 a ]
+[v F5981 `Cuc ~T0 @X0 -> 3 `i t ]
+"369
+[; ;master/solution_CES.c: 369:  const char command_drop_right[8][3] = {"U", "R", "U'", "R'", "U'", "F'", "U", "F"};
+[v F5980 `F5981 ~T0 @X0 -> 8 `i s command_drop_right ]
+[i F5980
+:U ..
+:U ..
+-> 85 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 0 `c
+..
+:U ..
+-> 85 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 85 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 70 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 85 `c
+-> 0 `c
+..
+:U ..
+-> 70 `c
+-> 0 `c
+..
+..
+]
+[v F5983 `Cuc ~T0 @X0 -> 3 `i t ]
+"370
+[; ;master/solution_CES.c: 370:  const char command_drop_left[8][3] = {"U'", "L'", "U", "L", "U", "F", "U'", "F'"};
+[v F5982 `F5983 ~T0 @X0 -> 8 `i s command_drop_left ]
+[i F5982
+:U ..
+:U ..
+-> 85 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 76 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 85 `c
+-> 0 `c
+..
+:U ..
+-> 76 `c
+-> 0 `c
+..
+:U ..
+-> 85 `c
+-> 0 `c
+..
+:U ..
+-> 70 `c
+-> 0 `c
+..
+:U ..
+-> 85 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 70 `c
+-> 39 `c
+-> 0 `c
+..
+..
+]
+"372
+[; ;master/solution_CES.c: 372:  if (operation_setup() == 1)
+[e $ ! == -> ( _operation_setup ..  `i -> 1 `i 968  ]
+"373
+[; ;master/solution_CES.c: 373:   return;
+[e $UE 967  ]
+[e :U 968 ]
+"375
+[; ;master/solution_CES.c: 375:  while (if_second_flower_perfect() != 0)
+[e $U 969  ]
+[e :U 970 ]
+"376
+[; ;master/solution_CES.c: 376:  {
+{
+"378
+[; ;master/solution_CES.c: 378:   if (operation_limit(100) == 1)
+[e $ ! == -> ( _operation_limit (1 -> 100 `i `i -> 1 `i 972  ]
+"379
+[; ;master/solution_CES.c: 379:    return;
+[e $UE 967  ]
+[e :U 972 ]
+"380
+[; ;master/solution_CES.c: 380:   for (search_ep = 0; search_ep < 4; search_ep++)
+{
+[e = _search_ep -> -> 0 `i `uc ]
+[e $ < -> _search_ep `i -> 4 `i 973  ]
+[e $U 974  ]
+[e :U 973 ]
+"381
+[; ;master/solution_CES.c: 381:   {
+{
+"382
+[; ;master/solution_CES.c: 382:    if (if_second_flower_perfect() == 0)
+[e $ ! == -> ( _if_second_flower_perfect ..  `i -> 0 `i 976  ]
+"383
+[; ;master/solution_CES.c: 383:     break;
+[e $U 974  ]
+[e :U 976 ]
+"384
+[; ;master/solution_CES.c: 384:    if (operation_limit(100) == 1)
+[e $ ! == -> ( _operation_limit (1 -> 100 `i `i -> 1 `i 977  ]
+"385
+[; ;master/solution_CES.c: 385:     return;
+[e $UE 967  ]
+[e :U 977 ]
+"386
+[; ;master/solution_CES.c: 386:    make_flont_green();
+[e ( _make_flont_green ..  ]
+"388
+[; ;master/solution_CES.c: 388:    if (state_CE.ep[0] == search_ep || state_CE.ep[1] == search_ep || state_CE.ep[2] == search_ep || state_CE.ep[3] == search_ep)
+[e $ ! || || || == -> *U + &U . _state_CE 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> _search_ep `i == -> *U + &U . _state_CE 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> _search_ep `i == -> *U + &U . _state_CE 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> _search_ep `i == -> *U + &U . _state_CE 2 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> _search_ep `i 978  ]
+"389
+[; ;master/solution_CES.c: 389:    {
+{
+"390
+[; ;master/solution_CES.c: 390:     if (state_CE.eo[search_ep] != 0 || state_CE.cp[search_ep + 4] - state_CE.ep[search_ep] != 0)
+[e $ ! || != -> *U + &U . _state_CE 3 * -> _search_ep `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 0 `i != - -> *U + &U . _state_CE 0 * -> -> + -> _search_ep `i -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> *U + &U . _state_CE 2 * -> _search_ep `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> 0 `i 979  ]
+"391
+[; ;master/solution_CES.c: 391:     {
+{
+"392
+[; ;master/solution_CES.c: 392:      if (search_ep <= 1)
+[e $ ! <= -> _search_ep `i -> 1 `i 980  ]
+"393
+[; ;master/solution_CES.c: 393:      {
+{
+"394
+[; ;master/solution_CES.c: 394:       command_turn_ARRAY_3("Y");
+[e ( _command_turn_ARRAY_3 (1 :s 20C ]
+"395
+[; ;master/solution_CES.c: 395:       command_turn_ARRAY_3("Y");
+[e ( _command_turn_ARRAY_3 (1 :s 21C ]
+"396
+[; ;master/solution_CES.c: 396:      }
+}
+[e :U 980 ]
+"397
+[; ;master/solution_CES.c: 397:      if (search_ep % 2 == 0)
+[e $ ! == % -> _search_ep `i -> 2 `i -> 0 `i 981  ]
+"398
+[; ;master/solution_CES.c: 398:      {
+{
+"399
+[; ;master/solution_CES.c: 399:       for (i = 0; i < 8; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 8 `i 982  ]
+[e $U 983  ]
+[e :U 982 ]
+"400
+[; ;master/solution_CES.c: 400:       {
+{
+"401
+[; ;master/solution_CES.c: 401:        command_turn_ARRAY_3(command_drop_right[i]);
+[e ( _command_turn_ARRAY_3 (1 &U *U + &U F5980 * -> _i `ux -> * -> # *U &U *U &U F5980 `ui -> -> 3 `i `ui `ux ]
+"402
+[; ;master/solution_CES.c: 402:       }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 8 `i 982  ]
+[e :U 983 ]
+}
+"403
+[; ;master/solution_CES.c: 403:      }
+}
+[e $U 985  ]
+"404
+[; ;master/solution_CES.c: 404:      else
+[e :U 981 ]
+"405
+[; ;master/solution_CES.c: 405:      {
+{
+"406
+[; ;master/solution_CES.c: 406:       for (i = 0; i < 8; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 8 `i 986  ]
+[e $U 987  ]
+[e :U 986 ]
+"407
+[; ;master/solution_CES.c: 407:       {
+{
+"408
+[; ;master/solution_CES.c: 408:        command_turn_ARRAY_3(command_drop_left[i]);
+[e ( _command_turn_ARRAY_3 (1 &U *U + &U F5982 * -> _i `ux -> * -> # *U &U *U &U F5982 `ui -> -> 3 `i `ui `ux ]
+"409
+[; ;master/solution_CES.c: 409:       }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 8 `i 986  ]
+[e :U 987 ]
+}
+"410
+[; ;master/solution_CES.c: 410:      }
+}
+[e :U 985 ]
+"411
+[; ;master/solution_CES.c: 411:     }
+}
+[e $U 989  ]
+"412
+[; ;master/solution_CES.c: 412:     else
+[e :U 979 ]
+"413
+[; ;master/solution_CES.c: 413:     {
+{
+"414
+[; ;master/solution_CES.c: 414:      continue;
+[e $U 975  ]
+"415
+[; ;master/solution_CES.c: 415:     }
+}
+[e :U 989 ]
+"416
+[; ;master/solution_CES.c: 416:    }
+}
+[e :U 978 ]
+"417
+[; ;master/solution_CES.c: 417:    if (search_ep < 2)
+[e $ ! < -> _search_ep `i -> 2 `i 990  ]
+"418
+[; ;master/solution_CES.c: 418:    {
+{
+"419
+[; ;master/solution_CES.c: 419:     command_turn_ARRAY_3("Y");
+[e ( _command_turn_ARRAY_3 (1 :s 22C ]
+"420
+[; ;master/solution_CES.c: 420:     command_turn_ARRAY_3("Y");
+[e ( _command_turn_ARRAY_3 (1 :s 23C ]
+"421
+[; ;master/solution_CES.c: 421:    }
+}
+[e :U 990 ]
+"422
+[; ;master/solution_CES.c: 422:    for (i = 0; i < 4; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 991  ]
+[e $U 992  ]
+[e :U 991 ]
+"423
+[; ;master/solution_CES.c: 423:    {
+{
+"424
+[; ;master/solution_CES.c: 424:     if (state_CE.ep[6] == search_ep)
+[e $ ! == -> *U + &U . _state_CE 2 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> _search_ep `i 994  ]
+"425
+[; ;master/solution_CES.c: 425:     {
+{
+"426
+[; ;master/solution_CES.c: 426:      flont_0 = 0;
+[e = _flont_0 -> -> 0 `i `uc ]
+"427
+[; ;master/solution_CES.c: 427:      if (state_CE.eo[6] == 0)
+[e $ ! == -> *U + &U . _state_CE 3 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 0 `i 995  ]
+"428
+[; ;master/solution_CES.c: 428:      {
+{
+"429
+[; ;master/solution_CES.c: 429:       if (search_ep % 2 == 0)
+[e $ ! == % -> _search_ep `i -> 2 `i -> 0 `i 996  ]
+"430
+[; ;master/solution_CES.c: 430:       {
+{
+"431
+[; ;master/solution_CES.c: 431:        command_turn_ARRAY_3("E");
+[e ( _command_turn_ARRAY_3 (1 :s 24C ]
+"432
+[; ;master/solution_CES.c: 432:        command_turn_ARRAY_3("D");
+[e ( _command_turn_ARRAY_3 (1 :s 25C ]
+"433
+[; ;master/solution_CES.c: 433:       }
+}
+[e $U 997  ]
+"434
+[; ;master/solution_CES.c: 434:       else
+[e :U 996 ]
+"435
+[; ;master/solution_CES.c: 435:       {
+{
+"436
+[; ;master/solution_CES.c: 436:        command_turn_ARRAY_3("E'");
+[e ( _command_turn_ARRAY_3 (1 :s 26C ]
+"437
+[; ;master/solution_CES.c: 437:        command_turn_ARRAY_3("D'");
+[e ( _command_turn_ARRAY_3 (1 :s 27C ]
+"439
+[; ;master/solution_CES.c: 439:       }
+}
+[e :U 997 ]
+"440
+[; ;master/solution_CES.c: 440:       flont_0++;
+[e ++ _flont_0 -> -> 1 `i `uc ]
+"441
+[; ;master/solution_CES.c: 441:      }
+}
+[e :U 995 ]
+"443
+[; ;master/solution_CES.c: 443:      if ((search_ep + flont_0) % 2 == 1)
+[e $ ! == % + -> _search_ep `i -> _flont_0 `i -> 2 `i -> 1 `i 998  ]
+"444
+[; ;master/solution_CES.c: 444:      {
+{
+"445
+[; ;master/solution_CES.c: 445:       for (j = 0; j < 8; j++)
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 8 `i 999  ]
+[e $U 1000  ]
+[e :U 999 ]
+"446
+[; ;master/solution_CES.c: 446:       {
+{
+"447
+[; ;master/solution_CES.c: 447:        command_turn_ARRAY_3(command_drop_right[j]);
+[e ( _command_turn_ARRAY_3 (1 &U *U + &U F5980 * -> _j `ux -> * -> # *U &U *U &U F5980 `ui -> -> 3 `i `ui `ux ]
+"448
+[; ;master/solution_CES.c: 448:       }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 8 `i 999  ]
+[e :U 1000 ]
+}
+"449
+[; ;master/solution_CES.c: 449:      }
+}
+[e $U 1002  ]
+"450
+[; ;master/solution_CES.c: 450:      else
+[e :U 998 ]
+"451
+[; ;master/solution_CES.c: 451:      {
+{
+"452
+[; ;master/solution_CES.c: 452:       for (j = 0; j < 8; j++)
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 8 `i 1003  ]
+[e $U 1004  ]
+[e :U 1003 ]
+"453
+[; ;master/solution_CES.c: 453:       {
+{
+"454
+[; ;master/solution_CES.c: 454:        command_turn_ARRAY_3(command_drop_left[j]);
+[e ( _command_turn_ARRAY_3 (1 &U *U + &U F5982 * -> _j `ux -> * -> # *U &U *U &U F5982 `ui -> -> 3 `i `ui `ux ]
+"455
+[; ;master/solution_CES.c: 455:       }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 8 `i 1003  ]
+[e :U 1004 ]
+}
+"456
+[; ;master/solution_CES.c: 456:      }
+}
+[e :U 1002 ]
+"457
+[; ;master/solution_CES.c: 457:      search_ep = 0;
+[e = _search_ep -> -> 0 `i `uc ]
+"458
+[; ;master/solution_CES.c: 458:      break;
+[e $U 992  ]
+"459
+[; ;master/solution_CES.c: 459:     }
+}
+[e $U 1006  ]
+"460
+[; ;master/solution_CES.c: 460:     else
+[e :U 994 ]
+"461
+[; ;master/solution_CES.c: 461:     {
+{
+"462
+[; ;master/solution_CES.c: 462:      command_turn_ARRAY_3("U");
+[e ( _command_turn_ARRAY_3 (1 :s 28C ]
+"463
+[; ;master/solution_CES.c: 463:      if (i == 3 && search_ep == 3)
+[e $ ! && == -> _i `i -> 3 `i == -> _search_ep `i -> 3 `i 1007  ]
+"464
+[; ;master/solution_CES.c: 464:      {
+{
+"465
+[; ;master/solution_CES.c: 465:       make_flont_green();
+[e ( _make_flont_green ..  ]
+"466
+[; ;master/solution_CES.c: 466:       for (i = 0; i < 4; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 1008  ]
+[e $U 1009  ]
+[e :U 1008 ]
+"467
+[; ;master/solution_CES.c: 467:       {
+{
+"468
+[; ;master/solution_CES.c: 468:        if (state_CE.ep[i] == i)
+[e $ ! == -> *U + &U . _state_CE 2 * -> _i `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> _i `i 1011  ]
+"469
+[; ;master/solution_CES.c: 469:        {
+{
+"470
+[; ;master/solution_CES.c: 470:         search_ep = 3 - i;
+[e = _search_ep -> - -> 3 `i -> _i `i `uc ]
+"471
+[; ;master/solution_CES.c: 471:         break;
+[e $U 1009  ]
+"472
+[; ;master/solution_CES.c: 472:        }
+}
+[e :U 1011 ]
+"473
+[; ;master/solution_CES.c: 473:       }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 1008  ]
+[e :U 1009 ]
+}
+"474
+[; ;master/solution_CES.c: 474:       for (i = 0; i < search_ep; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 1015  ]
+[e :U 1012 ]
+"475
+[; ;master/solution_CES.c: 475:       {
+{
+"476
+[; ;master/solution_CES.c: 476:        command_turn_ARRAY_3("Y");
+[e ( _command_turn_ARRAY_3 (1 :s 29C ]
+"477
+[; ;master/solution_CES.c: 477:       }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 1015 ]
+[e $ < -> _i `i -> _search_ep `i 1012  ]
+[e :U 1013 ]
+}
+"478
+[; ;master/solution_CES.c: 478:       for (i = 0; i < 8; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 8 `i 1016  ]
+[e $U 1017  ]
+[e :U 1016 ]
+"479
+[; ;master/solution_CES.c: 479:       {
+{
+"480
+[; ;master/solution_CES.c: 480:        command_turn_ARRAY_3(command_drop_left[i]);
+[e ( _command_turn_ARRAY_3 (1 &U *U + &U F5982 * -> _i `ux -> * -> # *U &U *U &U F5982 `ui -> -> 3 `i `ui `ux ]
+"481
+[; ;master/solution_CES.c: 481:       }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 8 `i 1016  ]
+[e :U 1017 ]
+}
+"482
+[; ;master/solution_CES.c: 482:       i = 5;
+[e = _i -> -> 5 `i `uc ]
+"483
+[; ;master/solution_CES.c: 483:       search_ep = 0;
+[e = _search_ep -> -> 0 `i `uc ]
+"484
+[; ;master/solution_CES.c: 484:      }
+}
+[e :U 1007 ]
+"485
+[; ;master/solution_CES.c: 485:     }
+}
+[e :U 1006 ]
+"486
+[; ;master/solution_CES.c: 486:    }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 991  ]
+[e :U 992 ]
+}
+"487
+[; ;master/solution_CES.c: 487:   }
+}
+[e :U 975 ]
+[e ++ _search_ep -> -> 1 `i `uc ]
+[e $ < -> _search_ep `i -> 4 `i 973  ]
+[e :U 974 ]
+}
+"488
+[; ;master/solution_CES.c: 488:  }
+}
+[e :U 969 ]
+"375
+[; ;master/solution_CES.c: 375:  while (if_second_flower_perfect() != 0)
+[e $ != -> ( _if_second_flower_perfect ..  `i -> 0 `i 970  ]
+[e :U 971 ]
+"489
+[; ;master/solution_CES.c: 489: }
+[e :UE 967 ]
+}
+"491
+[; ;master/solution_CES.c: 491: char make_flont_green(void)
+[v _make_flont_green `(uc ~T0 @X0 1 ef ]
+"492
+[; ;master/solution_CES.c: 492: {
+{
+[e :U _make_flont_green ]
+[f ]
+"493
+[; ;master/solution_CES.c: 493:  int move_count = 0;
+[v _move_count `i ~T0 @X0 1 a ]
+[e = _move_count -> 0 `i ]
+"494
+[; ;master/solution_CES.c: 494:  if (state_CE.sp[0] == 1 || state_CE.sp[5] == 1)
+[e $ ! || == -> *U + &U . _state_CE 4 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 1 `i == -> *U + &U . _state_CE 4 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 1 `i 1020  ]
+"495
+[; ;master/solution_CES.c: 495:   command_turn_ARRAY_3("X");
+[e ( _command_turn_ARRAY_3 (1 :s 30C ]
+[e :U 1020 ]
+"497
+[; ;master/solution_CES.c: 497:  while (state_CE.sp[1] != 1)
+[e $U 1021  ]
+[e :U 1022 ]
+"498
+[; ;master/solution_CES.c: 498:  {
+{
+"500
+[; ;master/solution_CES.c: 500:   command_turn_ARRAY_3("Y");
+[e ( _command_turn_ARRAY_3 (1 :s 31C ]
+"501
+[; ;master/solution_CES.c: 501:  }
+}
+[e :U 1021 ]
+"497
+[; ;master/solution_CES.c: 497:  while (state_CE.sp[1] != 1)
+[e $ != -> *U + &U . _state_CE 4 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 1 `i 1022  ]
+[e :U 1023 ]
+"502
+[; ;master/solution_CES.c: 502:  return move_count;
+[e ) -> _move_count `uc ]
+[e $UE 1019  ]
+"503
+[; ;master/solution_CES.c: 503: }
+[e :UE 1019 ]
+}
+"505
+[; ;master/solution_CES.c: 505: void make_up_white(void)
+[v _make_up_white `(v ~T0 @X0 1 ef ]
+"506
+[; ;master/solution_CES.c: 506: {
+{
+[e :U _make_up_white ]
+[f ]
+"507
+[; ;master/solution_CES.c: 507:  if (state_CE.sp[2] == 0 || state_CE.sp[4] == 0)
+[e $ ! || == -> *U + &U . _state_CE 4 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 0 `i == -> *U + &U . _state_CE 4 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 0 `i 1025  ]
+"508
+[; ;master/solution_CES.c: 508:   command_turn_ARRAY_3("Y");
+[e ( _command_turn_ARRAY_3 (1 :s 32C ]
+[e :U 1025 ]
+"510
+[; ;master/solution_CES.c: 510:  while (state_CE.sp[0] != 0)
+[e $U 1026  ]
+[e :U 1027 ]
+"511
+[; ;master/solution_CES.c: 511:  {
+{
+"513
+[; ;master/solution_CES.c: 513:   command_turn_ARRAY_3("X");
+[e ( _command_turn_ARRAY_3 (1 :s 33C ]
+"514
+[; ;master/solution_CES.c: 514:  }
+}
+[e :U 1026 ]
+"510
+[; ;master/solution_CES.c: 510:  while (state_CE.sp[0] != 0)
+[e $ != -> *U + &U . _state_CE 4 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 0 `i 1027  ]
+[e :U 1028 ]
+"515
+[; ;master/solution_CES.c: 515: }
+[e :UE 1024 ]
+}
+"517
+[; ;master/solution_CES.c: 517: void yellow_cross(void)
+[v _yellow_cross `(v ~T0 @X0 1 ef ]
+"518
+[; ;master/solution_CES.c: 518: {
+{
+[e :U _yellow_cross ]
+[f ]
+"519
+[; ;master/solution_CES.c: 519:  const char cross_eo[4] = {0, 0, 0, 0};
+[v F5993 `Cuc ~T0 @X0 -> 4 `i s cross_eo ]
+[i F5993
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+]
+[v F5995 `Cuc ~T0 @X0 -> 4 `i t ]
+"520
+[; ;master/solution_CES.c: 520:  const char check_eo[2][4] = {
+[v F5994 `F5995 ~T0 @X0 -> 2 `i s check_eo ]
+[i F5994
+:U ..
+:U ..
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+..
+..
+]
+[v F5997 `Cuc ~T0 @X0 -> 3 `i t ]
+"523
+[; ;master/solution_CES.c: 523:  const char step5[6][3] = {"B", "R", "D", "R'", "D'", "B'"};
+[v F5996 `F5997 ~T0 @X0 -> 6 `i s step5 ]
+[i F5996
+:U ..
+:U ..
+-> 66 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 66 `c
+-> 39 `c
+-> 0 `c
+..
+..
+]
+"524
+[; ;master/solution_CES.c: 524:  char i, j;
+[v _i `uc ~T0 @X0 1 a ]
+[v _j `uc ~T0 @X0 1 a ]
+"526
+[; ;master/solution_CES.c: 526:  if (operation_setup() == 1)
+[e $ ! == -> ( _operation_setup ..  `i -> 1 `i 1030  ]
+"527
+[; ;master/solution_CES.c: 527:   return;
+[e $UE 1029  ]
+[e :U 1030 ]
+"529
+[; ;master/solution_CES.c: 529:  while (if_yellow_eo(cross_eo) == 1)
+[e $U 1031  ]
+[e :U 1032 ]
+"530
+[; ;master/solution_CES.c: 530:  {
+{
+"531
+[; ;master/solution_CES.c: 531:   if (operation_limit(50) == 1)
+[e $ ! == -> ( _operation_limit (1 -> 50 `i `i -> 1 `i 1034  ]
+"532
+[; ;master/solution_CES.c: 532:    return;
+[e $UE 1029  ]
+[e :U 1034 ]
+"533
+[; ;master/solution_CES.c: 533:   for (i = 0; i < 2; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 2 `i 1035  ]
+[e $U 1036  ]
+[e :U 1035 ]
+"534
+[; ;master/solution_CES.c: 534:   {
+{
+"535
+[; ;master/solution_CES.c: 535:    for (j = 0; j < (i + 1) * 2; j++)
+{
+[e = _j -> -> 0 `i `uc ]
+[e $U 1041  ]
+[e :U 1038 ]
+"536
+[; ;master/solution_CES.c: 536:    {
+{
+"537
+[; ;master/solution_CES.c: 537:     if (if_yellow_eo(check_eo[i]) == 0)
+[e $ ! == -> ( _if_yellow_eo (1 &U *U + &U F5994 * -> _i `ux -> * -> # *U &U *U &U F5994 `ui -> -> 4 `i `ui `ux `i -> 0 `i 1042  ]
+"538
+[; ;master/solution_CES.c: 538:     {
+{
+"539
+[; ;master/solution_CES.c: 539:      i = 3;
+[e = _i -> -> 3 `i `uc ]
+"540
+[; ;master/solution_CES.c: 540:      break;
+[e $U 1039  ]
+"541
+[; ;master/solution_CES.c: 541:     }
+}
+[e :U 1042 ]
+"542
+[; ;master/solution_CES.c: 542:     command_turn_ARRAY_3("D");
+[e ( _command_turn_ARRAY_3 (1 :s 34C ]
+"543
+[; ;master/solution_CES.c: 543:    }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e :U 1041 ]
+[e $ < -> _j `i * + -> _i `i -> 1 `i -> 2 `i 1038  ]
+[e :U 1039 ]
+}
+"544
+[; ;master/solution_CES.c: 544:   }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 2 `i 1035  ]
+[e :U 1036 ]
+}
+"545
+[; ;master/solution_CES.c: 545:   for (i = 0; i < 6; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 6 `i 1043  ]
+[e $U 1044  ]
+[e :U 1043 ]
+"546
+[; ;master/solution_CES.c: 546:   {
+{
+"547
+[; ;master/solution_CES.c: 547:    command_turn_ARRAY_3(step5[i]);
+[e ( _command_turn_ARRAY_3 (1 &U *U + &U F5996 * -> _i `ux -> * -> # *U &U *U &U F5996 `ui -> -> 3 `i `ui `ux ]
+"548
+[; ;master/solution_CES.c: 548:   }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 6 `i 1043  ]
+[e :U 1044 ]
+}
+"549
+[; ;master/solution_CES.c: 549:  }
+}
+[e :U 1031 ]
+"529
+[; ;master/solution_CES.c: 529:  while (if_yellow_eo(cross_eo) == 1)
+[e $ == -> ( _if_yellow_eo (1 &U F5993 `i -> 1 `i 1032  ]
+[e :U 1033 ]
+"550
+[; ;master/solution_CES.c: 550: }
+[e :UE 1029 ]
+}
+"552
+[; ;master/solution_CES.c: 552: char if_yellow_eo(const char eo[])
+[v _if_yellow_eo `(uc ~T0 @X0 1 ef1`*Cuc ]
+"553
+[; ;master/solution_CES.c: 553: {
+{
+[e :U _if_yellow_eo ]
+"552
+[; ;master/solution_CES.c: 552: char if_yellow_eo(const char eo[])
+[v _eo `*Cuc ~T0 @X0 1 r1 ]
+"553
+[; ;master/solution_CES.c: 553: {
+[f ]
+"554
+[; ;master/solution_CES.c: 554:  char i;
+[v _i `uc ~T0 @X0 1 a ]
+"555
+[; ;master/solution_CES.c: 555:  for (i = 0; i < 4; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 1047  ]
+[e $U 1048  ]
+[e :U 1047 ]
+"556
+[; ;master/solution_CES.c: 556:  {
+{
+"557
+[; ;master/solution_CES.c: 557:   if (state_CE.eo[8 + i] != eo[i])
+[e $ ! != -> *U + &U . _state_CE 3 * -> -> + -> 8 `i -> _i `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> *U + _eo * -> _i `ux -> -> # *U _eo `ui `ux `i 1050  ]
+"558
+[; ;master/solution_CES.c: 558:   {
+{
+"559
+[; ;master/solution_CES.c: 559:    return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 1046  ]
+"560
+[; ;master/solution_CES.c: 560:   }
+}
+[e :U 1050 ]
+"561
+[; ;master/solution_CES.c: 561:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 1047  ]
+[e :U 1048 ]
+}
+"562
+[; ;master/solution_CES.c: 562:  return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 1046  ]
+"563
+[; ;master/solution_CES.c: 563: }
+[e :UE 1046 ]
+}
+"565
+[; ;master/solution_CES.c: 565: void all_yellow(void)
+[v _all_yellow `(v ~T0 @X0 1 ef ]
+"566
+[; ;master/solution_CES.c: 566: {
+{
+[e :U _all_yellow ]
+[f ]
+"567
+[; ;master/solution_CES.c: 567:  char check_CO = 7, i, j;
+[v _check_CO `uc ~T0 @X0 1 a ]
+[e = _check_CO -> -> 7 `i `uc ]
+[v _i `uc ~T0 @X0 1 a ]
+[v _j `uc ~T0 @X0 1 a ]
+[v F6010 `Cuc ~T0 @X0 -> 4 `i t ]
+"568
+[; ;master/solution_CES.c: 568:  const char CO[8][4] = {
+[v F6009 `F6010 ~T0 @X0 -> 8 `i s CO ]
+[i F6009
+:U ..
+:U ..
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+..
+:U ..
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+..
+]
+[v F6012 `Cuc ~T0 @X0 -> 3 `i t ]
+"577
+[; ;master/solution_CES.c: 577:  const char step6[7][3] = {"R", "D2", "R'", "D'", "R", "D'", "R'"};
+[v F6011 `F6012 ~T0 @X0 -> 7 `i s step6 ]
+[i F6011
+:U ..
+:U ..
+-> 82 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 50 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 39 `c
+-> 0 `c
+..
+..
+]
+"579
+[; ;master/solution_CES.c: 579:  if (operation_setup() == 1)
+[e $ ! == -> ( _operation_setup ..  `i -> 1 `i 1052  ]
+"580
+[; ;master/solution_CES.c: 580:   return;
+[e $UE 1051  ]
+[e :U 1052 ]
+"582
+[; ;master/solution_CES.c: 582:  while (if_yellow_co(CO[7]) != 0)
+[e $U 1053  ]
+[e :U 1054 ]
+"583
+[; ;master/solution_CES.c: 583:  {
+{
+"584
+[; ;master/solution_CES.c: 584:   if (operation_limit(50) == 1)
+[e $ ! == -> ( _operation_limit (1 -> 50 `i `i -> 1 `i 1056  ]
+"585
+[; ;master/solution_CES.c: 585:    return;
+[e $UE 1051  ]
+[e :U 1056 ]
+"586
+[; ;master/solution_CES.c: 586:   for (i = 0; i < 4; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 1057  ]
+[e $U 1058  ]
+[e :U 1057 ]
+"587
+[; ;master/solution_CES.c: 587:   {
+{
+"588
+[; ;master/solution_CES.c: 588:    if (if_yellow_co(CO[check_CO]) == 0)
+[e $ ! == -> ( _if_yellow_co (1 &U *U + &U F6009 * -> _check_CO `ux -> * -> # *U &U *U &U F6009 `ui -> -> 4 `i `ui `ux `i -> 0 `i 1060  ]
+"589
+[; ;master/solution_CES.c: 589:    {
+{
+"590
+[; ;master/solution_CES.c: 590:     for (j = 0; j < 7; j++)
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 7 `i 1061  ]
+[e $U 1062  ]
+[e :U 1061 ]
+"591
+[; ;master/solution_CES.c: 591:     {
+{
+"592
+[; ;master/solution_CES.c: 592:      command_turn_ARRAY_3(step6[j]);
+[e ( _command_turn_ARRAY_3 (1 &U *U + &U F6011 * -> _j `ux -> * -> # *U &U *U &U F6011 `ui -> -> 3 `i `ui `ux ]
+"593
+[; ;master/solution_CES.c: 593:     }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 7 `i 1061  ]
+[e :U 1062 ]
+}
+"594
+[; ;master/solution_CES.c: 594:     check_CO = 7;
+[e = _check_CO -> -> 7 `i `uc ]
+"595
+[; ;master/solution_CES.c: 595:     break;
+[e $U 1058  ]
+"596
+[; ;master/solution_CES.c: 596:    }
+}
+[e $U 1064  ]
+"597
+[; ;master/solution_CES.c: 597:    else
+[e :U 1060 ]
+"598
+[; ;master/solution_CES.c: 598:    {
+{
+"599
+[; ;master/solution_CES.c: 599:     command_turn_ARRAY_3("D");
+[e ( _command_turn_ARRAY_3 (1 :s 35C ]
+"600
+[; ;master/solution_CES.c: 600:    }
+}
+[e :U 1064 ]
+"601
+[; ;master/solution_CES.c: 601:   }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 1057  ]
+[e :U 1058 ]
+}
+"602
+[; ;master/solution_CES.c: 602:   check_CO--;
+[e -- _check_CO -> -> 1 `i `uc ]
+"603
+[; ;master/solution_CES.c: 603:  }
+}
+[e :U 1053 ]
+"582
+[; ;master/solution_CES.c: 582:  while (if_yellow_co(CO[7]) != 0)
+[e $ != -> ( _if_yellow_co (1 &U *U + &U F6009 * -> -> -> 7 `i `ui `ux -> * -> # *U &U *U &U F6009 `ui -> -> 4 `i `ui `ux `i -> 0 `i 1054  ]
+[e :U 1055 ]
+"604
+[; ;master/solution_CES.c: 604: }
+[e :UE 1051 ]
+}
+"606
+[; ;master/solution_CES.c: 606: char if_yellow_co(const char co[])
+[v _if_yellow_co `(uc ~T0 @X0 1 ef1`*Cuc ]
+"607
+[; ;master/solution_CES.c: 607: {
+{
+[e :U _if_yellow_co ]
+"606
+[; ;master/solution_CES.c: 606: char if_yellow_co(const char co[])
+[v _co `*Cuc ~T0 @X0 1 r1 ]
+"607
+[; ;master/solution_CES.c: 607: {
+[f ]
+"608
+[; ;master/solution_CES.c: 608:  char i;
+[v _i `uc ~T0 @X0 1 a ]
+"609
+[; ;master/solution_CES.c: 609:  for (i = 0; i < 4; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 1066  ]
+[e $U 1067  ]
+[e :U 1066 ]
+"610
+[; ;master/solution_CES.c: 610:  {
+{
+"611
+[; ;master/solution_CES.c: 611:   if (state_CE.co[4 + i] != co[i])
+[e $ ! != -> *U + &U . _state_CE 1 * -> -> + -> 4 `i -> _i `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> *U + _co * -> _i `ux -> -> # *U _co `ui `ux `i 1069  ]
+"612
+[; ;master/solution_CES.c: 612:   {
+{
+"613
+[; ;master/solution_CES.c: 613:    return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 1065  ]
+"614
+[; ;master/solution_CES.c: 614:   }
+}
+[e :U 1069 ]
+"615
+[; ;master/solution_CES.c: 615:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 1066  ]
+[e :U 1067 ]
+}
+"616
+[; ;master/solution_CES.c: 616:  return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 1065  ]
+"617
+[; ;master/solution_CES.c: 617: }
+[e :UE 1065 ]
+}
+"619
+[; ;master/solution_CES.c: 619: void make_up_yellow(void)
+[v _make_up_yellow `(v ~T0 @X0 1 ef ]
+"620
+[; ;master/solution_CES.c: 620: {
+{
+[e :U _make_up_yellow ]
+[f ]
+"621
+[; ;master/solution_CES.c: 621:  if (state_CE.sp[2] == 5 || state_CE.sp[4] == 5)
+[e $ ! || == -> *U + &U . _state_CE 4 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 5 `i == -> *U + &U . _state_CE 4 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 5 `i 1071  ]
+"622
+[; ;master/solution_CES.c: 622:   command_turn_ARRAY_3("Y");
+[e ( _command_turn_ARRAY_3 (1 :s 36C ]
+[e :U 1071 ]
+"624
+[; ;master/solution_CES.c: 624:  while (state_CE.sp[0] != 5)
+[e $U 1072  ]
+[e :U 1073 ]
+"625
+[; ;master/solution_CES.c: 625:  {
+{
+"627
+[; ;master/solution_CES.c: 627:   command_turn_ARRAY_3("X");
+[e ( _command_turn_ARRAY_3 (1 :s 37C ]
+"628
+[; ;master/solution_CES.c: 628:  }
+}
+[e :U 1072 ]
+"624
+[; ;master/solution_CES.c: 624:  while (state_CE.sp[0] != 5)
+[e $ != -> *U + &U . _state_CE 4 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 5 `i 1073  ]
+[e :U 1074 ]
+"629
+[; ;master/solution_CES.c: 629: }
+[e :UE 1070 ]
+}
+"631
+[; ;master/solution_CES.c: 631: char if_all_2pair(void)
+[v _if_all_2pair `(uc ~T0 @X0 1 ef ]
+"632
+[; ;master/solution_CES.c: 632: {
+{
+[e :U _if_all_2pair ]
+[f ]
+"633
+[; ;master/solution_CES.c: 633:  int i, if_flag = 0, re = 0, x, y = 0;
+[v _i `i ~T0 @X0 1 a ]
+[v _if_flag `i ~T0 @X0 1 a ]
+[e = _if_flag -> 0 `i ]
+[v _re `i ~T0 @X0 1 a ]
+[e = _re -> 0 `i ]
+[v _x `i ~T0 @X0 1 a ]
+[v _y `i ~T0 @X0 1 a ]
+[e = _y -> 0 `i ]
+"634
+[; ;master/solution_CES.c: 634:  for (i = 0; i < 4; i++)
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 4 `i 1076  ]
+[e $U 1077  ]
+[e :U 1076 ]
+"635
+[; ;master/solution_CES.c: 635:  {
+{
+"636
+[; ;master/solution_CES.c: 636:   if (state_CE.cp[i + 4] == 4)
+[e $ ! == -> *U + &U . _state_CE 0 * -> -> + _i -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> 4 `i 1079  ]
+"637
+[; ;master/solution_CES.c: 637:   {
+{
+"638
+[; ;master/solution_CES.c: 638:    break;
+[e $U 1077  ]
+"639
+[; ;master/solution_CES.c: 639:   }
+}
+[e :U 1079 ]
+"640
+[; ;master/solution_CES.c: 640:  }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 4 `i 1076  ]
+[e :U 1077 ]
+}
+"641
+[; ;master/solution_CES.c: 641:  if_flag = i;
+[e = _if_flag _i ]
+"642
+[; ;master/solution_CES.c: 642:  for (i = 0; i < 4; i++)
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 4 `i 1080  ]
+[e $U 1081  ]
+[e :U 1080 ]
+"643
+[; ;master/solution_CES.c: 643:  {
+{
+"644
+[; ;master/solution_CES.c: 644:   if (state_CE.cp[4 + (i + if_flag) % 4] != i + 4)
+[e $ ! != -> *U + &U . _state_CE 0 * -> -> + -> 4 `i % + _i _if_flag -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i + _i -> 4 `i 1083  ]
+"645
+[; ;master/solution_CES.c: 645:   {
+{
+"646
+[; ;master/solution_CES.c: 646:    re = 1;
+[e = _re -> 1 `i ]
+"647
+[; ;master/solution_CES.c: 647:   }
+}
+[e :U 1083 ]
+"648
+[; ;master/solution_CES.c: 648:  }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 4 `i 1080  ]
+[e :U 1081 ]
+}
+"649
+[; ;master/solution_CES.c: 649:  return re;
+[e ) -> _re `uc ]
+[e $UE 1075  ]
+"650
+[; ;master/solution_CES.c: 650: }
+[e :UE 1075 ]
+}
+"652
+[; ;master/solution_CES.c: 652: char if_no_pair(void)
+[v _if_no_pair `(uc ~T0 @X0 1 ef ]
+"653
+[; ;master/solution_CES.c: 653: {
+{
+[e :U _if_no_pair ]
+[f ]
+"654
+[; ;master/solution_CES.c: 654:  char i;
+[v _i `uc ~T0 @X0 1 a ]
+"656
+[; ;master/solution_CES.c: 656:  command_turn_ARRAY_3_end();
+[e ( _command_turn_ARRAY_3_end ..  ]
+"657
+[; ;master/solution_CES.c: 657:  set_C();
+[e ( _set_C ..  ]
+"658
+[; ;master/solution_CES.c: 658:  for (i = 1; i < 5; i++)
+{
+[e = _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 5 `i 1085  ]
+[e $U 1086  ]
+[e :U 1085 ]
+"659
+[; ;master/solution_CES.c: 659:  {
+{
+"660
+[; ;master/solution_CES.c: 660:   if (LED_Light[i][6] == LED_Light[i][8])
+[e $ ! == -> *U + &U *U + &U _LED_Light * -> _i `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 6 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> _i `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux `i -> *U + &U *U + &U _LED_Light * -> _i `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> _i `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux `i 1088  ]
+"661
+[; ;master/solution_CES.c: 661:    return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 1084  ]
+[e :U 1088 ]
+"662
+[; ;master/solution_CES.c: 662:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 5 `i 1085  ]
+[e :U 1086 ]
+}
+"663
+[; ;master/solution_CES.c: 663:  return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 1084  ]
+"664
+[; ;master/solution_CES.c: 664: }
+[e :UE 1084 ]
+}
+"666
+[; ;master/solution_CES.c: 666: void make_step_7(void)
+[v _make_step_7 `(v ~T0 @X0 1 ef ]
+"667
+[; ;master/solution_CES.c: 667: {
+{
+[e :U _make_step_7 ]
+[f ]
+[v F6032 `Cuc ~T0 @X0 -> 3 `i t ]
+"668
+[; ;master/solution_CES.c: 668:  const char start7[20][3] = {
+[v F6031 `F6032 ~T0 @X0 -> 20 `i s start7 ]
+[i F6031
+:U ..
+:U ..
+-> 82 `c
+-> 0 `c
+..
+:U ..
+-> 76 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 76 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 0 `c
+..
+:U ..
+-> 76 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 0 `c
+..
+:U ..
+-> 76 `c
+-> 39 `c
+-> 0 `c
+..
+..
+]
+"671
+[; ;master/solution_CES.c: 671:  char i;
+[v _i `uc ~T0 @X0 1 a ]
+[v F6035 `Cuc ~T0 @X0 -> 3 `i t ]
+"672
+[; ;master/solution_CES.c: 672:  const char step7[14][3] = {
+[v F6034 `F6035 ~T0 @X0 -> 14 `i s step7 ]
+[i F6034
+:U ..
+:U ..
+-> 82 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 66 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 50 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 0 `c
+..
+:U ..
+-> 82 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 66 `c
+-> 39 `c
+-> 0 `c
+..
+..
+]
+"676
+[; ;master/solution_CES.c: 676:  if (if_no_pair() == 0)
+[e $ ! == -> ( _if_no_pair ..  `i -> 0 `i 1090  ]
+"677
+[; ;master/solution_CES.c: 677:  {
+{
+"679
+[; ;master/solution_CES.c: 679:   for (i = 0; i < 20; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 20 `i 1091  ]
+[e $U 1092  ]
+[e :U 1091 ]
+"680
+[; ;master/solution_CES.c: 680:   {
+{
+"681
+[; ;master/solution_CES.c: 681:    command_turn_ARRAY_3(start7[i]);
+[e ( _command_turn_ARRAY_3 (1 &U *U + &U F6031 * -> _i `ux -> * -> # *U &U *U &U F6031 `ui -> -> 3 `i `ui `ux ]
+"682
+[; ;master/solution_CES.c: 682:   }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 20 `i 1091  ]
+[e :U 1092 ]
+}
+"683
+[; ;master/solution_CES.c: 683:  }
+}
+[e :U 1090 ]
+"684
+[; ;master/solution_CES.c: 684:  if (if_all_2pair() == 0)
+[e $ ! == -> ( _if_all_2pair ..  `i -> 0 `i 1094  ]
+"685
+[; ;master/solution_CES.c: 685:  {
+{
+"686
+[; ;master/solution_CES.c: 686:   return;
+[e $UE 1089  ]
+"687
+[; ;master/solution_CES.c: 687:  }
+}
+[e :U 1094 ]
+"688
+[; ;master/solution_CES.c: 688:  make_flont_green();
+[e ( _make_flont_green ..  ]
+"690
+[; ;master/solution_CES.c: 690:  if (operation_setup() == 1)
+[e $ ! == -> ( _operation_setup ..  `i -> 1 `i 1095  ]
+"691
+[; ;master/solution_CES.c: 691:   return;
+[e $UE 1089  ]
+[e :U 1095 ]
+"693
+[; ;master/solution_CES.c: 693:  while (if_2pair() == 1)
+[e $U 1096  ]
+[e :U 1097 ]
+"694
+[; ;master/solution_CES.c: 694:  {
+{
+"695
+[; ;master/solution_CES.c: 695:   if (operation_limit(50) == 1)
+[e $ ! == -> ( _operation_limit (1 -> 50 `i `i -> 1 `i 1099  ]
+"696
+[; ;master/solution_CES.c: 696:    return;
+[e $UE 1089  ]
+[e :U 1099 ]
+"697
+[; ;master/solution_CES.c: 697:   command_turn_ARRAY_3("D");
+[e ( _command_turn_ARRAY_3 (1 :s 38C ]
+"698
+[; ;master/solution_CES.c: 698:  }
+}
+[e :U 1096 ]
+"693
+[; ;master/solution_CES.c: 693:  while (if_2pair() == 1)
+[e $ == -> ( _if_2pair ..  `i -> 1 `i 1097  ]
+[e :U 1098 ]
+"699
+[; ;master/solution_CES.c: 699:  command_turn_ARRAY_3("D");
+[e ( _command_turn_ARRAY_3 (1 :s 39C ]
+"700
+[; ;master/solution_CES.c: 700:  if (operation_setup() == 1)
+[e $ ! == -> ( _operation_setup ..  `i -> 1 `i 1100  ]
+"701
+[; ;master/solution_CES.c: 701:   return;
+[e $UE 1089  ]
+[e :U 1100 ]
+"703
+[; ;master/solution_CES.c: 703:  while (state_CE.cp[4] - state_CE.cp[0] != 4)
+[e $U 1101  ]
+[e :U 1102 ]
+"704
+[; ;master/solution_CES.c: 704:  {
+{
+"705
+[; ;master/solution_CES.c: 705:   if (operation_limit(8) == 1)
+[e $ ! == -> ( _operation_limit (1 -> 8 `i `i -> 1 `i 1104  ]
+"706
+[; ;master/solution_CES.c: 706:    return;
+[e $UE 1089  ]
+[e :U 1104 ]
+"707
+[; ;master/solution_CES.c: 707:   command_turn_ARRAY_3("U'");
+[e ( _command_turn_ARRAY_3 (1 :s 40C ]
+"708
+[; ;master/solution_CES.c: 708:   command_turn_ARRAY_3("E");
+[e ( _command_turn_ARRAY_3 (1 :s 41C ]
+"709
+[; ;master/solution_CES.c: 709:  }
+}
+[e :U 1101 ]
+"703
+[; ;master/solution_CES.c: 703:  while (state_CE.cp[4] - state_CE.cp[0] != 4)
+[e $ != - -> *U + &U . _state_CE 0 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> *U + &U . _state_CE 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> 4 `i 1102  ]
+[e :U 1103 ]
+"711
+[; ;master/solution_CES.c: 711:  for (i = 0; i < 14; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 14 `i 1105  ]
+[e $U 1106  ]
+[e :U 1105 ]
+"712
+[; ;master/solution_CES.c: 712:  {
+{
+"713
+[; ;master/solution_CES.c: 713:   command_turn_ARRAY_3(step7[i]);
+[e ( _command_turn_ARRAY_3 (1 &U *U + &U F6034 * -> _i `ux -> * -> # *U &U *U &U F6034 `ui -> -> 3 `i `ui `ux ]
+"714
+[; ;master/solution_CES.c: 714:  }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 14 `i 1105  ]
+[e :U 1106 ]
+}
+"715
+[; ;master/solution_CES.c: 715:  make_flont_green();
+[e ( _make_flont_green ..  ]
+"716
+[; ;master/solution_CES.c: 716: }
+[e :UE 1089 ]
+}
+"718
+[; ;master/solution_CES.c: 718: void make_step_8(void)
+[v _make_step_8 `(v ~T0 @X0 1 ef ]
+"719
+[; ;master/solution_CES.c: 719: {
+{
+[e :U _make_step_8 ]
+[f ]
+[v F6040 `Cuc ~T0 @X0 -> 3 `i t ]
+"720
+[; ;master/solution_CES.c: 720:  const char step8[7][3] = {"M2", "D'", "M", "D2", "M'", "D'", "M2"};
+[v F6039 `F6040 ~T0 @X0 -> 7 `i s step8 ]
+[i F6039
+:U ..
+:U ..
+-> 77 `c
+-> 50 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 77 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 50 `c
+-> 0 `c
+..
+:U ..
+-> 77 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 68 `c
+-> 39 `c
+-> 0 `c
+..
+:U ..
+-> 77 `c
+-> 50 `c
+-> 0 `c
+..
+..
+]
+"721
+[; ;master/solution_CES.c: 721:  char i = 0;
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+"722
+[; ;master/solution_CES.c: 722:  if (if_solution_end() == 0)
+[e $ ! == -> ( _if_solution_end ..  `i -> 0 `i 1109  ]
+"723
+[; ;master/solution_CES.c: 723:   return;
+[e $UE 1108  ]
+[e :U 1109 ]
+"725
+[; ;master/solution_CES.c: 725:  if (operation_setup() == 1)
+[e $ ! == -> ( _operation_setup ..  `i -> 1 `i 1110  ]
+"726
+[; ;master/solution_CES.c: 726:   return;
+[e $UE 1108  ]
+[e :U 1110 ]
+"728
+[; ;master/solution_CES.c: 728:  while (1)
+[e :U 1112 ]
+"729
+[; ;master/solution_CES.c: 729:  {
+{
+"730
+[; ;master/solution_CES.c: 730:   if (operation_limit(50) == 1)
+[e $ ! == -> ( _operation_limit (1 -> 50 `i `i -> 1 `i 1114  ]
+"731
+[; ;master/solution_CES.c: 731:    return;
+[e $UE 1108  ]
+[e :U 1114 ]
+"732
+[; ;master/solution_CES.c: 732:   if (state_CE.ep[10] - state_CE.ep[6] == 4 && state_CE.cp[7] - state_CE.cp[3] == 4)
+[e $ ! && == - -> *U + &U . _state_CE 2 * -> -> -> 10 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> *U + &U . _state_CE 2 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> 4 `i == - -> *U + &U . _state_CE 0 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> *U + &U . _state_CE 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> 4 `i 1115  ]
+"733
+[; ;master/solution_CES.c: 733:   {
+{
+"734
+[; ;master/solution_CES.c: 734:    if (if_solution_end() == 0)
+[e $ ! == -> ( _if_solution_end ..  `i -> 0 `i 1116  ]
+"735
+[; ;master/solution_CES.c: 735:    {
+{
+"736
+[; ;master/solution_CES.c: 736:     return;
+[e $UE 1108  ]
+"737
+[; ;master/solution_CES.c: 737:    }
+}
+[e :U 1116 ]
+"738
+[; ;master/solution_CES.c: 738:    for (i = 0; i < 7; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 7 `i 1117  ]
+[e $U 1118  ]
+[e :U 1117 ]
+"739
+[; ;master/solution_CES.c: 739:    {
+{
+"740
+[; ;master/solution_CES.c: 740:     command_turn_ARRAY_3(step8[i]);
+[e ( _command_turn_ARRAY_3 (1 &U *U + &U F6039 * -> _i `ux -> * -> # *U &U *U &U F6039 `ui -> -> 3 `i `ui `ux ]
+"741
+[; ;master/solution_CES.c: 741:    }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 7 `i 1117  ]
+[e :U 1118 ]
+}
+"742
+[; ;master/solution_CES.c: 742:    if (state_CE.ep[8] - state_CE.ep[4] == 4 && state_CE.cp[5] - state_CE.cp[1] == 4)
+[e $ ! && == - -> *U + &U . _state_CE 2 * -> -> -> 8 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> *U + &U . _state_CE 2 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `i -> 4 `i == - -> *U + &U . _state_CE 0 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> *U + &U . _state_CE 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> 4 `i 1120  ]
+"743
+[; ;master/solution_CES.c: 743:    {
+{
+"744
+[; ;master/solution_CES.c: 744:    }
+}
+[e $U 1121  ]
+"745
+[; ;master/solution_CES.c: 745:    else
+[e :U 1120 ]
+"746
+[; ;master/solution_CES.c: 746:    {
+{
+"747
+[; ;master/solution_CES.c: 747:     for (i = 0; i < 7; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 7 `i 1122  ]
+[e $U 1123  ]
+[e :U 1122 ]
+"748
+[; ;master/solution_CES.c: 748:     {
+{
+"749
+[; ;master/solution_CES.c: 749:      command_turn_ARRAY_3(step8[i]);
+[e ( _command_turn_ARRAY_3 (1 &U *U + &U F6039 * -> _i `ux -> * -> # *U &U *U &U F6039 `ui -> -> 3 `i `ui `ux ]
+"750
+[; ;master/solution_CES.c: 750:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 7 `i 1122  ]
+[e :U 1123 ]
+}
+"751
+[; ;master/solution_CES.c: 751:    }
+}
+[e :U 1121 ]
+"752
+[; ;master/solution_CES.c: 752:    break;
+[e $U 1113  ]
+"753
+[; ;master/solution_CES.c: 753:   }
+}
+[e :U 1115 ]
+"754
+[; ;master/solution_CES.c: 754:   i++;
+[e ++ _i -> -> 1 `i `uc ]
+"755
+[; ;master/solution_CES.c: 755:   command_turn_ARRAY_3("D");
+[e ( _command_turn_ARRAY_3 (1 :s 42C ]
+"756
+[; ;master/solution_CES.c: 756:   if (i >= 4)
+[e $ ! >= -> _i `i -> 4 `i 1125  ]
+"757
+[; ;master/solution_CES.c: 757:   {
+{
+"758
+[; ;master/solution_CES.c: 758:    command_turn_ARRAY_3("U");
+[e ( _command_turn_ARRAY_3 (1 :s 43C ]
+"759
+[; ;master/solution_CES.c: 759:    command_turn_ARRAY_3("E'");
+[e ( _command_turn_ARRAY_3 (1 :s 44C ]
+"760
+[; ;master/solution_CES.c: 760:    i = 0;
+[e = _i -> -> 0 `i `uc ]
+"761
+[; ;master/solution_CES.c: 761:   }
+}
+[e :U 1125 ]
+"762
+[; ;master/solution_CES.c: 762:  }
+}
+[e :U 1111 ]
+[e $U 1112  ]
+[e :U 1113 ]
+"763
+[; ;master/solution_CES.c: 763: }
+[e :UE 1108 ]
+}
+"765
+[; ;master/solution_CES.c: 765: char if_2pair(void)
+[v _if_2pair `(uc ~T0 @X0 1 ef ]
+"766
+[; ;master/solution_CES.c: 766: {
+{
+[e :U _if_2pair ]
+[f ]
+"767
+[; ;master/solution_CES.c: 767:  char i;
+[v _i `uc ~T0 @X0 1 a ]
+"768
+[; ;master/solution_CES.c: 768:  if (state_CE.cp[5] - state_CE.cp[4] == 1)
+[e $ ! == - -> *U + &U . _state_CE 0 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> *U + &U . _state_CE 0 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> 1 `i 1127  ]
+"769
+[; ;master/solution_CES.c: 769:  {
+{
+"770
+[; ;master/solution_CES.c: 770:   return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 1126  ]
+"771
+[; ;master/solution_CES.c: 771:  }
+}
+[e :U 1127 ]
+"772
+[; ;master/solution_CES.c: 772:  if (state_CE.cp[5] == 4 && state_CE.cp[4] == 7)
+[e $ ! && == -> *U + &U . _state_CE 0 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> 4 `i == -> *U + &U . _state_CE 0 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> 7 `i 1128  ]
+"773
+[; ;master/solution_CES.c: 773:  {
+{
+"774
+[; ;master/solution_CES.c: 774:   return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 1126  ]
+"775
+[; ;master/solution_CES.c: 775:  }
+}
+[e :U 1128 ]
+"776
+[; ;master/solution_CES.c: 776:  return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 1126  ]
+"777
+[; ;master/solution_CES.c: 777: }
+[e :UE 1126 ]
+}
+"779
+[; ;master/solution_CES.c: 779: void make_perfect_white(void)
+[v _make_perfect_white `(v ~T0 @X0 1 ef ]
+"780
+[; ;master/solution_CES.c: 780: {
+{
+[e :U _make_perfect_white ]
+[f ]
+"782
+[; ;master/solution_CES.c: 782:  signed char mark_count = 3, EPW_count = 1, i = 3, j;
+[v _mark_count `c ~T0 @X0 1 a ]
+[e = _mark_count -> -> 3 `i `c ]
+[v _EPW_count `c ~T0 @X0 1 a ]
+[e = _EPW_count -> -> 1 `i `c ]
+[v _i `c ~T0 @X0 1 a ]
+[e = _i -> -> 3 `i `c ]
+[v _j `c ~T0 @X0 1 a ]
+"784
+[; ;master/solution_CES.c: 784:  make_flont_green();
+[e ( _make_flont_green ..  ]
+"785
+[; ;master/solution_CES.c: 785:  if (operation_setup() == 1)
+[e $ ! == -> ( _operation_setup ..  `i -> 1 `i 1130  ]
+"786
+[; ;master/solution_CES.c: 786:   return;
+[e $UE 1129  ]
+[e :U 1130 ]
+"787
+[; ;master/solution_CES.c: 787:  command_turn_ARRAY_3_end();
+[e ( _command_turn_ARRAY_3_end ..  ]
+"789
+[; ;master/solution_CES.c: 789:  while (if_perfect_white() != 0)
+[e $U 1131  ]
+[e :U 1132 ]
+"790
+[; ;master/solution_CES.c: 790:  {
+{
+"791
+[; ;master/solution_CES.c: 791:   command_turn_ARRAY_3_end();
+[e ( _command_turn_ARRAY_3_end ..  ]
+"793
+[; ;master/solution_CES.c: 793:   if (operation_limit(100) == 1)
+[e $ ! == -> ( _operation_limit (1 -> 100 `i `i -> 1 `i 1134  ]
+"794
+[; ;master/solution_CES.c: 794:    return;
+[e $UE 1129  ]
+[e :U 1134 ]
+"796
+[; ;master/solution_CES.c: 796:   if (if_CP(3, 0, 3) == 1)
+[e $ ! == -> ( _if_CP (3 , , -> -> 3 `i `uc -> -> 0 `i `uc -> -> 3 `i `uc `i -> 1 `i 1135  ]
+"797
+[; ;master/solution_CES.c: 797:   {
+{
+"799
+[; ;master/solution_CES.c: 799:    if (state_CE.co[3] != 0 || state_CE.cp[3] != mark_count)
+[e $ ! || != -> *U + &U . _state_CE 1 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 0 `i != -> *U + &U . _state_CE 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> _mark_count `i 1136  ]
+"800
+[; ;master/solution_CES.c: 800:    {
+{
+"802
+[; ;master/solution_CES.c: 802:     command_turn_ARRAY_3("L");
+[e ( _command_turn_ARRAY_3 (1 :s 45C ]
+"803
+[; ;master/solution_CES.c: 803:     command_turn_ARRAY_3("D");
+[e ( _command_turn_ARRAY_3 (1 :s 46C ]
+"804
+[; ;master/solution_CES.c: 804:     command_turn_ARRAY_3("L'");
+[e ( _command_turn_ARRAY_3 (1 :s 47C ]
+"805
+[; ;master/solution_CES.c: 805:     command_turn_ARRAY_3("D'");
+[e ( _command_turn_ARRAY_3 (1 :s 48C ]
+"807
+[; ;master/solution_CES.c: 807:    }
+}
+[e :U 1136 ]
+"809
+[; ;master/solution_CES.c: 809:    mark_count--;
+[e -- _mark_count -> -> 1 `i `c ]
+"810
+[; ;master/solution_CES.c: 810:    if (mark_count < 0)
+[e $ ! < -> _mark_count `i -> 0 `i 1137  ]
+"811
+[; ;master/solution_CES.c: 811:     mark_count = 3;
+[e = _mark_count -> -> 3 `i `c ]
+[e :U 1137 ]
+"812
+[; ;master/solution_CES.c: 812:    command_turn_ARRAY_3("U");
+[e ( _command_turn_ARRAY_3 (1 :s 49C ]
+"813
+[; ;master/solution_CES.c: 813:    command_turn_ARRAY_3("E'");
+[e ( _command_turn_ARRAY_3 (1 :s 50C ]
+"814
+[; ;master/solution_CES.c: 814:    continue;
+[e $U 1131  ]
+"815
+[; ;master/solution_CES.c: 815:   }
+}
+[e :U 1135 ]
+"817
+[; ;master/solution_CES.c: 817:   for (j = 0; j < 4; j++)
+{
+[e = _j -> -> 0 `i `c ]
+[e $ < -> _j `i -> 4 `i 1138  ]
+[e $U 1139  ]
+[e :U 1138 ]
+"818
+[; ;master/solution_CES.c: 818:   {
+{
+"820
+[; ;master/solution_CES.c: 820:    if (state_CE.cp[7] == mark_count)
+[e $ ! == -> *U + &U . _state_CE 0 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `i -> _mark_count `i 1141  ]
+"821
+[; ;master/solution_CES.c: 821:    {
+{
+"823
+[; ;master/solution_CES.c: 823:     switch (state_CE.co[7])
+[e $U 1143  ]
+"824
+[; ;master/solution_CES.c: 824:     {
+{
+"825
+[; ;master/solution_CES.c: 825:     case 0:
+[e :U 1144 ]
+"826
+[; ;master/solution_CES.c: 826:      EPW_count = 3;
+[e = _EPW_count -> -> 3 `i `c ]
+"827
+[; ;master/solution_CES.c: 827:      break;
+[e $U 1142  ]
+"828
+[; ;master/solution_CES.c: 828:     case 1:
+[e :U 1145 ]
+"829
+[; ;master/solution_CES.c: 829:      EPW_count = 5;
+[e = _EPW_count -> -> 5 `i `c ]
+"830
+[; ;master/solution_CES.c: 830:     case 2:
+[e :U 1146 ]
+"831
+[; ;master/solution_CES.c: 831:      EPW_count = 1;
+[e = _EPW_count -> -> 1 `i `c ]
+"832
+[; ;master/solution_CES.c: 832:      break;
+[e $U 1142  ]
+"833
+[; ;master/solution_CES.c: 833:     default:
+[e :U 1147 ]
+"834
+[; ;master/solution_CES.c: 834:      break;
+[e $U 1142  ]
+"835
+[; ;master/solution_CES.c: 835:     }
+}
+[e $U 1142  ]
+[e :U 1143 ]
+[e [\ -> *U + &U . _state_CE 1 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i , $ -> 0 `i 1144
+ , $ -> 1 `i 1145
+ , $ -> 2 `i 1146
+ 1147 ]
+[e :U 1142 ]
+"837
+[; ;master/solution_CES.c: 837:     for (i = 0; i < EPW_count; i++)
+{
+[e = _i -> -> 0 `i `c ]
+[e $U 1151  ]
+[e :U 1148 ]
+"838
+[; ;master/solution_CES.c: 838:     {
+{
+"839
+[; ;master/solution_CES.c: 839:      command_turn_ARRAY_3("L");
+[e ( _command_turn_ARRAY_3 (1 :s 51C ]
+"840
+[; ;master/solution_CES.c: 840:      command_turn_ARRAY_3("D");
+[e ( _command_turn_ARRAY_3 (1 :s 52C ]
+"841
+[; ;master/solution_CES.c: 841:      command_turn_ARRAY_3("L'");
+[e ( _command_turn_ARRAY_3 (1 :s 53C ]
+"842
+[; ;master/solution_CES.c: 842:      command_turn_ARRAY_3("D'");
+[e ( _command_turn_ARRAY_3 (1 :s 54C ]
+"843
+[; ;master/solution_CES.c: 843:      j = 5;
+[e = _j -> -> 5 `i `c ]
+"844
+[; ;master/solution_CES.c: 844:     }
+}
+[e ++ _i -> -> 1 `i `c ]
+[e :U 1151 ]
+[e $ < -> _i `i -> _EPW_count `i 1148  ]
+[e :U 1149 ]
+}
+"845
+[; ;master/solution_CES.c: 845:     break;
+[e $U 1139  ]
+"846
+[; ;master/solution_CES.c: 846:    }
+}
+[e :U 1141 ]
+"848
+[; ;master/solution_CES.c: 848:    command_turn_ARRAY_3("D'");
+[e ( _command_turn_ARRAY_3 (1 :s 55C ]
+"849
+[; ;master/solution_CES.c: 849:   }
+}
+[e ++ _j -> -> 1 `i `c ]
+[e $ < -> _j `i -> 4 `i 1138  ]
+[e :U 1139 ]
+}
+"850
+[; ;master/solution_CES.c: 850:   mark_count--;
+[e -- _mark_count -> -> 1 `i `c ]
+"851
+[; ;master/solution_CES.c: 851:   if (mark_count < 0)
+[e $ ! < -> _mark_count `i -> 0 `i 1152  ]
+"852
+[; ;master/solution_CES.c: 852:   {
+{
+"853
+[; ;master/solution_CES.c: 853:    mark_count = 3;
+[e = _mark_count -> -> 3 `i `c ]
+"854
+[; ;master/solution_CES.c: 854:   }
+}
+[e :U 1152 ]
+"855
+[; ;master/solution_CES.c: 855:   command_turn_ARRAY_3("Y");
+[e ( _command_turn_ARRAY_3 (1 :s 56C ]
+"856
+[; ;master/solution_CES.c: 856:  }
+}
+[e :U 1131 ]
+"789
+[; ;master/solution_CES.c: 789:  while (if_perfect_white() != 0)
+[e $ != -> ( _if_perfect_white ..  `i -> 0 `i 1132  ]
+[e :U 1133 ]
+"857
+[; ;master/solution_CES.c: 857: }
+[e :UE 1129 ]
+}
+"859
+[; ;master/solution_CES.c: 859: void make_justice_axis(void)
+[v _make_justice_axis `(v ~T0 @X0 1 ef ]
+"860
+[; ;master/solution_CES.c: 860: {
+{
+[e :U _make_justice_axis ]
+[f ]
+"861
+[; ;master/solution_CES.c: 861:  if (state_CE.sp[0] != 0)
+[e $ ! != -> *U + &U . _state_CE 4 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 0 `i 1154  ]
+"862
+[; ;master/solution_CES.c: 862:  {
+{
+"863
+[; ;master/solution_CES.c: 863:   make_up_white();
+[e ( _make_up_white ..  ]
+"864
+[; ;master/solution_CES.c: 864:  }
+}
+[e :U 1154 ]
+"865
+[; ;master/solution_CES.c: 865:  if (operation_setup() == 1)
+[e $ ! == -> ( _operation_setup ..  `i -> 1 `i 1155  ]
+"866
+[; ;master/solution_CES.c: 866:   return;
+[e $UE 1153  ]
+[e :U 1155 ]
+"867
+[; ;master/solution_CES.c: 867:  while (state_CE.sp[1] != 1)
+[e $U 1156  ]
+[e :U 1157 ]
+"868
+[; ;master/solution_CES.c: 868:  {
+{
+"869
+[; ;master/solution_CES.c: 869:   if (operation_limit(8) == 1)
+[e $ ! == -> ( _operation_limit (1 -> 8 `i `i -> 1 `i 1159  ]
+"870
+[; ;master/solution_CES.c: 870:    return;
+[e $UE 1153  ]
+[e :U 1159 ]
+"871
+[; ;master/solution_CES.c: 871:   command_turn_ARRAY_3("Y");
+[e ( _command_turn_ARRAY_3 (1 :s 57C ]
+"872
+[; ;master/solution_CES.c: 872:  }
+}
+[e :U 1156 ]
+"867
+[; ;master/solution_CES.c: 867:  while (state_CE.sp[1] != 1)
+[e $ != -> *U + &U . _state_CE 4 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux `i -> 1 `i 1157  ]
+[e :U 1158 ]
+"873
+[; ;master/solution_CES.c: 873: }
+[e :UE 1153 ]
+}
+"875
+[; ;master/solution_CES.c: 875: char operation_limit(const int count)
+[v _operation_limit `(uc ~T0 @X0 1 ef1`Ci ]
+"876
+[; ;master/solution_CES.c: 876: {
+{
+[e :U _operation_limit ]
+"875
+[; ;master/solution_CES.c: 875: char operation_limit(const int count)
+[v _count `Ci ~T0 @X0 1 r1 ]
+"876
+[; ;master/solution_CES.c: 876: {
+[f ]
+"877
+[; ;master/solution_CES.c: 877:  opereation_count++;
+[e ++ _opereation_count -> 1 `i ]
+"878
+[; ;master/solution_CES.c: 878:  if (opereation_count > count)
+[e $ ! > _opereation_count _count 1161  ]
+"879
+[; ;master/solution_CES.c: 879:  {
+{
+"880
+[; ;master/solution_CES.c: 880:   opereation_over_flag = 1;
+[e = _opereation_over_flag -> -> 1 `i `uc ]
+"881
+[; ;master/solution_CES.c: 881:   return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 1160  ]
+"882
+[; ;master/solution_CES.c: 882:  }
+}
+[e :U 1161 ]
+"883
+[; ;master/solution_CES.c: 883:  return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 1160  ]
+"884
+[; ;master/solution_CES.c: 884: }
+[e :UE 1160 ]
+}
+"886
+[; ;master/solution_CES.c: 886: void operation_first(void)
+[v _operation_first `(v ~T0 @X0 1 ef ]
+"887
+[; ;master/solution_CES.c: 887: {
+{
+[e :U _operation_first ]
+[f ]
+"888
+[; ;master/solution_CES.c: 888:  opereation_count = 0;
+[e = _opereation_count -> 0 `i ]
+"889
+[; ;master/solution_CES.c: 889:  opereation_over_flag = 0;
+[e = _opereation_over_flag -> -> 0 `i `uc ]
+"890
+[; ;master/solution_CES.c: 890: }
+[e :UE 1162 ]
+}
+"892
+[; ;master/solution_CES.c: 892: char operation_setup(void)
+[v _operation_setup `(uc ~T0 @X0 1 ef ]
+"893
+[; ;master/solution_CES.c: 893: {
+{
+[e :U _operation_setup ]
+[f ]
+"894
+[; ;master/solution_CES.c: 894:  if (opereation_over_flag == 1)
+[e $ ! == -> _opereation_over_flag `i -> 1 `i 1164  ]
+"895
+[; ;master/solution_CES.c: 895:  {
+{
+"896
+[; ;master/solution_CES.c: 896:   return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 1163  ]
+"897
+[; ;master/solution_CES.c: 897:  }
+}
+[e :U 1164 ]
+"898
+[; ;master/solution_CES.c: 898:  opereation_count = 0;
+[e = _opereation_count -> 0 `i ]
+"899
+[; ;master/solution_CES.c: 899:  return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 1163  ]
+"900
+[; ;master/solution_CES.c: 900: }
+[e :UE 1163 ]
+}
+[a 9C 89 0 ]
+[a 10C 89 0 ]
+[a 12C 89 0 ]
+[a 14C 89 0 ]
+[a 20C 89 0 ]
+[a 21C 89 0 ]
+[a 22C 89 0 ]
+[a 23C 89 0 ]
+[a 29C 89 0 ]
+[a 31C 89 0 ]
+[a 32C 89 0 ]
+[a 36C 89 0 ]
+[a 56C 89 0 ]
+[a 57C 89 0 ]
+[a 30C 88 0 ]
+[a 33C 88 0 ]
+[a 37C 88 0 ]
+[a 3C 85 0 ]
+[a 7C 85 0 ]
+[a 13C 85 0 ]
+[a 28C 85 0 ]
+[a 43C 85 0 ]
+[a 49C 85 0 ]
+[a 1C 82 0 ]
+[a 5C 82 0 ]
+[a 15C 77 0 ]
+[a 2C 76 0 ]
+[a 6C 76 0 ]
+[a 45C 76 0 ]
+[a 51C 76 0 ]
+[a 24C 69 0 ]
+[a 41C 69 0 ]
+[a 25C 68 0 ]
+[a 34C 68 0 ]
+[a 35C 68 0 ]
+[a 38C 68 0 ]
+[a 39C 68 0 ]
+[a 42C 68 0 ]
+[a 46C 68 0 ]
+[a 52C 68 0 ]
+[a 4C 66 0 ]
+[a 8C 66 0 ]
+[a 16C 68 50 0 ]
+[a 11C 66 50 0 ]
+[a 40C 85 39 0 ]
+[a 17C 77 39 0 ]
+[a 47C 76 39 0 ]
+[a 53C 76 39 0 ]
+[a 18C 69 39 0 ]
+[a 26C 69 39 0 ]
+[a 44C 69 39 0 ]
+[a 50C 69 39 0 ]
+[a 19C 68 39 0 ]
+[a 27C 68 39 0 ]
+[a 48C 68 39 0 ]
+[a 54C 68 39 0 ]
+[a 55C 68 39 0 ]

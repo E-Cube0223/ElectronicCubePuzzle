@@ -1,0 +1,2659 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"83 master/operation_CES.h
+[; ;master/operation_CES.h: 83: void set_S(void);
+[v _set_S `(v ~T0 @X0 0 ef ]
+"81
+[; ;master/operation_CES.h: 81: void set_C(void);
+[v _set_C `(v ~T0 @X0 0 ef ]
+"82
+[; ;master/operation_CES.h: 82: void set_E(void);
+[v _set_E `(v ~T0 @X0 0 ef ]
+"26
+[; ;master/operation_CES.h: 26: typedef struct CE_2 {
+[s S1 `uc -> 8 `i `uc -> 8 `i `uc -> 12 `i `uc -> 12 `i `uc -> 6 `i ]
+[n S1 CE_2 cp co ep eo sp ]
+"63
+[; ;master/operation_CES.h: 63: typedef struct enm {
+[s S2 `*CS1 1 `*uc 1 `uc 1 ]
+[n S2 enm DATA name CE_count ]
+"37
+[; ;master/operation_CES.h: 37: extern CE state_CE;
+[v _state_CE `S1 ~T0 @X0 0 e ]
+"88
+[; ;master/operation_CES.h: 88: typedef struct TURN_NUM2 {
+[s S3 `Cuc -> 4 `i `Cuc -> 12 `i ]
+[n S3 TURN_NUM2 MEN_SURFASE POINT_NUM ]
+"96
+[; ;master/operation_CES.h: 96: void ARRAY_LINE_TURN(const char MOVE_LOW, const TURN_NUM MEN_NUM_1);
+[v _ARRAY_LINE_TURN `(v ~T0 @X0 0 ef2`Cuc`CS3 ]
+"95
+[; ;master/operation_CES.h: 95: void ARRAY_SIDE_TURN(const char surface);
+[v _ARRAY_SIDE_TURN `(v ~T0 @X0 0 ef1`Cuc ]
+"79
+[; ;master/operation_CES.h: 79: char str_cmp_const(const char p1[], char *p2);
+[v _str_cmp_const `(uc ~T0 @X0 0 ef2`*Cuc`*uc ]
+"70
+[; ;master/operation_CES.h: 70: extern const CE_LISTER CE_LIST[(2 + 12 * 3)];
+[v _CE_LIST `CS2 ~T0 @X0 -> 0 `x e ]
+[v F38 `Cuc ~T0 @X0 -> 3 `i t ]
+"73
+[; ;master/operation_CES.h: 73: extern const char LED_C[8][3];
+[v _LED_C `F38 ~T0 @X0 -> 0 `x e ]
+[v F40 `Cuc ~T0 @X0 -> 2 `i t ]
+"76
+[; ;master/operation_CES.h: 76: extern const char LED_E[12][2];
+[v _LED_E `F40 ~T0 @X0 -> 0 `x e ]
+[v F65 `uc ~T0 @X0 -> 9 `i t ]
+"3 master/operation_CES.c
+[; ;master/operation_CES.c: 3: char LED_Light[6][9];
+[v _LED_Light `F65 ~T0 @X0 -> 6 `i e ]
+"4
+[; ;master/operation_CES.c: 4: unsigned int total_number_of_moves = 0;
+[v _total_number_of_moves `ui ~T0 @X0 1 e ]
+[i _total_number_of_moves
+-> -> 0 `i `ui
+]
+"6
+[; ;master/operation_CES.c: 6: void set_CES(void)
+[v _set_CES `(v ~T0 @X0 1 ef ]
+"7
+[; ;master/operation_CES.c: 7: {
+{
+[e :U _set_CES ]
+[f ]
+"8
+[; ;master/operation_CES.c: 8:     int i;
+[v _i `i ~T0 @X0 1 a ]
+"10
+[; ;master/operation_CES.c: 10:     set_S();
+[e ( _set_S ..  ]
+"11
+[; ;master/operation_CES.c: 11:     set_C();
+[e ( _set_C ..  ]
+"12
+[; ;master/operation_CES.c: 12:     set_E();
+[e ( _set_E ..  ]
+"13
+[; ;master/operation_CES.c: 13: }
+[e :UE 4 ]
+}
+"15
+[; ;master/operation_CES.c: 15: void turn_CE(const CE_LISTER *change)
+[v _turn_CE `(v ~T0 @X0 1 ef1`*CS2 ]
+"16
+[; ;master/operation_CES.c: 16: {
+{
+[e :U _turn_CE ]
+"15
+[; ;master/operation_CES.c: 15: void turn_CE(const CE_LISTER *change)
+[v _change `*CS2 ~T0 @X0 1 r1 ]
+"16
+[; ;master/operation_CES.c: 16: {
+[f ]
+"17
+[; ;master/operation_CES.c: 17:     int i, j;
+[v _i `i ~T0 @X0 1 a ]
+[v _j `i ~T0 @X0 1 a ]
+"18
+[; ;master/operation_CES.c: 18:     for (j = 0; j < change->CE_count; j++)
+{
+[e = _j -> 0 `i ]
+[e $U 9  ]
+[e :U 6 ]
+"19
+[; ;master/operation_CES.c: 19:     {
+{
+"20
+[; ;master/operation_CES.c: 20:         CE past = state_CE;
+[v _past `S1 ~T0 @X0 1 a ]
+[e = _past _state_CE ]
+"22
+[; ;master/operation_CES.c: 22:         for (i = 0; i < 8; i++)
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 8 `i 10  ]
+[e $U 11  ]
+[e :U 10 ]
+"23
+[; ;master/operation_CES.c: 23:         {
+{
+"24
+[; ;master/operation_CES.c: 24:             state_CE.cp[i] = past.cp[change->DATA->cp[i]];
+[e = *U + &U . _state_CE 0 * -> -> _i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux *U + &U . _past 0 * -> *U + &U . *U . *U _change 0 0 * -> -> _i `ui `ux -> -> # *U &U . *U . *U _change 0 0 `ui `ux `ux -> -> # *U &U . _past 0 `ui `ux ]
+"25
+[; ;master/operation_CES.c: 25:             state_CE.co[i] = (past.co[change->DATA->cp[i]] + change->DATA->co[i]) % 3;
+[e = *U + &U . _state_CE 1 * -> -> _i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux -> % + -> *U + &U . _past 1 * -> *U + &U . *U . *U _change 0 0 * -> -> _i `ui `ux -> -> # *U &U . *U . *U _change 0 0 `ui `ux `ux -> -> # *U &U . _past 1 `ui `ux `i -> *U + &U . *U . *U _change 0 1 * -> -> _i `ui `ux -> -> # *U &U . *U . *U _change 0 1 `ui `ux `i -> 3 `i `uc ]
+"26
+[; ;master/operation_CES.c: 26:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 8 `i 10  ]
+[e :U 11 ]
+}
+"27
+[; ;master/operation_CES.c: 27:         for (i = 0; i < 12; i++)
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 12 `i 13  ]
+[e $U 14  ]
+[e :U 13 ]
+"28
+[; ;master/operation_CES.c: 28:         {
+{
+"29
+[; ;master/operation_CES.c: 29:             state_CE.ep[i] = past.ep[change->DATA->ep[i]];
+[e = *U + &U . _state_CE 2 * -> -> _i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux *U + &U . _past 2 * -> *U + &U . *U . *U _change 0 2 * -> -> _i `ui `ux -> -> # *U &U . *U . *U _change 0 2 `ui `ux `ux -> -> # *U &U . _past 2 `ui `ux ]
+"30
+[; ;master/operation_CES.c: 30:             state_CE.eo[i] = (past.eo[change->DATA->ep[i]] + change->DATA->eo[i]) % 2;
+[e = *U + &U . _state_CE 3 * -> -> _i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux -> % + -> *U + &U . _past 3 * -> *U + &U . *U . *U _change 0 2 * -> -> _i `ui `ux -> -> # *U &U . *U . *U _change 0 2 `ui `ux `ux -> -> # *U &U . _past 3 `ui `ux `i -> *U + &U . *U . *U _change 0 3 * -> -> _i `ui `ux -> -> # *U &U . *U . *U _change 0 3 `ui `ux `i -> 2 `i `uc ]
+"31
+[; ;master/operation_CES.c: 31:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 12 `i 13  ]
+[e :U 14 ]
+}
+"32
+[; ;master/operation_CES.c: 32:         for (i = 0; i < 6; i++)
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 6 `i 16  ]
+[e $U 17  ]
+[e :U 16 ]
+"33
+[; ;master/operation_CES.c: 33:         {
+{
+"34
+[; ;master/operation_CES.c: 34:             state_CE.sp[i] = past.sp[change->DATA->sp[i]];
+[e = *U + &U . _state_CE 4 * -> -> _i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux *U + &U . _past 4 * -> *U + &U . *U . *U _change 0 4 * -> -> _i `ui `ux -> -> # *U &U . *U . *U _change 0 4 `ui `ux `ux -> -> # *U &U . _past 4 `ui `ux ]
+"35
+[; ;master/operation_CES.c: 35:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 6 `i 16  ]
+[e :U 17 ]
+}
+"36
+[; ;master/operation_CES.c: 36:     }
+}
+[e ++ _j -> 1 `i ]
+[e :U 9 ]
+[e $ < _j -> . *U _change 2 `i 6  ]
+[e :U 7 ]
+}
+"37
+[; ;master/operation_CES.c: 37: }
+[e :UE 5 ]
+}
+"39
+[; ;master/operation_CES.c: 39: char TURN_COUNT = 0;
+[v _TURN_COUNT `uc ~T0 @X0 1 e ]
+[i _TURN_COUNT
+-> -> 0 `i `uc
+]
+"41
+[; ;master/operation_CES.c: 41: void command_turn_ARRAY(const char *s)
+[v _command_turn_ARRAY `(v ~T0 @X0 1 ef1`*Cuc ]
+"42
+[; ;master/operation_CES.c: 42: {
+{
+[e :U _command_turn_ARRAY ]
+"41
+[; ;master/operation_CES.c: 41: void command_turn_ARRAY(const char *s)
+[v _s `*Cuc ~T0 @X0 1 r1 ]
+"42
+[; ;master/operation_CES.c: 42: {
+[f ]
+"43
+[; ;master/operation_CES.c: 43:     const TURN_NUM TURN_NUM_R = {
+[v F84 `CS3 ~T0 @X0 1 s TURN_NUM_R ]
+[i F84
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 5 `i `uc
+-> -> 3 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 6 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 6 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 6 `i `uc
+-> -> 8 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+..
+..
+..
+]
+"47
+[; ;master/operation_CES.c: 47:     const TURN_NUM TURN_NUM_U = {
+[v F85 `CS3 ~T0 @X0 1 s TURN_NUM_U ]
+[i F85
+:U ..
+:U ..
+:U ..
+-> -> 1 `i `uc
+-> -> 4 `i `uc
+-> -> 3 `i `uc
+-> -> 2 `i `uc
+..
+:U ..
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+..
+..
+..
+]
+"51
+[; ;master/operation_CES.c: 51:     const TURN_NUM TURN_NUM_F = {
+[v F86 `CS3 ~T0 @X0 1 s TURN_NUM_F ]
+[i F86
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 5 `i `uc
+-> -> 4 `i `uc
+..
+:U ..
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 6 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 8 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+..
+..
+..
+]
+"56
+[; ;master/operation_CES.c: 56:     const TURN_NUM TURN_NUM_L = {
+[v F87 `CS3 ~T0 @X0 1 s TURN_NUM_L ]
+[i F87
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 5 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 8 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 6 `i `uc
+-> -> 8 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+-> -> 8 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+..
+..
+..
+]
+"59
+[; ;master/operation_CES.c: 59:     const TURN_NUM TURN_NUM_D = {
+[v F88 `CS3 ~T0 @X0 1 s TURN_NUM_D ]
+[i F88
+:U ..
+:U ..
+:U ..
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+..
+:U ..
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 8 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 8 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 8 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 8 `i `uc
+..
+..
+..
+]
+"62
+[; ;master/operation_CES.c: 62:     const TURN_NUM TURN_NUM_B = {
+[v F89 `CS3 ~T0 @X0 1 s TURN_NUM_B ]
+[i F89
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+..
+:U ..
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 6 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 8 `i `uc
+-> -> 8 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+..
+..
+..
+]
+"66
+[; ;master/operation_CES.c: 66:     const TURN_NUM TURN_NUM_M = {
+[v F90 `CS3 ~T0 @X0 1 s TURN_NUM_M ]
+[i F90
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 5 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 7 `i `uc
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 4 `i `uc
+-> -> 7 `i `uc
+-> -> 7 `i `uc
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+-> -> 7 `i `uc
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+..
+..
+..
+]
+"69
+[; ;master/operation_CES.c: 69:     const TURN_NUM TURN_NUM_S = {
+[v F91 `CS3 ~T0 @X0 1 s TURN_NUM_S ]
+[i F91
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 5 `i `uc
+-> -> 4 `i `uc
+..
+:U ..
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 1 `i `uc
+-> -> 4 `i `uc
+-> -> 7 `i `uc
+-> -> 5 `i `uc
+-> -> 4 `i `uc
+-> -> 3 `i `uc
+-> -> 7 `i `uc
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+..
+..
+..
+]
+"73
+[; ;master/operation_CES.c: 73:     const TURN_NUM TURN_NUM_E = {
+[v F92 `CS3 ~T0 @X0 1 s TURN_NUM_E ]
+[i F92
+:U ..
+:U ..
+:U ..
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+..
+:U ..
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+..
+..
+..
+]
+"78
+[; ;master/operation_CES.c: 78:     char for_count_num = 1;
+[v _for_count_num `uc ~T0 @X0 1 a ]
+[e = _for_count_num -> -> 1 `i `uc ]
+"79
+[; ;master/operation_CES.c: 79:     char MOVE_LOW = 0;
+[v _MOVE_LOW `uc ~T0 @X0 1 a ]
+[e = _MOVE_LOW -> -> 0 `i `uc ]
+"80
+[; ;master/operation_CES.c: 80:     const TURN_NUM *MEN_NUM;
+[v _MEN_NUM `*CS3 ~T0 @X0 1 a ]
+"81
+[; ;master/operation_CES.c: 81:     const char for_count_LIST[4] = {1, 11, 11, 1};
+[v F96 `Cuc ~T0 @X0 -> 4 `i s for_count_LIST ]
+[i F96
+:U ..
+-> -> 1 `i `uc
+-> -> 11 `i `uc
+-> -> 11 `i `uc
+-> -> 1 `i `uc
+..
+]
+"82
+[; ;master/operation_CES.c: 82:     char SIDE_SURFACE;
+[v _SIDE_SURFACE `uc ~T0 @X0 1 a ]
+"83
+[; ;master/operation_CES.c: 83:     char SIDE_TURN_FLG = 1;
+[v _SIDE_TURN_FLG `uc ~T0 @X0 1 a ]
+[e = _SIDE_TURN_FLG -> -> 1 `i `uc ]
+"84
+[; ;master/operation_CES.c: 84:     char for_count;
+[v _for_count `uc ~T0 @X0 1 a ]
+"85
+[; ;master/operation_CES.c: 85:     char for_count_2;
+[v _for_count_2 `uc ~T0 @X0 1 a ]
+"86
+[; ;master/operation_CES.c: 86:     SIDE_TURN_FLG = 1;
+[e = _SIDE_TURN_FLG -> -> 1 `i `uc ]
+"89
+[; ;master/operation_CES.c: 89:     if (*(s + 1) == '\'')
+[e $ ! == -> *U + _s * -> -> 1 `i `x -> -> # *U _s `i `x `ui -> 39 `ui 20  ]
+"90
+[; ;master/operation_CES.c: 90:     {
+{
+"91
+[; ;master/operation_CES.c: 91:         for_count_num = 1;
+[e = _for_count_num -> -> 1 `i `uc ]
+"92
+[; ;master/operation_CES.c: 92:     }
+}
+[e $U 21  ]
+"93
+[; ;master/operation_CES.c: 93:     else
+[e :U 20 ]
+"94
+[; ;master/operation_CES.c: 94:     {
+{
+"95
+[; ;master/operation_CES.c: 95:         for_count_num = 0;
+[e = _for_count_num -> -> 0 `i `uc ]
+"96
+[; ;master/operation_CES.c: 96:     }
+}
+[e :U 21 ]
+"97
+[; ;master/operation_CES.c: 97:     switch (*s)
+[e $U 23  ]
+"98
+[; ;master/operation_CES.c: 98:     {
+{
+"99
+[; ;master/operation_CES.c: 99:     case 'R':
+[e :U 24 ]
+"100
+[; ;master/operation_CES.c: 100:         MEN_NUM = &TURN_NUM_R;
+[e = _MEN_NUM &U F84 ]
+"101
+[; ;master/operation_CES.c: 101:         MOVE_LOW = 0;
+[e = _MOVE_LOW -> -> 0 `i `uc ]
+"102
+[; ;master/operation_CES.c: 102:         SIDE_SURFACE = 4;
+[e = _SIDE_SURFACE -> -> 4 `i `uc ]
+"103
+[; ;master/operation_CES.c: 103:         break;
+[e $U 22  ]
+"104
+[; ;master/operation_CES.c: 104:     case 'L':
+[e :U 25 ]
+"105
+[; ;master/operation_CES.c: 105:         MEN_NUM = &TURN_NUM_L;
+[e = _MEN_NUM &U F87 ]
+"106
+[; ;master/operation_CES.c: 106:         MOVE_LOW = 2;
+[e = _MOVE_LOW -> -> 2 `i `uc ]
+"107
+[; ;master/operation_CES.c: 107:         SIDE_SURFACE = 2;
+[e = _SIDE_SURFACE -> -> 2 `i `uc ]
+"108
+[; ;master/operation_CES.c: 108:         break;
+[e $U 22  ]
+"109
+[; ;master/operation_CES.c: 109:     case 'U':
+[e :U 26 ]
+"110
+[; ;master/operation_CES.c: 110:         SIDE_SURFACE = 0;
+[e = _SIDE_SURFACE -> -> 0 `i `uc ]
+"111
+[; ;master/operation_CES.c: 111:         MEN_NUM = &TURN_NUM_U;
+[e = _MEN_NUM &U F85 ]
+"112
+[; ;master/operation_CES.c: 112:         MOVE_LOW = 0;
+[e = _MOVE_LOW -> -> 0 `i `uc ]
+"113
+[; ;master/operation_CES.c: 113:         break;
+[e $U 22  ]
+"114
+[; ;master/operation_CES.c: 114:     case 'D':
+[e :U 27 ]
+"115
+[; ;master/operation_CES.c: 115:         SIDE_SURFACE = 5;
+[e = _SIDE_SURFACE -> -> 5 `i `uc ]
+"116
+[; ;master/operation_CES.c: 116:         MEN_NUM = &TURN_NUM_D;
+[e = _MEN_NUM &U F88 ]
+"117
+[; ;master/operation_CES.c: 117:         MOVE_LOW = 2;
+[e = _MOVE_LOW -> -> 2 `i `uc ]
+"118
+[; ;master/operation_CES.c: 118:         break;
+[e $U 22  ]
+"119
+[; ;master/operation_CES.c: 119:     case 'F':
+[e :U 28 ]
+"120
+[; ;master/operation_CES.c: 120:         SIDE_SURFACE = 1;
+[e = _SIDE_SURFACE -> -> 1 `i `uc ]
+"121
+[; ;master/operation_CES.c: 121:         MEN_NUM = &TURN_NUM_F;
+[e = _MEN_NUM &U F86 ]
+"122
+[; ;master/operation_CES.c: 122:         MOVE_LOW = 0;
+[e = _MOVE_LOW -> -> 0 `i `uc ]
+"123
+[; ;master/operation_CES.c: 123:         break;
+[e $U 22  ]
+"124
+[; ;master/operation_CES.c: 124:     case 'B':
+[e :U 29 ]
+"125
+[; ;master/operation_CES.c: 125:         MOVE_LOW = 2;
+[e = _MOVE_LOW -> -> 2 `i `uc ]
+"126
+[; ;master/operation_CES.c: 126:         SIDE_SURFACE = 3;
+[e = _SIDE_SURFACE -> -> 3 `i `uc ]
+"127
+[; ;master/operation_CES.c: 127:         MEN_NUM = &TURN_NUM_B;
+[e = _MEN_NUM &U F89 ]
+"128
+[; ;master/operation_CES.c: 128:         break;
+[e $U 22  ]
+"131
+[; ;master/operation_CES.c: 131:     case 'M':
+[e :U 30 ]
+"132
+[; ;master/operation_CES.c: 132:         MOVE_LOW = 2;
+[e = _MOVE_LOW -> -> 2 `i `uc ]
+"133
+[; ;master/operation_CES.c: 133:         MEN_NUM = &TURN_NUM_M;
+[e = _MEN_NUM &U F90 ]
+"134
+[; ;master/operation_CES.c: 134:         SIDE_TURN_FLG = 0;
+[e = _SIDE_TURN_FLG -> -> 0 `i `uc ]
+"135
+[; ;master/operation_CES.c: 135:         break;
+[e $U 22  ]
+"136
+[; ;master/operation_CES.c: 136:     case 'S':
+[e :U 31 ]
+"137
+[; ;master/operation_CES.c: 137:         MOVE_LOW = 0;
+[e = _MOVE_LOW -> -> 0 `i `uc ]
+"138
+[; ;master/operation_CES.c: 138:         SIDE_TURN_FLG = 0;
+[e = _SIDE_TURN_FLG -> -> 0 `i `uc ]
+"139
+[; ;master/operation_CES.c: 139:         MEN_NUM = &TURN_NUM_S;
+[e = _MEN_NUM &U F91 ]
+"140
+[; ;master/operation_CES.c: 140:         break;
+[e $U 22  ]
+"141
+[; ;master/operation_CES.c: 141:     case 'E':
+[e :U 32 ]
+"142
+[; ;master/operation_CES.c: 142:         MOVE_LOW = 2;
+[e = _MOVE_LOW -> -> 2 `i `uc ]
+"143
+[; ;master/operation_CES.c: 143:         MEN_NUM = &TURN_NUM_E;
+[e = _MEN_NUM &U F92 ]
+"144
+[; ;master/operation_CES.c: 144:         SIDE_TURN_FLG = 0;
+[e = _SIDE_TURN_FLG -> -> 0 `i `uc ]
+"145
+[; ;master/operation_CES.c: 145:         break;
+[e $U 22  ]
+"146
+[; ;master/operation_CES.c: 146:     }
+}
+[e $U 22  ]
+[e :U 23 ]
+[e [\ -> *U _s `i , $ -> -> 82 `ui `i 24
+ , $ -> -> 76 `ui `i 25
+ , $ -> -> 85 `ui `i 26
+ , $ -> -> 68 `ui `i 27
+ , $ -> -> 70 `ui `i 28
+ , $ -> -> 66 `ui `i 29
+ , $ -> -> 77 `ui `i 30
+ , $ -> -> 83 `ui `i 31
+ , $ -> -> 69 `ui `i 32
+ 22 ]
+[e :U 22 ]
+"147
+[; ;master/operation_CES.c: 147:     for (for_count = 0; for_count < for_count_LIST[for_count_num + MOVE_LOW]; for_count++)
+{
+[e = _for_count -> -> 0 `i `uc ]
+[e $U 36  ]
+[e :U 33 ]
+"148
+[; ;master/operation_CES.c: 148:     {
+{
+"149
+[; ;master/operation_CES.c: 149:         MOVE_LOW = 0;
+[e = _MOVE_LOW -> -> 0 `i `uc ]
+"150
+[; ;master/operation_CES.c: 150:         ARRAY_LINE_TURN(MOVE_LOW, *MEN_NUM);
+[e ( _ARRAY_LINE_TURN (2 , _MOVE_LOW *U _MEN_NUM ]
+"151
+[; ;master/operation_CES.c: 151:     }
+}
+[e ++ _for_count -> -> 1 `i `uc ]
+[e :U 36 ]
+[e $ < -> _for_count `i -> *U + &U F96 * -> -> + -> _for_count_num `i -> _MOVE_LOW `i `ui `ux -> -> # *U &U F96 `ui `ux `i 33  ]
+[e :U 34 ]
+}
+"152
+[; ;master/operation_CES.c: 152:     if (SIDE_TURN_FLG == 1)
+[e $ ! == -> _SIDE_TURN_FLG `i -> 1 `i 37  ]
+"153
+[; ;master/operation_CES.c: 153:     {
+{
+"155
+[; ;master/operation_CES.c: 155:         for (for_count_2 = 0; for_count_2 < for_count_LIST[for_count_num]; for_count_2++)
+{
+[e = _for_count_2 -> -> 0 `i `uc ]
+[e $U 41  ]
+[e :U 38 ]
+"156
+[; ;master/operation_CES.c: 156:         {
+{
+"157
+[; ;master/operation_CES.c: 157:             ARRAY_SIDE_TURN(SIDE_SURFACE);
+[e ( _ARRAY_SIDE_TURN (1 _SIDE_SURFACE ]
+"158
+[; ;master/operation_CES.c: 158:         }
+}
+[e ++ _for_count_2 -> -> 1 `i `uc ]
+[e :U 41 ]
+[e $ < -> _for_count_2 `i -> *U + &U F96 * -> _for_count_num `ux -> -> # *U &U F96 `ui `ux `i 38  ]
+[e :U 39 ]
+}
+"159
+[; ;master/operation_CES.c: 159:     }
+}
+[e :U 37 ]
+"160
+[; ;master/operation_CES.c: 160: }
+[e :UE 19 ]
+}
+"162
+[; ;master/operation_CES.c: 162: void ARRAY_LINE_TURN(const char MOVE_LOW, const TURN_NUM MEN_NUM_1)
+[v _ARRAY_LINE_TURN `(v ~T0 @X0 1 ef2`Cuc`CS3 ]
+"163
+[; ;master/operation_CES.c: 163: {
+{
+[e :U _ARRAY_LINE_TURN ]
+"162
+[; ;master/operation_CES.c: 162: void ARRAY_LINE_TURN(const char MOVE_LOW, const TURN_NUM MEN_NUM_1)
+[v _MOVE_LOW `Cuc ~T0 @X0 1 r1 ]
+[v _MEN_NUM_1 `CS3 ~T0 @X0 1 r2 ]
+"163
+[; ;master/operation_CES.c: 163: {
+[f ]
+"164
+[; ;master/operation_CES.c: 164:     char temp, i, j;
+[v _temp `uc ~T0 @X0 1 a ]
+[v _i `uc ~T0 @X0 1 a ]
+[v _j `uc ~T0 @X0 1 a ]
+"165
+[; ;master/operation_CES.c: 165:     char SURFASE;
+[v _SURFASE `uc ~T0 @X0 1 a ]
+"166
+[; ;master/operation_CES.c: 166:     temp = LED_Light[MEN_NUM_1.MEN_SURFASE[0]][MEN_NUM_1.POINT_NUM[0]];
+[e = _temp *U + &U *U + &U _LED_Light * -> *U + &U . _MEN_NUM_1 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _MEN_NUM_1 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> *U + &U . _MEN_NUM_1 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _MEN_NUM_1 1 `ui `ux `ux -> -> # *U &U *U + &U _LED_Light * -> *U + &U . _MEN_NUM_1 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _MEN_NUM_1 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux ]
+"167
+[; ;master/operation_CES.c: 167:     for (i = 0; i < 4; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 43  ]
+[e $U 44  ]
+[e :U 43 ]
+"168
+[; ;master/operation_CES.c: 168:     {
+{
+"169
+[; ;master/operation_CES.c: 169:         SURFASE = MEN_NUM_1.MEN_SURFASE[i];
+[e = _SURFASE *U + &U . _MEN_NUM_1 0 * -> _i `ux -> -> # *U &U . _MEN_NUM_1 0 `ui `ux ]
+"170
+[; ;master/operation_CES.c: 170:         for (j = 0; j < 2; j++)
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 2 `i 46  ]
+[e $U 47  ]
+[e :U 46 ]
+"171
+[; ;master/operation_CES.c: 171:         {
+{
+"172
+[; ;master/operation_CES.c: 172:             LED_Light[SURFASE][MEN_NUM_1.POINT_NUM[j + i * 3]] = LED_Light[SURFASE][MEN_NUM_1.POINT_NUM[j + 1 + i * 3]];
+[e = *U + &U *U + &U _LED_Light * -> _SURFASE `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> *U + &U . _MEN_NUM_1 1 * -> -> + -> _j `i * -> _i `i -> 3 `i `ui `ux -> -> # *U &U . _MEN_NUM_1 1 `ui `ux `ux -> -> # *U &U *U + &U _LED_Light * -> _SURFASE `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_Light * -> _SURFASE `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> *U + &U . _MEN_NUM_1 1 * -> -> + + -> _j `i -> 1 `i * -> _i `i -> 3 `i `ui `ux -> -> # *U &U . _MEN_NUM_1 1 `ui `ux `ux -> -> # *U &U *U + &U _LED_Light * -> _SURFASE `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux ]
+"173
+[; ;master/operation_CES.c: 173:         }
+}
+[e ++ _j -> -> 1 `i `uc ]
+[e $ < -> _j `i -> 2 `i 46  ]
+[e :U 47 ]
+}
+"174
+[; ;master/operation_CES.c: 174:         LED_Light[SURFASE][MEN_NUM_1.POINT_NUM[2 + i * 3]] = LED_Light[MEN_NUM_1.MEN_SURFASE[i + 1]][MEN_NUM_1.POINT_NUM[(i + 1) * 3 + 0]];
+[e = *U + &U *U + &U _LED_Light * -> _SURFASE `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> *U + &U . _MEN_NUM_1 1 * -> -> + -> 2 `i * -> _i `i -> 3 `i `ui `ux -> -> # *U &U . _MEN_NUM_1 1 `ui `ux `ux -> -> # *U &U *U + &U _LED_Light * -> _SURFASE `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_Light * -> *U + &U . _MEN_NUM_1 0 * -> -> + -> _i `i -> 1 `i `ui `ux -> -> # *U &U . _MEN_NUM_1 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> *U + &U . _MEN_NUM_1 1 * -> -> + * + -> _i `i -> 1 `i -> 3 `i -> 0 `i `ui `ux -> -> # *U &U . _MEN_NUM_1 1 `ui `ux `ux -> -> # *U &U *U + &U _LED_Light * -> *U + &U . _MEN_NUM_1 0 * -> -> + -> _i `i -> 1 `i `ui `ux -> -> # *U &U . _MEN_NUM_1 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux ]
+"175
+[; ;master/operation_CES.c: 175:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 43  ]
+[e :U 44 ]
+}
+"176
+[; ;master/operation_CES.c: 176:     LED_Light[MEN_NUM_1.MEN_SURFASE[3]][MEN_NUM_1.POINT_NUM[11]] = temp;
+[e = *U + &U *U + &U _LED_Light * -> *U + &U . _MEN_NUM_1 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _MEN_NUM_1 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> *U + &U . _MEN_NUM_1 1 * -> -> -> 11 `i `ui `ux -> -> # *U &U . _MEN_NUM_1 1 `ui `ux `ux -> -> # *U &U *U + &U _LED_Light * -> *U + &U . _MEN_NUM_1 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _MEN_NUM_1 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux _temp ]
+"177
+[; ;master/operation_CES.c: 177: }
+[e :UE 42 ]
+}
+"179
+[; ;master/operation_CES.c: 179: void ARRAY_SIDE_TURN(const char surface)
+[v _ARRAY_SIDE_TURN `(v ~T0 @X0 1 ef1`Cuc ]
+"180
+[; ;master/operation_CES.c: 180: {
+{
+[e :U _ARRAY_SIDE_TURN ]
+"179
+[; ;master/operation_CES.c: 179: void ARRAY_SIDE_TURN(const char surface)
+[v _surface `Cuc ~T0 @X0 1 r1 ]
+"180
+[; ;master/operation_CES.c: 180: {
+[f ]
+"181
+[; ;master/operation_CES.c: 181:     const char side_NUM[8] = {0, 1, 2, 5, 8, 7, 6, 3};
+[v F116 `Cuc ~T0 @X0 -> 8 `i s side_NUM ]
+[i F116
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 5 `i `uc
+-> -> 8 `i `uc
+-> -> 7 `i `uc
+-> -> 6 `i `uc
+-> -> 3 `i `uc
+..
+]
+"182
+[; ;master/operation_CES.c: 182:     char temp, i;
+[v _temp `uc ~T0 @X0 1 a ]
+[v _i `uc ~T0 @X0 1 a ]
+"183
+[; ;master/operation_CES.c: 183:     if (TURN_COUNT != 2 && TURN_COUNT != 5 && TURN_COUNT != 8 && TURN_COUNT != 11)
+[e $ ! && && && != -> _TURN_COUNT `i -> 2 `i != -> _TURN_COUNT `i -> 5 `i != -> _TURN_COUNT `i -> 8 `i != -> _TURN_COUNT `i -> 11 `i 50  ]
+"184
+[; ;master/operation_CES.c: 184:     {
+{
+"185
+[; ;master/operation_CES.c: 185:         temp = LED_Light[surface][side_NUM[0]];
+[e = _temp *U + &U *U + &U _LED_Light * -> _surface `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> *U + &U F116 * -> -> -> 0 `i `ui `ux -> -> # *U &U F116 `ui `ux `ux -> -> # *U &U *U + &U _LED_Light * -> _surface `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux ]
+"186
+[; ;master/operation_CES.c: 186:         for (i = 0; i < 7; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 7 `i 51  ]
+[e $U 52  ]
+[e :U 51 ]
+"187
+[; ;master/operation_CES.c: 187:         {
+{
+"188
+[; ;master/operation_CES.c: 188:             LED_Light[surface][side_NUM[i]] = LED_Light[surface][side_NUM[i + 1]];
+[e = *U + &U *U + &U _LED_Light * -> _surface `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> *U + &U F116 * -> _i `ux -> -> # *U &U F116 `ui `ux `ux -> -> # *U &U *U + &U _LED_Light * -> _surface `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_Light * -> _surface `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> *U + &U F116 * -> -> + -> _i `i -> 1 `i `ui `ux -> -> # *U &U F116 `ui `ux `ux -> -> # *U &U *U + &U _LED_Light * -> _surface `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux ]
+"189
+[; ;master/operation_CES.c: 189:         }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 7 `i 51  ]
+[e :U 52 ]
+}
+"190
+[; ;master/operation_CES.c: 190:         LED_Light[surface][side_NUM[7]] = temp;
+[e = *U + &U *U + &U _LED_Light * -> _surface `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> *U + &U F116 * -> -> -> 7 `i `ui `ux -> -> # *U &U F116 `ui `ux `ux -> -> # *U &U *U + &U _LED_Light * -> _surface `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux _temp ]
+"191
+[; ;master/operation_CES.c: 191:     }
+}
+[e :U 50 ]
+"192
+[; ;master/operation_CES.c: 192:     TURN_COUNT++;
+[e ++ _TURN_COUNT -> -> 1 `i `uc ]
+"193
+[; ;master/operation_CES.c: 193:     if (TURN_COUNT == 12)
+[e $ ! == -> _TURN_COUNT `i -> 12 `i 54  ]
+"194
+[; ;master/operation_CES.c: 194:     {
+{
+"195
+[; ;master/operation_CES.c: 195:         TURN_COUNT = 0;
+[e = _TURN_COUNT -> -> 0 `i `uc ]
+"196
+[; ;master/operation_CES.c: 196:     }
+}
+[e :U 54 ]
+"197
+[; ;master/operation_CES.c: 197: }
+[e :UE 49 ]
+}
+"199
+[; ;master/operation_CES.c: 199: char command_turn_CE(const char *s)
+[v _command_turn_CE `(uc ~T0 @X0 1 ef1`*Cuc ]
+"200
+[; ;master/operation_CES.c: 200: {
+{
+[e :U _command_turn_CE ]
+"199
+[; ;master/operation_CES.c: 199: char command_turn_CE(const char *s)
+[v _s `*Cuc ~T0 @X0 1 r1 ]
+"200
+[; ;master/operation_CES.c: 200: {
+[f ]
+"201
+[; ;master/operation_CES.c: 201:     int i;
+[v _i `i ~T0 @X0 1 a ]
+"203
+[; ;master/operation_CES.c: 203:     for (i = 0; i < (2 + 12 * 3); i++)
+{
+[e = _i -> 0 `i ]
+[e $ < _i + -> 2 `i * -> 12 `i -> 3 `i 56  ]
+[e $U 57  ]
+[e :U 56 ]
+"204
+[; ;master/operation_CES.c: 204:     {
+{
+"205
+[; ;master/operation_CES.c: 205:         if (str_cmp_const(s, CE_LIST[i].name) == 0)
+[e $ ! == -> ( _str_cmp_const (2 , _s . *U + &U _CE_LIST * -> -> _i `ui `ux -> -> # *U &U _CE_LIST `ui `ux 1 `i -> 0 `i 59  ]
+"206
+[; ;master/operation_CES.c: 206:         {
+{
+"207
+[; ;master/operation_CES.c: 207:             turn_CE(&CE_LIST[i]);
+[e ( _turn_CE (1 &U *U + &U _CE_LIST * -> -> _i `ui `ux -> -> # *U &U _CE_LIST `ui `ux ]
+"208
+[; ;master/operation_CES.c: 208:             if (i > 1 && i < (2 + 12 * 3) - 9)
+[e $ ! && > _i -> 1 `i < _i - + -> 2 `i * -> 12 `i -> 3 `i -> 9 `i 60  ]
+"209
+[; ;master/operation_CES.c: 209:             {
+{
+"210
+[; ;master/operation_CES.c: 210:                 total_number_of_moves++;
+[e ++ _total_number_of_moves -> -> 1 `i `ui ]
+"211
+[; ;master/operation_CES.c: 211:             }
+}
+[e :U 60 ]
+"212
+[; ;master/operation_CES.c: 212:             return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 55  ]
+"213
+[; ;master/operation_CES.c: 213:         }
+}
+[e :U 59 ]
+"214
+[; ;master/operation_CES.c: 214:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i + -> 2 `i * -> 12 `i -> 3 `i 56  ]
+[e :U 57 ]
+}
+"215
+[; ;master/operation_CES.c: 215:     return -1;
+[e ) -> -U -> 1 `i `uc ]
+[e $UE 55  ]
+"216
+[; ;master/operation_CES.c: 216: }
+[e :UE 55 ]
+}
+"232
+[; ;master/operation_CES.c: 232: char str_cmp_const(const char p1[], char *p2)
+[v _str_cmp_const `(uc ~T0 @X0 1 ef2`*Cuc`*uc ]
+"233
+[; ;master/operation_CES.c: 233: {
+{
+[e :U _str_cmp_const ]
+"232
+[; ;master/operation_CES.c: 232: char str_cmp_const(const char p1[], char *p2)
+[v _p1 `*Cuc ~T0 @X0 1 r1 ]
+[v _p2 `*uc ~T0 @X0 1 r2 ]
+"233
+[; ;master/operation_CES.c: 233: {
+[f ]
+"234
+[; ;master/operation_CES.c: 234:     int i = 0;
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+"235
+[; ;master/operation_CES.c: 235:     while (p1[i] != '\0')
+[e $U 62  ]
+[e :U 63 ]
+"236
+[; ;master/operation_CES.c: 236:     {
+{
+"237
+[; ;master/operation_CES.c: 237:         if (p1[i] != *(p2 + i))
+[e $ ! != -> *U + _p1 * -> _i `x -> -> # *U _p1 `i `x `i -> *U + _p2 * -> _i `x -> -> # *U _p2 `i `x `i 65  ]
+"238
+[; ;master/operation_CES.c: 238:             return -1;
+[e ) -> -U -> 1 `i `uc ]
+[e $UE 61  ]
+[e :U 65 ]
+"239
+[; ;master/operation_CES.c: 239:         i++;
+[e ++ _i -> 1 `i ]
+"240
+[; ;master/operation_CES.c: 240:     }
+}
+[e :U 62 ]
+"235
+[; ;master/operation_CES.c: 235:     while (p1[i] != '\0')
+[e $ != -> *U + _p1 * -> _i `x -> -> # *U _p1 `i `x `ui -> 0 `ui 63  ]
+[e :U 64 ]
+"241
+[; ;master/operation_CES.c: 241:     if (*(p2 + i) == '\0')
+[e $ ! == -> *U + _p2 * -> _i `x -> -> # *U _p2 `i `x `ui -> 0 `ui 66  ]
+"242
+[; ;master/operation_CES.c: 242:         return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 61  ]
+[e :U 66 ]
+"243
+[; ;master/operation_CES.c: 243:     return -1;
+[e ) -> -U -> 1 `i `uc ]
+[e $UE 61  ]
+"244
+[; ;master/operation_CES.c: 244: }
+[e :UE 61 ]
+}
+"246
+[; ;master/operation_CES.c: 246: void set_S(void)
+[v _set_S `(v ~T0 @X0 1 ef ]
+"247
+[; ;master/operation_CES.c: 247: {
+{
+[e :U _set_S ]
+[f ]
+"249
+[; ;master/operation_CES.c: 249:     LED_Light[0][4] = state_CE.sp[0];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 4 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U . _state_CE 4 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux ]
+"250
+[; ;master/operation_CES.c: 250:     LED_Light[1][4] = state_CE.sp[1];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 4 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U . _state_CE 4 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux ]
+"251
+[; ;master/operation_CES.c: 251:     LED_Light[4][4] = state_CE.sp[2];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 4 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U . _state_CE 4 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux ]
+"252
+[; ;master/operation_CES.c: 252:     LED_Light[3][4] = state_CE.sp[3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 4 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U . _state_CE 4 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux ]
+"253
+[; ;master/operation_CES.c: 253:     LED_Light[2][4] = state_CE.sp[4];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 4 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U . _state_CE 4 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux ]
+"254
+[; ;master/operation_CES.c: 254:     LED_Light[5][4] = state_CE.sp[5];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 4 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U . _state_CE 4 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux ]
+"255
+[; ;master/operation_CES.c: 255: }
+[e :UE 67 ]
+}
+"257
+[; ;master/operation_CES.c: 257: void set_C(void)
+[v _set_C `(v ~T0 @X0 1 ef ]
+"258
+[; ;master/operation_CES.c: 258: {
+{
+[e :U _set_C ]
+[f ]
+"260
+[; ;master/operation_CES.c: 260:     LED_Light[0][2] = LED_C[state_CE.cp[0]][state_CE.co[0]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> *U + &U . _state_CE 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"261
+[; ;master/operation_CES.c: 261:     LED_Light[0][0] = LED_C[state_CE.cp[1]][state_CE.co[1]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> *U + &U . _state_CE 1 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"262
+[; ;master/operation_CES.c: 262:     LED_Light[0][8] = LED_C[state_CE.cp[3]][state_CE.co[3]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> *U + &U . _state_CE 1 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"263
+[; ;master/operation_CES.c: 263:     LED_Light[0][6] = LED_C[state_CE.cp[2]][state_CE.co[2]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 6 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> *U + &U . _state_CE 1 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"265
+[; ;master/operation_CES.c: 265:     LED_Light[1][2] = LED_C[state_CE.cp[3]][(state_CE.co[3] + 2) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 2 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"266
+[; ;master/operation_CES.c: 266:     LED_Light[1][0] = LED_C[state_CE.cp[2]][(state_CE.co[2] + 1) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 1 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"267
+[; ;master/operation_CES.c: 267:     LED_Light[1][8] = LED_C[state_CE.cp[7]][(state_CE.co[7] + 1) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 1 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"268
+[; ;master/operation_CES.c: 268:     LED_Light[1][6] = LED_C[state_CE.cp[6]][(state_CE.co[6] + 2) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 6 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 2 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"270
+[; ;master/operation_CES.c: 270:     LED_Light[4][2] = LED_C[state_CE.cp[2]][(state_CE.co[2] + 2) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 2 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"271
+[; ;master/operation_CES.c: 271:     LED_Light[4][0] = LED_C[state_CE.cp[1]][(state_CE.co[1] + 1) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 1 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"272
+[; ;master/operation_CES.c: 272:     LED_Light[4][8] = LED_C[state_CE.cp[6]][(state_CE.co[6] + 1) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 1 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"273
+[; ;master/operation_CES.c: 273:     LED_Light[4][6] = LED_C[state_CE.cp[5]][(state_CE.co[5] + 2) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 6 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 2 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"275
+[; ;master/operation_CES.c: 275:     LED_Light[3][2] = LED_C[state_CE.cp[1]][(state_CE.co[1] + 2) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 2 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"276
+[; ;master/operation_CES.c: 276:     LED_Light[3][0] = LED_C[state_CE.cp[0]][(state_CE.co[0] + 1) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 1 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"277
+[; ;master/operation_CES.c: 277:     LED_Light[3][8] = LED_C[state_CE.cp[5]][(state_CE.co[5] + 1) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 1 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"278
+[; ;master/operation_CES.c: 278:     LED_Light[3][6] = LED_C[state_CE.cp[4]][(state_CE.co[4] + 2) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 6 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 2 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"280
+[; ;master/operation_CES.c: 280:     LED_Light[2][2] = LED_C[state_CE.cp[0]][(state_CE.co[0] + 2) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 2 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"281
+[; ;master/operation_CES.c: 281:     LED_Light[2][0] = LED_C[state_CE.cp[3]][(state_CE.co[3] + 1) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 1 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"282
+[; ;master/operation_CES.c: 282:     LED_Light[2][8] = LED_C[state_CE.cp[4]][(state_CE.co[4] + 1) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 1 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"283
+[; ;master/operation_CES.c: 283:     LED_Light[2][6] = LED_C[state_CE.cp[7]][(state_CE.co[7] + 2) % 3];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 6 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 1 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `i -> 2 `i -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"285
+[; ;master/operation_CES.c: 285:     LED_Light[5][2] = LED_C[state_CE.cp[7]][state_CE.co[7]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> *U + &U . _state_CE 1 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"286
+[; ;master/operation_CES.c: 286:     LED_Light[5][0] = LED_C[state_CE.cp[6]][state_CE.co[6]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 0 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> *U + &U . _state_CE 1 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"287
+[; ;master/operation_CES.c: 287:     LED_Light[5][8] = LED_C[state_CE.cp[4]][state_CE.co[4]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 8 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> *U + &U . _state_CE 1 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"288
+[; ;master/operation_CES.c: 288:     LED_Light[5][6] = LED_C[state_CE.cp[5]][state_CE.co[5]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 6 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux * -> *U + &U . _state_CE 1 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux `ux -> -> # *U &U *U + &U _LED_C * -> *U + &U . _state_CE 0 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux `ux -> * -> # *U &U *U &U _LED_C `ui -> -> 3 `i `ui `ux `ui `ux ]
+"289
+[; ;master/operation_CES.c: 289: }
+[e :UE 68 ]
+}
+"291
+[; ;master/operation_CES.c: 291: void set_E(void)
+[v _set_E `(v ~T0 @X0 1 ef ]
+"292
+[; ;master/operation_CES.c: 292: {
+{
+[e :U _set_E ]
+[f ]
+"293
+[; ;master/operation_CES.c: 293:     LED_Light[0][1] = LED_E[state_CE.ep[4]][state_CE.eo[4]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> *U + &U . _state_CE 3 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"294
+[; ;master/operation_CES.c: 294:     LED_Light[0][5] = LED_E[state_CE.ep[7]][state_CE.eo[7]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 5 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> *U + &U . _state_CE 3 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"295
+[; ;master/operation_CES.c: 295:     LED_Light[0][3] = LED_E[state_CE.ep[5]][state_CE.eo[5]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> *U + &U . _state_CE 3 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"296
+[; ;master/operation_CES.c: 296:     LED_Light[0][7] = LED_E[state_CE.ep[6]][state_CE.eo[6]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 7 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 0 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> *U + &U . _state_CE 3 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"298
+[; ;master/operation_CES.c: 298:     LED_Light[1][1] = LED_E[state_CE.ep[6]][(state_CE.eo[6] + 1) % 2];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 3 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 1 `i -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 6 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"299
+[; ;master/operation_CES.c: 299:     LED_Light[1][5] = LED_E[state_CE.ep[3]][(state_CE.eo[3])];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 5 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> *U + &U . _state_CE 3 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"300
+[; ;master/operation_CES.c: 300:     LED_Light[1][3] = LED_E[state_CE.ep[2]][(state_CE.eo[2])];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> *U + &U . _state_CE 3 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"301
+[; ;master/operation_CES.c: 301:     LED_Light[1][7] = LED_E[state_CE.ep[10]][(state_CE.eo[10] + 1) % 2];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 7 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 1 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 10 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 3 * -> -> -> 10 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 1 `i -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 10 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"303
+[; ;master/operation_CES.c: 303:     LED_Light[4][1] = LED_E[state_CE.ep[5]][(state_CE.eo[5] + 1) % 2];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 3 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 1 `i -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 5 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"304
+[; ;master/operation_CES.c: 304:     LED_Light[4][5] = LED_E[state_CE.ep[2]][(state_CE.eo[2] + 1) % 2];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 5 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 3 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 1 `i -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"305
+[; ;master/operation_CES.c: 305:     LED_Light[4][3] = LED_E[state_CE.ep[1]][(state_CE.eo[1] + 1) % 2];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 3 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 1 `i -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"306
+[; ;master/operation_CES.c: 306:     LED_Light[4][7] = LED_E[state_CE.ep[9]][(state_CE.eo[9] + 1) % 2];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 7 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 4 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 9 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 3 * -> -> -> 9 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 1 `i -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 9 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"308
+[; ;master/operation_CES.c: 308:     LED_Light[3][1] = LED_E[state_CE.ep[4]][(state_CE.eo[4] + 1) % 2];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 3 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 1 `i -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 4 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"309
+[; ;master/operation_CES.c: 309:     LED_Light[3][5] = LED_E[state_CE.ep[1]][(state_CE.eo[1])];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 5 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> *U + &U . _state_CE 3 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"310
+[; ;master/operation_CES.c: 310:     LED_Light[3][3] = LED_E[state_CE.ep[0]][(state_CE.eo[0])];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> *U + &U . _state_CE 3 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"311
+[; ;master/operation_CES.c: 311:     LED_Light[3][7] = LED_E[state_CE.ep[8]][(state_CE.eo[8] + 1) % 2];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 7 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 3 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 8 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 3 * -> -> -> 8 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 1 `i -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 8 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"313
+[; ;master/operation_CES.c: 313:     LED_Light[2][1] = LED_E[state_CE.ep[7]][(state_CE.eo[7] + 1) % 2];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 3 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 1 `i -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 7 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"314
+[; ;master/operation_CES.c: 314:     LED_Light[2][5] = LED_E[state_CE.ep[0]][(state_CE.eo[0] + 1) % 2];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 5 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 3 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 1 `i -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"315
+[; ;master/operation_CES.c: 315:     LED_Light[2][3] = LED_E[state_CE.ep[3]][(state_CE.eo[3] + 1) % 2];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 3 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 1 `i -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 3 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"316
+[; ;master/operation_CES.c: 316:     LED_Light[2][7] = LED_E[state_CE.ep[11]][(state_CE.eo[11] + 1) % 2];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 7 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 2 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 11 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> -> % + -> *U + &U . _state_CE 3 * -> -> -> 11 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `i -> 1 `i -> 2 `i `ui `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 11 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"318
+[; ;master/operation_CES.c: 318:     LED_Light[5][1] = LED_E[state_CE.ep[10]][state_CE.eo[10]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 1 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 10 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> *U + &U . _state_CE 3 * -> -> -> 10 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 10 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"319
+[; ;master/operation_CES.c: 319:     LED_Light[5][5] = LED_E[state_CE.ep[11]][state_CE.eo[11]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 5 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 11 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> *U + &U . _state_CE 3 * -> -> -> 11 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 11 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"320
+[; ;master/operation_CES.c: 320:     LED_Light[5][3] = LED_E[state_CE.ep[9]][state_CE.eo[9]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 3 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 9 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> *U + &U . _state_CE 3 * -> -> -> 9 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 9 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"321
+[; ;master/operation_CES.c: 321:     LED_Light[5][7] = LED_E[state_CE.ep[8]][state_CE.eo[8]];
+[e = *U + &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux * -> -> -> 7 `i `ui `ux -> -> # *U &U *U + &U _LED_Light * -> -> -> 5 `i `ui `ux -> * -> # *U &U *U &U _LED_Light `ui -> -> 9 `i `ui `ux `ui `ux *U + &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 8 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux * -> *U + &U . _state_CE 3 * -> -> -> 8 `i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux `ux -> -> # *U &U *U + &U _LED_E * -> *U + &U . _state_CE 2 * -> -> -> 8 `i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux `ux -> * -> # *U &U *U &U _LED_E `ui -> -> 2 `i `ui `ux `ui `ux ]
+"322
+[; ;master/operation_CES.c: 322: }
+[e :UE 69 ]
+}
+"324
+[; ;master/operation_CES.c: 324: void over_write_CE(const CE write_CE)
+[v _over_write_CE `(v ~T0 @X0 1 ef1`CS1 ]
+"325
+[; ;master/operation_CES.c: 325: {
+{
+[e :U _over_write_CE ]
+"324
+[; ;master/operation_CES.c: 324: void over_write_CE(const CE write_CE)
+[v _write_CE `CS1 ~T0 @X0 1 r1 ]
+"325
+[; ;master/operation_CES.c: 325: {
+[f ]
+"326
+[; ;master/operation_CES.c: 326:      int i;
+[v _i `i ~T0 @X0 1 a ]
+"327
+[; ;master/operation_CES.c: 327:      for (i = 0; i < 8; i++)
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 8 `i 71  ]
+[e $U 72  ]
+[e :U 71 ]
+"328
+[; ;master/operation_CES.c: 328:      {
+{
+"329
+[; ;master/operation_CES.c: 329:          state_CE.co[i] = write_CE.co[i];
+[e = *U + &U . _state_CE 1 * -> -> _i `ui `ux -> -> # *U &U . _state_CE 1 `ui `ux *U + &U . _write_CE 1 * -> -> _i `ui `ux -> -> # *U &U . _write_CE 1 `ui `ux ]
+"330
+[; ;master/operation_CES.c: 330:          state_CE.cp[i] = write_CE.cp[i];
+[e = *U + &U . _state_CE 0 * -> -> _i `ui `ux -> -> # *U &U . _state_CE 0 `ui `ux *U + &U . _write_CE 0 * -> -> _i `ui `ux -> -> # *U &U . _write_CE 0 `ui `ux ]
+"331
+[; ;master/operation_CES.c: 331:      }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 8 `i 71  ]
+[e :U 72 ]
+}
+"332
+[; ;master/operation_CES.c: 332:      for (i = 0; i < 12; i++)
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 12 `i 74  ]
+[e $U 75  ]
+[e :U 74 ]
+"333
+[; ;master/operation_CES.c: 333:      {
+{
+"334
+[; ;master/operation_CES.c: 334:          state_CE.eo[i] = write_CE.eo[i];
+[e = *U + &U . _state_CE 3 * -> -> _i `ui `ux -> -> # *U &U . _state_CE 3 `ui `ux *U + &U . _write_CE 3 * -> -> _i `ui `ux -> -> # *U &U . _write_CE 3 `ui `ux ]
+"335
+[; ;master/operation_CES.c: 335:          state_CE.ep[i] = write_CE.ep[i];
+[e = *U + &U . _state_CE 2 * -> -> _i `ui `ux -> -> # *U &U . _state_CE 2 `ui `ux *U + &U . _write_CE 2 * -> -> _i `ui `ux -> -> # *U &U . _write_CE 2 `ui `ux ]
+"336
+[; ;master/operation_CES.c: 336:      }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 12 `i 74  ]
+[e :U 75 ]
+}
+"337
+[; ;master/operation_CES.c: 337:      for (i = 0; i < 6; i++)
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 6 `i 77  ]
+[e $U 78  ]
+[e :U 77 ]
+"338
+[; ;master/operation_CES.c: 338:      {
+{
+"339
+[; ;master/operation_CES.c: 339:          state_CE.sp[i] = write_CE.sp[i];
+[e = *U + &U . _state_CE 4 * -> -> _i `ui `ux -> -> # *U &U . _state_CE 4 `ui `ux *U + &U . _write_CE 4 * -> -> _i `ui `ux -> -> # *U &U . _write_CE 4 `ui `ux ]
+"340
+[; ;master/operation_CES.c: 340:      }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 6 `i 77  ]
+[e :U 78 ]
+}
+"342
+[; ;master/operation_CES.c: 342: }
+[e :UE 70 ]
+}
+"344
+[; ;master/operation_CES.c: 344: void over_write_CE_from_A_to_B(const CE A,CE* B)
+[v _over_write_CE_from_A_to_B `(v ~T0 @X0 1 ef2`CS1`*S1 ]
+"345
+[; ;master/operation_CES.c: 345: {
+{
+[e :U _over_write_CE_from_A_to_B ]
+"344
+[; ;master/operation_CES.c: 344: void over_write_CE_from_A_to_B(const CE A,CE* B)
+[v _A `CS1 ~T0 @X0 1 r1 ]
+[v _B `*S1 ~T0 @X0 1 r2 ]
+"345
+[; ;master/operation_CES.c: 345: {
+[f ]
+"346
+[; ;master/operation_CES.c: 346:  int i;
+[v _i `i ~T0 @X0 1 a ]
+"347
+[; ;master/operation_CES.c: 347:  for (i = 0; i < 8; i++)
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 8 `i 81  ]
+[e $U 82  ]
+[e :U 81 ]
+"348
+[; ;master/operation_CES.c: 348:  {
+{
+"349
+[; ;master/operation_CES.c: 349:   B->co[i] = A.co[i];
+[e = *U + &U . *U _B 1 * -> -> _i `ui `ux -> -> # *U &U . *U _B 1 `ui `ux *U + &U . _A 1 * -> -> _i `ui `ux -> -> # *U &U . _A 1 `ui `ux ]
+"350
+[; ;master/operation_CES.c: 350:   B->cp[i] = A.cp[i];
+[e = *U + &U . *U _B 0 * -> -> _i `ui `ux -> -> # *U &U . *U _B 0 `ui `ux *U + &U . _A 0 * -> -> _i `ui `ux -> -> # *U &U . _A 0 `ui `ux ]
+"351
+[; ;master/operation_CES.c: 351:  }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 8 `i 81  ]
+[e :U 82 ]
+}
+"352
+[; ;master/operation_CES.c: 352:  for (i = 0; i < 12; i++)
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 12 `i 84  ]
+[e $U 85  ]
+[e :U 84 ]
+"353
+[; ;master/operation_CES.c: 353:  {
+{
+"354
+[; ;master/operation_CES.c: 354:   B->eo[i] = A.eo[i];
+[e = *U + &U . *U _B 3 * -> -> _i `ui `ux -> -> # *U &U . *U _B 3 `ui `ux *U + &U . _A 3 * -> -> _i `ui `ux -> -> # *U &U . _A 3 `ui `ux ]
+"355
+[; ;master/operation_CES.c: 355:   B->ep[i] = A.ep[i];
+[e = *U + &U . *U _B 2 * -> -> _i `ui `ux -> -> # *U &U . *U _B 2 `ui `ux *U + &U . _A 2 * -> -> _i `ui `ux -> -> # *U &U . _A 2 `ui `ux ]
+"356
+[; ;master/operation_CES.c: 356:  }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 12 `i 84  ]
+[e :U 85 ]
+}
+"357
+[; ;master/operation_CES.c: 357:  for (i = 0; i < 6; i++)
+{
+[e = _i -> 0 `i ]
+[e $ < _i -> 6 `i 87  ]
+[e $U 88  ]
+[e :U 87 ]
+"358
+[; ;master/operation_CES.c: 358:  {
+{
+"359
+[; ;master/operation_CES.c: 359:   B->sp[i] = A.sp[i];
+[e = *U + &U . *U _B 4 * -> -> _i `ui `ux -> -> # *U &U . *U _B 4 `ui `ux *U + &U . _A 4 * -> -> _i `ui `ux -> -> # *U &U . _A 4 `ui `ux ]
+"360
+[; ;master/operation_CES.c: 360:  }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 6 `i 87  ]
+[e :U 88 ]
+}
+"361
+[; ;master/operation_CES.c: 361: }
+[e :UE 80 ]
+}
+"363
+[; ;master/operation_CES.c: 363: const CE deff_CE = {
+[v _deff_CE `CS1 ~T0 @X0 1 e ]
+[i _deff_CE
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 8 `i `uc
+-> -> 9 `i `uc
+-> -> 10 `i `uc
+-> -> 11 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+..
+..
+..
+]
+"370
+[; ;master/operation_CES.c: 370: CE state_CE = {
+[v _state_CE `S1 ~T0 @X0 1 e ]
+[i _state_CE
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 8 `i `uc
+-> -> 9 `i `uc
+-> -> 10 `i `uc
+-> -> 11 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+..
+..
+..
+]
+"377
+[; ;master/operation_CES.c: 377: const CE r_CE = {
+[v _r_CE `CS1 ~T0 @X0 1 e ]
+[i _r_CE
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 6 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+-> -> 5 `i `uc
+-> -> 7 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 5 `i `uc
+-> -> 9 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 2 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 8 `i `uc
+-> -> 1 `i `uc
+-> -> 10 `i `uc
+-> -> 11 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+..
+..
+..
+]
+"384
+[; ;master/operation_CES.c: 384: const CE u_CE = {
+[v _u_CE `CS1 ~T0 @X0 1 e ]
+[i _u_CE
+:U ..
+:U ..
+:U ..
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 7 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 8 `i `uc
+-> -> 9 `i `uc
+-> -> 10 `i `uc
+-> -> 11 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+..
+..
+..
+]
+"391
+[; ;master/operation_CES.c: 391: const CE d_CE = {
+[v _d_CE `CS1 ~T0 @X0 1 e ]
+[i _d_CE
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 4 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 9 `i `uc
+-> -> 10 `i `uc
+-> -> 11 `i `uc
+-> -> 8 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+..
+..
+..
+]
+"398
+[; ;master/operation_CES.c: 398: const CE l_CE = {
+[v _l_CE `CS1 ~T0 @X0 1 e ]
+[i _l_CE
+:U ..
+:U ..
+:U ..
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 7 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 3 `i `uc
+..
+:U ..
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+..
+:U ..
+-> -> 11 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 7 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 0 `i `uc
+-> -> 8 `i `uc
+-> -> 9 `i `uc
+-> -> 10 `i `uc
+-> -> 3 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+..
+..
+..
+]
+"405
+[; ;master/operation_CES.c: 405: const CE f_CE = {
+[v _f_CE `CS1 ~T0 @X0 1 e ]
+[i _f_CE
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 3 `i `uc
+-> -> 7 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+-> -> 6 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 6 `i `uc
+-> -> 10 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 3 `i `uc
+-> -> 7 `i `uc
+-> -> 8 `i `uc
+-> -> 9 `i `uc
+-> -> 2 `i `uc
+-> -> 11 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+..
+..
+..
+]
+"412
+[; ;master/operation_CES.c: 412: const CE b_CE = {
+[v _b_CE `CS1 ~T0 @X0 1 e ]
+[i _b_CE
+:U ..
+:U ..
+:U ..
+-> -> 1 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 4 `i `uc
+-> -> 8 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 1 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 0 `i `uc
+-> -> 9 `i `uc
+-> -> 10 `i `uc
+-> -> 11 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+..
+..
+..
+]
+"419
+[; ;master/operation_CES.c: 419: const CE m_CE = {
+[v _m_CE `CS1 ~T0 @X0 1 e ]
+[i _m_CE
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 8 `i `uc
+-> -> 5 `i `uc
+-> -> 4 `i `uc
+-> -> 7 `i `uc
+-> -> 10 `i `uc
+-> -> 9 `i `uc
+-> -> 6 `i `uc
+-> -> 11 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 5 `i `uc
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+..
+..
+..
+]
+"426
+[; ;master/operation_CES.c: 426: const CE s_CE = {
+[v _s_CE `CS1 ~T0 @X0 1 e ]
+[i _s_CE
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 7 `i `uc
+-> -> 6 `i `uc
+-> -> 11 `i `uc
+-> -> 8 `i `uc
+-> -> 5 `i `uc
+-> -> 10 `i `uc
+-> -> 9 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+..
+..
+..
+]
+"433
+[; ;master/operation_CES.c: 433: const CE e_CE = {
+[v _e_CE `CS1 ~T0 @X0 1 e ]
+[i _e_CE
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 8 `i `uc
+-> -> 9 `i `uc
+-> -> 10 `i `uc
+-> -> 11 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 5 `i `uc
+..
+..
+..
+]
+"440
+[; ;master/operation_CES.c: 440: const CE y_CE = {
+[v _y_CE `CS1 ~T0 @X0 1 e ]
+[i _y_CE
+:U ..
+:U ..
+:U ..
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 7 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 7 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 11 `i `uc
+-> -> 8 `i `uc
+-> -> 9 `i `uc
+-> -> 10 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+-> -> 5 `i `uc
+..
+..
+..
+]
+"448
+[; ;master/operation_CES.c: 448: const CE x_CE = {
+[v _x_CE `CS1 ~T0 @X0 1 e ]
+[i _x_CE
+:U ..
+:U ..
+:U ..
+-> -> 3 `i `uc
+-> -> 2 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 5 `i `uc
+-> -> 4 `i `uc
+..
+:U ..
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+..
+:U ..
+-> -> 7 `i `uc
+-> -> 5 `i `uc
+-> -> 9 `i `uc
+-> -> 11 `i `uc
+-> -> 6 `i `uc
+-> -> 2 `i `uc
+-> -> 10 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+-> -> 8 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 3 `i `uc
+..
+..
+..
+]
+"456
+[; ;master/operation_CES.c: 456: const CE z_CE = {
+[v _z_CE `CS1 ~T0 @X0 1 e ]
+[i _z_CE
+:U ..
+:U ..
+:U ..
+-> -> 4 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 7 `i `uc
+-> -> 5 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 6 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 8 `i `uc
+-> -> 4 `i `uc
+-> -> 6 `i `uc
+-> -> 10 `i `uc
+-> -> 0 `i `uc
+-> -> 7 `i `uc
+-> -> 3 `i `uc
+-> -> 11 `i `uc
+-> -> 1 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+-> -> 9 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+..
+..
+..
+]
+[v F258 `Cuc ~T0 @X0 -> 3 `i t ]
+"475
+[; ;master/operation_CES.c: 475: const char LED_C[8][3] = {
+[v _LED_C `F258 ~T0 @X0 -> 8 `i e ]
+[i _LED_C
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 5 `i `uc
+-> -> 4 `i `uc
+-> -> 3 `i `uc
+..
+:U ..
+-> -> 5 `i `uc
+-> -> 3 `i `uc
+-> -> 2 `i `uc
+..
+:U ..
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 5 `i `uc
+-> -> 1 `i `uc
+-> -> 4 `i `uc
+..
+..
+]
+[v F260 `Cuc ~T0 @X0 -> 2 `i t ]
+"485
+[; ;master/operation_CES.c: 485: const char LED_E[12][2] = {
+[v _LED_E `F260 ~T0 @X0 -> 12 `i e ]
+[i _LED_E
+:U ..
+:U ..
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+..
+:U ..
+-> -> 3 `i `uc
+-> -> 2 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> -> 4 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+..
+:U ..
+-> -> 5 `i `uc
+-> -> 3 `i `uc
+..
+:U ..
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+..
+:U ..
+-> -> 5 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 5 `i `uc
+-> -> 4 `i `uc
+..
+..
+]
+"500
+[; ;master/operation_CES.c: 500: const CE_LISTER CE_LIST[(2 + 12 * 3)] = {
+[v _CE_LIST `CS2 ~T0 @X0 -> 38 `i e ]
+[i _CE_LIST
+:U ..
+:U ..
+&U _deff_CE
+:s 1C
+-> -> 0 `i `uc
+..
+:U ..
+-> &U _state_CE `*CS1
+:s 2C
+-> -> 0 `i `uc
+..
+:U ..
+&U _u_CE
+:s 3C
+-> -> 1 `i `uc
+..
+:U ..
+&U _d_CE
+:s 4C
+-> -> 1 `i `uc
+..
+:U ..
+&U _l_CE
+:s 5C
+-> -> 1 `i `uc
+..
+:U ..
+&U _r_CE
+:s 6C
+-> -> 1 `i `uc
+..
+:U ..
+&U _f_CE
+:s 7C
+-> -> 1 `i `uc
+..
+:U ..
+&U _b_CE
+:s 8C
+-> -> 1 `i `uc
+..
+:U ..
+&U _u_CE
+:s 9C
+-> -> 3 `i `uc
+..
+:U ..
+&U _d_CE
+:s 10C
+-> -> 3 `i `uc
+..
+:U ..
+&U _l_CE
+:s 11C
+-> -> 3 `i `uc
+..
+:U ..
+&U _r_CE
+:s 12C
+-> -> 3 `i `uc
+..
+:U ..
+&U _f_CE
+:s 13C
+-> -> 3 `i `uc
+..
+:U ..
+&U _b_CE
+:s 14C
+-> -> 3 `i `uc
+..
+:U ..
+&U _u_CE
+:s 15C
+-> -> 2 `i `uc
+..
+:U ..
+&U _d_CE
+:s 16C
+-> -> 2 `i `uc
+..
+:U ..
+&U _l_CE
+:s 17C
+-> -> 2 `i `uc
+..
+:U ..
+&U _r_CE
+:s 18C
+-> -> 2 `i `uc
+..
+:U ..
+&U _f_CE
+:s 19C
+-> -> 2 `i `uc
+..
+:U ..
+&U _b_CE
+:s 20C
+-> -> 2 `i `uc
+..
+:U ..
+&U _e_CE
+:s 21C
+-> -> 1 `i `uc
+..
+:U ..
+&U _s_CE
+:s 22C
+-> -> 1 `i `uc
+..
+:U ..
+&U _m_CE
+:s 23C
+-> -> 1 `i `uc
+..
+:U ..
+&U _e_CE
+:s 24C
+-> -> 2 `i `uc
+..
+:U ..
+&U _s_CE
+:s 25C
+-> -> 2 `i `uc
+..
+:U ..
+&U _m_CE
+:s 26C
+-> -> 2 `i `uc
+..
+:U ..
+&U _e_CE
+:s 27C
+-> -> 3 `i `uc
+..
+:U ..
+&U _s_CE
+:s 28C
+-> -> 3 `i `uc
+..
+:U ..
+&U _m_CE
+:s 29C
+-> -> 3 `i `uc
+..
+:U ..
+&U _x_CE
+:s 30C
+-> -> 1 `i `uc
+..
+:U ..
+&U _y_CE
+:s 31C
+-> -> 1 `i `uc
+..
+:U ..
+&U _z_CE
+:s 32C
+-> -> 1 `i `uc
+..
+:U ..
+&U _x_CE
+:s 33C
+-> -> 3 `i `uc
+..
+:U ..
+&U _y_CE
+:s 34C
+-> -> 3 `i `uc
+..
+:U ..
+&U _z_CE
+:s 35C
+-> -> 3 `i `uc
+..
+:U ..
+&U _x_CE
+:s 36C
+-> -> 2 `i `uc
+..
+:U ..
+&U _y_CE
+:s 37C
+-> -> 2 `i `uc
+..
+:U ..
+&U _z_CE
+:s 38C
+-> -> 2 `i `uc
+..
+..
+]
+[a 1C 100 101 102 102 0 ]
+[a 2C 115 116 97 116 101 0 ]
+[a 32C 90 0 ]
+[a 31C 89 0 ]
+[a 30C 88 0 ]
+[a 3C 85 0 ]
+[a 22C 83 0 ]
+[a 6C 82 0 ]
+[a 23C 77 0 ]
+[a 5C 76 0 ]
+[a 7C 70 0 ]
+[a 21C 69 0 ]
+[a 4C 68 0 ]
+[a 8C 66 0 ]
+[a 38C 90 50 0 ]
+[a 37C 89 50 0 ]
+[a 36C 88 50 0 ]
+[a 15C 85 50 0 ]
+[a 25C 83 50 0 ]
+[a 18C 82 50 0 ]
+[a 26C 77 50 0 ]
+[a 17C 76 50 0 ]
+[a 19C 70 50 0 ]
+[a 24C 69 50 0 ]
+[a 16C 68 50 0 ]
+[a 20C 66 50 0 ]
+[a 35C 90 39 0 ]
+[a 34C 89 39 0 ]
+[a 33C 88 39 0 ]
+[a 9C 85 39 0 ]
+[a 28C 83 39 0 ]
+[a 12C 82 39 0 ]
+[a 29C 77 39 0 ]
+[a 11C 76 39 0 ]
+[a 13C 70 39 0 ]
+[a 27C 69 39 0 ]
+[a 10C 68 39 0 ]
+[a 14C 66 39 0 ]

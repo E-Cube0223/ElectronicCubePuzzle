@@ -1,0 +1,1715 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F25K22 ]
+[d frameptr 4065 ]
+"7 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\rand.c
+[v _srand srand `(v  1 e 1 0 ]
+"15
+[v _rand rand `(i  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"3 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/animation.c
+[v _animation_1 animation_1 `(uc  1 e 1 0 ]
+"22
+[v _animation_2 animation_2 `(uc  1 e 1 0 ]
+"38
+[v _animation_3 animation_3 `(uc  1 e 1 0 ]
+"73
+[v _animation_4 animation_4 `(uc  1 e 1 0 ]
+"97
+[v _set_all_LED_ARRAY set_all_LED_ARRAY `(v  1 e 1 0 ]
+"105
+[v _shuffle_state_CE shuffle_state_CE `(v  1 e 1 0 ]
+"118
+[v _convert_ROTtoLED convert_ROTtoLED `(v  1 e 1 0 ]
+"128
+[v _command_turn_ARRAY_3_end command_turn_ARRAY_3_end `(v  1 e 1 0 ]
+"210
+[v _command_turn_ARRAY_3 command_turn_ARRAY_3 `(v  1 e 1 0 ]
+"231
+[v _command_turn_ARRAY_2 command_turn_ARRAY_2 `(v  1 e 1 0 ]
+"275
+[v _command_turn_ARRAY_2_2 command_turn_ARRAY_2_2 `(v  1 e 1 0 ]
+"315
+[v _command_turn_ARRAY_2_3 command_turn_ARRAY_2_3 `(v  1 e 1 0 ]
+"5 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/CES_SPI_support.c
+[v _SPI_special SPI_special `(uc  1 e 1 0 ]
+"27
+[v _SPI_D2S SPI_D2S `(c  1 e 1 0 ]
+"212
+[v _SPI0_D2S0 SPI0_D2S0 `(uc  1 e 1 0 ]
+"227
+[v _SPI1_D2S0 SPI1_D2S0 `(uc  1 e 1 0 ]
+"242
+[v _SPI2_D2S0 SPI2_D2S0 `(uc  1 e 1 0 ]
+"257
+[v _SPI3_D2S0 SPI3_D2S0 `(uc  1 e 1 0 ]
+"272
+[v _SPI4_D2S0 SPI4_D2S0 `(uc  1 e 1 0 ]
+"287
+[v _SPI5_D2S0 SPI5_D2S0 `(uc  1 e 1 0 ]
+"6 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/EEROM_WR.c
+[v _EEROM_W_SAVE EEROM_W_SAVE `(v  1 e 1 0 ]
+"55
+[v _EEROM_R_SAVE EEROM_R_SAVE `(v  1 e 1 0 ]
+"94
+[v _EEROM_WR_ioport EEROM_WR_ioport `(v  1 e 1 0 ]
+"118
+[v _EEROM_GAME_ON EEROM_GAME_ON `(v  1 e 1 0 ]
+"128
+[v _EEROM_GAME_OFF EEROM_GAME_OFF `(v  1 e 1 0 ]
+"135
+[v _EEROM_R_DEFF EEROM_R_DEFF `(v  1 e 1 0 ]
+"166
+[v _EEROM_W_DEFF EEROM_W_DEFF `(v  1 e 1 0 ]
+"199
+[v _DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]
+"221
+[v _DATAEE_ReadByte DATAEE_ReadByte `(uc  1 e 1 0 ]
+"6 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/IDA_CES.c
+[v _initialization_shortest_command initialization_shortest_command `(v  1 e 1 0 ]
+"18
+[v _Create_Shoretest_command_Most_deep Create_Shoretest_command_Most_deep `(uc  1 e 1 0 ]
+"37
+[v _branch_off branch_off `(uc  1 e 1 0 ]
+"115
+[v _depth_add depth_add `(uc  1 e 1 0 ]
+"144
+[v _Create_shortest_command_depp_N1 Create_shortest_command_depp_N1 `(uc  1 e 1 0 ]
+"94 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/main.c
+[v _main main `(v  1 e 1 0 ]
+"184
+[v _if_game_end if_game_end `(uc  1 e 1 0 ]
+"199
+[v _ioport ioport `(v  1 e 1 0 ]
+"212
+[v _Special_input Special_input `(v  1 e 1 0 ]
+"15 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/master_SPI.c
+[v _SPIreadM SPIreadM `(uc  1 e 1 0 ]
+"32
+[v _SPI_readM_2 SPI_readM_2 `(uc  1 e 1 0 ]
+"62
+[v _SPI_M_ioport SPI_M_ioport `(v  1 e 1 0 ]
+"98
+[v _SPI_RET SPI_RET `(v  1 e 1 0 ]
+"105
+[v _SPI_RET_2 SPI_RET_2 `(v  1 e 1 0 ]
+"6 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/operation_CES.c
+[v _set_CES set_CES `(v  1 e 1 0 ]
+"15
+[v _turn_CE turn_CE `(v  1 e 1 0 ]
+"41
+[v _command_turn_ARRAY command_turn_ARRAY `(v  1 e 1 0 ]
+"162
+[v _ARRAY_LINE_TURN ARRAY_LINE_TURN `(v  1 e 1 0 ]
+"179
+[v _ARRAY_SIDE_TURN ARRAY_SIDE_TURN `(v  1 e 1 0 ]
+"199
+[v _command_turn_CE command_turn_CE `(uc  1 e 1 0 ]
+"232
+[v _str_cmp_const str_cmp_const `(uc  1 e 1 0 ]
+"246
+[v _set_S set_S `(v  1 e 1 0 ]
+"257
+[v _set_C set_C `(v  1 e 1 0 ]
+"291
+[v _set_E set_E `(v  1 e 1 0 ]
+"324
+[v _over_write_CE over_write_CE `(v  1 e 1 0 ]
+"344
+[v _over_write_CE_from_A_to_B over_write_CE_from_A_to_B `(v  1 e 1 0 ]
+"12 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/SerialLED_PIC18F25K22.c
+[v _OUT_NONE OUT_NONE `(v  1 e 1 0 ]
+"18
+[v _OUT_RED OUT_RED `(v  1 e 1 0 ]
+"25
+[v _OUT_GREEN OUT_GREEN `(v  1 e 1 0 ]
+"31
+[v _OUT_BLUE OUT_BLUE `(v  1 e 1 0 ]
+"37
+[v _OUT_WHITE OUT_WHITE `(v  1 e 1 0 ]
+"44
+[v _OUT_YELLOW OUT_YELLOW `(v  1 e 1 0 ]
+"50
+[v _OUT_ORANGE OUT_ORANGE `(v  1 e 1 0 ]
+"56
+[v _OUT_HIGH OUT_HIGH `(v  1 e 1 0 ]
+"80
+[v _OUT_LOW OUT_LOW `(v  1 e 1 0 ]
+"104
+[v _LED_RET LED_RET `(v  1 e 1 0 ]
+"110
+[v _OUT_LED_ARRAY OUT_LED_ARRAY `(v  1 e 1 0 ]
+"123
+[v _OUT_CHECK OUT_CHECK `(v  1 e 1 0 ]
+"8 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/solution_CES.c
+[v _made_cube made_cube `(v  1 e 1 0 ]
+"120
+[v _if_solution_end if_solution_end `(uc  1 e 1 0 ]
+"169
+[v _if_start_step8 if_start_step8 `(uc  1 e 1 0 ]
+"184
+[v _if_perfect_yellow if_perfect_yellow `(uc  1 e 1 0 ]
+"205
+[v _make_while_flower make_while_flower `(v  1 e 1 0 ]
+"229
+[v _make_white_yellow_flower make_white_yellow_flower `(v  1 e 1 0 ]
+"271
+[v _if_CP if_CP `(uc  1 e 1 0 ]
+"285
+[v _if_EP if_EP `(uc  1 e 1 0 ]
+"298
+[v _if_perfect_white if_perfect_white `(uc  1 e 1 0 ]
+"326
+[v _if_second_flower_perfect if_second_flower_perfect `(uc  1 e 1 0 ]
+"366
+[v _make_second_flower_perfect make_second_flower_perfect `(v  1 e 1 0 ]
+"491
+[v _make_flont_green make_flont_green `(uc  1 e 1 0 ]
+"505
+[v _make_up_white make_up_white `(v  1 e 1 0 ]
+"517
+[v _yellow_cross yellow_cross `(v  1 e 1 0 ]
+"552
+[v _if_yellow_eo if_yellow_eo `(uc  1 e 1 0 ]
+"565
+[v _all_yellow all_yellow `(v  1 e 1 0 ]
+"606
+[v _if_yellow_co if_yellow_co `(uc  1 e 1 0 ]
+"619
+[v _make_up_yellow make_up_yellow `(v  1 e 1 0 ]
+"631
+[v _if_all_2pair if_all_2pair `(uc  1 e 1 0 ]
+"652
+[v _if_no_pair if_no_pair `(uc  1 e 1 0 ]
+"666
+[v _make_step_7 make_step_7 `(v  1 e 1 0 ]
+"718
+[v _make_step_8 make_step_8 `(v  1 e 1 0 ]
+"765
+[v _if_2pair if_2pair `(uc  1 e 1 0 ]
+"779
+[v _make_perfect_white make_perfect_white `(v  1 e 1 0 ]
+"859
+[v _make_justice_axis make_justice_axis `(v  1 e 1 0 ]
+"875
+[v _operation_limit operation_limit `(uc  1 e 1 0 ]
+"886
+[v _operation_first operation_first `(v  1 e 1 0 ]
+"892
+[v _operation_setup operation_setup `(uc  1 e 1 0 ]
+"4 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/sound.c
+[v _do1 do1 `(v  1 e 1 0 ]
+"30
+[v _re1 re1 `(v  1 e 1 0 ]
+"44
+[v _mi1 mi1 `(v  1 e 1 0 ]
+"57
+[v _fa1 fa1 `(v  1 e 1 0 ]
+"70
+[v _so1 so1 `(v  1 e 1 0 ]
+"83
+[v _ra1 ra1 `(v  1 e 1 0 ]
+"96
+[v _si1 si1 `(v  1 e 1 0 ]
+"109
+[v _do2 do2 `(v  1 e 1 0 ]
+"52 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\include\pic18f25k22.h
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"97
+[v _ANSELB ANSELB `VEuc  1 e 1 @3897 ]
+[s S936 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 ANSC2 1 0 :1:2 
+`uc 1 ANSC3 1 0 :1:3 
+`uc 1 ANSC4 1 0 :1:4 
+`uc 1 ANSC5 1 0 :1:5 
+`uc 1 ANSC6 1 0 :1:6 
+`uc 1 ANSC7 1 0 :1:7 
+]
+"163
+[u S944 . 1 `S936 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES944  1 e 1 @3898 ]
+"6174
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"6465
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+[s S1298 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"6553
+[s S1307 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 CCP2 1 0 :1:3 
+`uc 1 KBI0 1 0 :1:4 
+`uc 1 KBI1 1 0 :1:5 
+`uc 1 KBI2 1 0 :1:6 
+`uc 1 KBI3 1 0 :1:7 
+]
+[s S1316 . 1 `uc 1 AN12 1 0 :1:0 
+`uc 1 AN10 1 0 :1:1 
+`uc 1 AN8 1 0 :1:2 
+`uc 1 AN9 1 0 :1:3 
+`uc 1 AN11 1 0 :1:4 
+`uc 1 AN13 1 0 :1:5 
+`uc 1 TX2 1 0 :1:6 
+`uc 1 RX2 1 0 :1:7 
+]
+[s S1325 . 1 `uc 1 FLT0 1 0 :1:0 
+`uc 1 C12IN3M 1 0 :1:1 
+`uc 1 P1B 1 0 :1:2 
+`uc 1 C12IN2M 1 0 :1:3 
+`uc 1 T5G 1 0 :1:4 
+`uc 1 T1G 1 0 :1:5 
+`uc 1 CK2 1 0 :1:6 
+`uc 1 DT2 1 0 :1:7 
+]
+[s S1334 . 1 `uc 1 SRI 1 0 :1:0 
+`uc 1 C12IN3N 1 0 :1:1 
+`uc 1 CTED1 1 0 :1:2 
+`uc 1 C12IN2N 1 0 :1:3 
+`uc 1 P1D 1 0 :1:4 
+`uc 1 CCP3 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S1343 . 1 `uc 1 CCP4 1 0 :1:0 
+`uc 1 P1C 1 0 :1:1 
+`uc 1 SDA2 1 0 :1:2 
+`uc 1 CTED2 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 T3CKI 1 0 :1:5 
+]
+[s S1350 . 1 `uc 1 SS2 1 0 :1:0 
+`uc 1 SCL2 1 0 :1:1 
+`uc 1 SDI2 1 0 :1:2 
+`uc 1 P2A 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 P3A 1 0 :1:5 
+]
+[s S1357 . 1 `uc 1 NOT_SS2 1 0 :1:0 
+]
+[s S1359 . 1 `uc 1 nSS2 1 0 :1:0 
+`uc 1 SCK2 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SDO2 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 P2B 1 0 :1:5 
+]
+[s S1366 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S1369 . 1 `S1298 1 . 1 0 `S1307 1 . 1 0 `S1316 1 . 1 0 `S1325 1 . 1 0 `S1334 1 . 1 0 `S1343 1 . 1 0 `S1350 1 . 1 0 `S1357 1 . 1 0 `S1359 1 . 1 0 `S1366 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES1369  1 e 1 @3969 ]
+[s S769 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"7271
+[s S778 . 1 `uc 1 LA0 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+`uc 1 LA2 1 0 :1:2 
+`uc 1 LA3 1 0 :1:3 
+`uc 1 LA4 1 0 :1:4 
+`uc 1 LA5 1 0 :1:5 
+`uc 1 LA6 1 0 :1:6 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S787 . 1 `S769 1 . 1 0 `S778 1 . 1 0 ]
+[v _LATAbits LATAbits `VES787  1 e 1 @3977 ]
+[s S1827 . 1 `uc 1 LATB0 1 0 :1:0 
+`uc 1 LATB1 1 0 :1:1 
+`uc 1 LATB2 1 0 :1:2 
+`uc 1 LATB3 1 0 :1:3 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"7383
+[s S1836 . 1 `uc 1 LB0 1 0 :1:0 
+`uc 1 LB1 1 0 :1:1 
+`uc 1 LB2 1 0 :1:2 
+`uc 1 LB3 1 0 :1:3 
+`uc 1 LB4 1 0 :1:4 
+`uc 1 LB5 1 0 :1:5 
+`uc 1 LB6 1 0 :1:6 
+`uc 1 LB7 1 0 :1:7 
+]
+[u S1845 . 1 `S1827 1 . 1 0 `S1836 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1845  1 e 1 @3978 ]
+"7580
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+[s S896 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"7612
+[s S905 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+[u S914 . 1 `S896 1 . 1 0 `S905 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES914  1 e 1 @3986 ]
+"7802
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+[s S856 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"8056
+[s S865 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S874 . 1 `S856 1 . 1 0 `S865 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES874  1 e 1 @3988 ]
+[s S232 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"9393
+[s S241 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 EEFS 1 0 :1:6 
+]
+[u S244 . 1 `S232 1 . 1 0 `S241 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES244  1 e 1 @4006 ]
+"9438
+[v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
+"9458
+[v _EEDATA EEDATA `VEuc  1 e 1 @4008 ]
+"9478
+[v _EEADR EEADR `VEuc  1 e 1 @4009 ]
+"12641
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"12712
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"13306
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @4038 ]
+[s S809 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"13341
+[s S815 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S820 . 1 `uc 1 SSPM01 1 0 :1:0 
+`uc 1 SSPM11 1 0 :1:1 
+`uc 1 SSPM21 1 0 :1:2 
+`uc 1 SSPM31 1 0 :1:3 
+`uc 1 CKP1 1 0 :1:4 
+`uc 1 SSPEN1 1 0 :1:5 
+`uc 1 SSPOV1 1 0 :1:6 
+`uc 1 WCOL1 1 0 :1:7 
+]
+[u S829 . 1 `S809 1 . 1 0 `S815 1 . 1 0 `S820 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES829  1 e 1 @4038 ]
+"13544
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @4039 ]
+[s S595 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"13650
+[s S598 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S601 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S610 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S615 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 A 1 0 :1:5 
+]
+[s S620 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S625 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S630 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S633 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S636 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S641 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S650 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S656 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S662 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S667 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S670 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S673 . 1 `S595 1 . 1 0 `S598 1 . 1 0 `S601 1 . 1 0 `S610 1 . 1 0 `S615 1 . 1 0 `S620 1 . 1 0 `S625 1 . 1 0 `S630 1 . 1 0 `S633 1 . 1 0 `S636 1 . 1 0 `S641 1 . 1 0 `S650 1 . 1 0 `S656 1 . 1 0 `S662 1 . 1 0 `S667 1 . 1 0 `S670 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES673  1 e 1 @4039 ]
+"14428
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @4041 ]
+"15215
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+[s S181 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"16127
+[s S190 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S199 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S203 . 1 `S181 1 . 1 0 `S190 1 . 1 0 `S199 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES203  1 e 1 @4082 ]
+"18380
+[v _PLLEN PLLEN `VEb  1 e 0 @31966 ]
+"7 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\rand.c
+[v _seed seed `uo  1 s 8 seed ]
+"126 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/animation.c
+[v _mode_cube_end mode_cube_end `uc  1 e 1 0 ]
+"273
+[v _ARRAY_skip_CS ARRAY_skip_CS `uc  1 e 1 0 ]
+"32 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/animation.h
+[v _past_command_3 past_command_3 `uc  1 e 1 0 ]
+"33
+[v _past_command_count_3 past_command_count_3 `uc  1 e 1 0 ]
+[s S108 CE_2 46 `[8]uc 1 cp 8 0 `[8]uc 1 co 8 8 `[12]uc 1 ep 12 16 `[12]uc 1 eo 12 28 `[6]uc 1 sp 6 40 ]
+"4 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/EEROM_WR.c
+[v _save_CE save_CE `S108  1 e 46 0 ]
+"5
+[v _game_flag game_flag `uc  1 e 1 0 ]
+"3 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/IDA_CES.c
+[v _shortest_command shortest_command `[2]uc  1 e 2 0 ]
+"4
+[v _shortest_depth shortest_depth `uc  1 e 1 0 ]
+"161
+[s S114 enm 5 `*.35CS108 1 DATA 2 0 `*.25uc 1 name 2 2 `uc 1 CE_count 1 4 ]
+[v _CE_IDA_LIST CE_IDA_LIST `C[19]S114  1 e 95 0 ]
+"80 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/main.c
+[v _LED_ARRAY LED_ARRAY `[6][9]uc  1 e 54 0 ]
+"81
+[v _POWER POWER `uc  1 e 1 0 ]
+"85
+[v _Special_input_0 Special_input_0 `uc  1 e 1 0 ]
+"89
+[v _rand_seed rand_seed `ui  1 e 2 0 ]
+"90
+[v _GET_COMMAND GET_COMMAND `c  1 e 1 0 ]
+"3 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/operation_CES.c
+[v _LED_Light LED_Light `[6][9]uc  1 e 54 0 ]
+"4
+[v _total_number_of_moves total_number_of_moves `ui  1 e 2 0 ]
+"39
+[v _TURN_COUNT TURN_COUNT `uc  1 e 1 0 ]
+"363
+[v _deff_CE deff_CE `CS108  1 e 46 0 ]
+"370
+[v _state_CE state_CE `S108  1 e 46 0 ]
+"377
+[v _r_CE r_CE `CS108  1 e 46 0 ]
+"384
+[v _u_CE u_CE `CS108  1 e 46 0 ]
+"391
+[v _d_CE d_CE `CS108  1 e 46 0 ]
+"398
+[v _l_CE l_CE `CS108  1 e 46 0 ]
+"405
+[v _f_CE f_CE `CS108  1 e 46 0 ]
+"412
+[v _b_CE b_CE `CS108  1 e 46 0 ]
+"419
+[v _m_CE m_CE `CS108  1 e 46 0 ]
+"426
+[v _s_CE s_CE `CS108  1 e 46 0 ]
+"433
+[v _e_CE e_CE `CS108  1 e 46 0 ]
+"440
+[v _y_CE y_CE `CS108  1 e 46 0 ]
+"448
+[v _x_CE x_CE `CS108  1 e 46 0 ]
+"456
+[v _z_CE z_CE `CS108  1 e 46 0 ]
+"475
+[v _LED_C LED_C `C[8][3]uc  1 e 24 0 ]
+"485
+[v _LED_E LED_E `C[12][2]uc  1 e 24 0 ]
+"500
+[v _CE_LIST CE_LIST `C[38]S114  1 e 190 0 ]
+"34 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/SerialLED_PIC18F25K22.h
+[v _LED_COLOR LED_COLOR `[7]*.37(v  1 e 14 0 ]
+"4 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/solution_CES.c
+[v _opereation_count opereation_count `i  1 e 2 0 ]
+"5
+[v _opereation_over_flag opereation_over_flag `uc  1 e 1 0 ]
+"6
+[v _limit_count limit_count `uc  1 e 1 0 ]
+"2 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/sound.c
+[v _sound_flag sound_flag `uc  1 e 1 0 ]
+"29 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/sound.h
+[v _SOUND_NOTE SOUND_NOTE `[7]*.37(v  1 e 14 0 ]
+"94 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"148
+[v main@i_559 i `i  1 a 2 127 ]
+"137
+[v main@q q `uc  1 a 1 129 ]
+"128
+[v main@SPI_DATA SPI_DATA `uc  1 a 1 125 ]
+"126
+[v main@i i `uc  1 a 1 130 ]
+"117
+[v main@EEROM_FLAG EEROM_FLAG `uc  1 a 1 126 ]
+"182
+} 0
+"199
+[v _ioport ioport `(v  1 e 1 0 ]
+{
+"210
+} 0
+"184
+[v _if_game_end if_game_end `(uc  1 e 1 0 ]
+{
+"190
+[v if_game_end@j j `uc  1 a 1 5 ]
+"187
+[v if_game_end@i i `uc  1 a 1 6 ]
+"186
+[v if_game_end@err_flag err_flag `uc  1 a 1 4 ]
+[v if_game_end@deff deff `uc  1 a 1 3 ]
+"197
+} 0
+"22 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/animation.c
+[v _animation_2 animation_2 `(uc  1 e 1 0 ]
+{
+"23
+[v animation_2@animation_count animation_count `uc  1 a 1 75 ]
+"36
+} 0
+"212 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/main.c
+[v _Special_input Special_input `(v  1 e 1 0 ]
+{
+[v Special_input@SS SS `uc  1 a 1 wreg ]
+"284
+[v Special_input@j j `i  1 a 2 2 ]
+"311
+[v Special_input@i i `uc  1 a 1 4 ]
+[s S108 CE_2 46 `[8]uc 1 cp 8 0 `[8]uc 1 co 8 8 `[12]uc 1 ep 12 16 `[12]uc 1 eo 12 28 `[6]uc 1 sp 6 40 ]
+"266
+[v Special_input@IDA_CE IDA_CE `S108  1 a 46 6 ]
+"265
+[v Special_input@deep_flag deep_flag `uc  1 a 1 5 ]
+[v Special_input@if_can_get if_can_get `uc  1 a 1 1 ]
+"212
+[v Special_input@SS SS `uc  1 a 1 wreg ]
+[v Special_input@SS SS `uc  1 a 1 0 ]
+"344
+} 0
+"6 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/IDA_CES.c
+[v _initialization_shortest_command initialization_shortest_command `(v  1 e 1 0 ]
+{
+"8
+[v initialization_shortest_command@i i `uc  1 a 1 0 ]
+"12
+} 0
+"231 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/animation.c
+[v _command_turn_ARRAY_2 command_turn_ARRAY_2 `(v  1 e 1 0 ]
+{
+[v command_turn_ARRAY_2@s s `*.25Cuc  1 p 2 86 ]
+"271
+} 0
+"73
+[v _animation_4 animation_4 `(uc  1 e 1 0 ]
+{
+[s S108 CE_2 46 `[8]uc 1 cp 8 0 `[8]uc 1 co 8 8 `[12]uc 1 ep 12 16 `[12]uc 1 eo 12 28 `[6]uc 1 sp 6 40 ]
+"74
+[v animation_4@anime_4_before_CE anime_4_before_CE `S108  1 a 46 74 ]
+"73
+[v animation_4@rand_seed rand_seed `ui  1 p 2 70 ]
+"95
+} 0
+"105
+[v _shuffle_state_CE shuffle_state_CE `(v  1 e 1 0 ]
+{
+"106
+[v shuffle_state_CE@rand_CE rand_CE `[20]uc  1 a 20 57 ]
+"107
+[v shuffle_state_CE@i i `uc  1 a 1 77 ]
+"105
+[v shuffle_state_CE@seed_number seed_number `Cui  1 p 2 54 ]
+"116
+} 0
+"10 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\rand.c
+[v _srand srand `(v  1 e 1 0 ]
+{
+[v srand@s s `ui  1 p 2 0 ]
+"13
+} 0
+"15
+[v _rand rand `(i  1 e 2 0 ]
+{
+"27
+} 0
+"91 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+{
+"93
+[v ___omul@product product `uo  1 a 8 16 ]
+"91
+[v ___omul@multiplier multiplier `uo  1 p 8 0 ]
+[v ___omul@multiplicand multiplicand `uo  1 p 8 8 ]
+"354
+} 0
+"344 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/operation_CES.c
+[v _over_write_CE_from_A_to_B over_write_CE_from_A_to_B `(v  1 e 1 0 ]
+{
+"346
+[v over_write_CE_from_A_to_B@i i `i  1 a 2 52 ]
+[s S108 CE_2 46 `[8]uc 1 cp 8 0 `[8]uc 1 co 8 8 `[12]uc 1 ep 12 16 `[12]uc 1 eo 12 28 `[6]uc 1 sp 6 40 ]
+"344
+[v over_write_CE_from_A_to_B@A A `CS108  1 p 46 0 ]
+[v over_write_CE_from_A_to_B@B B `*.39S108  1 p 2 46 ]
+"361
+} 0
+"8 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/solution_CES.c
+[v _made_cube made_cube `(v  1 e 1 0 ]
+{
+[v made_cube@Light_ON_OFF Light_ON_OFF `uc  1 a 1 wreg ]
+"15
+[v made_cube@test_flag test_flag `uc  1 a 1 69 ]
+"10
+[v made_cube@i i `uc  1 a 1 68 ]
+"8
+[v made_cube@Light_ON_OFF Light_ON_OFF `uc  1 a 1 wreg ]
+[v made_cube@skip_CS skip_CS `Cuc  1 p 1 64 ]
+"11
+[v made_cube@start8 start8 `C[14][3]uc  1 s 42 start8 ]
+"15
+[v made_cube@Light_ON_OFF Light_ON_OFF `uc  1 a 1 67 ]
+"118
+} 0
+"517
+[v _yellow_cross yellow_cross `(v  1 e 1 0 ]
+{
+"524
+[v yellow_cross@i i `uc  1 a 1 60 ]
+[v yellow_cross@j j `uc  1 a 1 59 ]
+"519
+[v yellow_cross@cross_eo cross_eo `C[4]uc  1 s 4 cross_eo ]
+"520
+[v yellow_cross@check_eo check_eo `C[2][4]uc  1 s 8 check_eo ]
+"523
+[v yellow_cross@step5 step5 `C[6][3]uc  1 s 18 step5 ]
+"550
+} 0
+"552
+[v _if_yellow_eo if_yellow_eo `(uc  1 e 1 0 ]
+{
+"554
+[v if_yellow_eo@i i `uc  1 a 1 5 ]
+"552
+[v if_yellow_eo@eo eo `*.25Cuc  1 p 2 0 ]
+"563
+} 0
+"886
+[v _operation_first operation_first `(v  1 e 1 0 ]
+{
+"890
+} 0
+"229
+[v _make_white_yellow_flower make_white_yellow_flower `(v  1 e 1 0 ]
+{
+"236
+[v make_white_yellow_flower@t t `uc  1 a 1 56 ]
+"232
+[v make_white_yellow_flower@mark_count mark_count `uc  1 a 1 55 ]
+"233
+[v make_white_yellow_flower@command command `C[3][6][3]uc  1 s 54 command ]
+"269
+} 0
+"205
+[v _make_while_flower make_while_flower `(v  1 e 1 0 ]
+{
+"207
+[v make_while_flower@i i `uc  1 a 1 54 ]
+"227
+} 0
+"619
+[v _make_up_yellow make_up_yellow `(v  1 e 1 0 ]
+{
+"629
+} 0
+"718
+[v _make_step_8 make_step_8 `(v  1 e 1 0 ]
+{
+"721
+[v make_step_8@i i `uc  1 a 1 56 ]
+"720
+[v make_step_8@step8 step8 `C[7][3]uc  1 s 21 step8 ]
+"763
+} 0
+"120
+[v _if_solution_end if_solution_end `(uc  1 e 1 0 ]
+{
+"122
+[v if_solution_end@j j `uc  1 a 1 10 ]
+[v if_solution_end@p_start p_start `uc  1 a 1 9 ]
+[v if_solution_end@i i `uc  1 a 1 8 ]
+[v if_solution_end@xo xo `uc  1 a 1 7 ]
+"167
+} 0
+"666
+[v _make_step_7 make_step_7 `(v  1 e 1 0 ]
+{
+"671
+[v make_step_7@i i `uc  1 a 1 58 ]
+"668
+[v make_step_7@start7 start7 `C[20][3]uc  1 s 60 start7 ]
+"672
+[v make_step_7@step7 step7 `C[14][3]uc  1 s 42 step7 ]
+"716
+} 0
+"652
+[v _if_no_pair if_no_pair `(uc  1 e 1 0 ]
+{
+"654
+[v if_no_pair@i i `uc  1 a 1 0 ]
+"664
+} 0
+"631
+[v _if_all_2pair if_all_2pair `(uc  1 e 1 0 ]
+{
+"633
+[v if_all_2pair@i i `i  1 a 2 12 ]
+[v if_all_2pair@re re `i  1 a 2 10 ]
+[v if_all_2pair@if_flag if_flag `i  1 a 2 8 ]
+[v if_all_2pair@y y `i  1 a 2 6 ]
+"650
+} 0
+"765
+[v _if_2pair if_2pair `(uc  1 e 1 0 ]
+{
+"777
+} 0
+"366
+[v _make_second_flower_perfect make_second_flower_perfect `(v  1 e 1 0 ]
+{
+"368
+[v make_second_flower_perfect@i i `uc  1 a 1 62 ]
+[v make_second_flower_perfect@search_ep search_ep `uc  1 a 1 61 ]
+[v make_second_flower_perfect@j j `uc  1 a 1 60 ]
+[v make_second_flower_perfect@flont_0 flont_0 `uc  1 a 1 59 ]
+"369
+[v make_second_flower_perfect@command_drop_right command_drop_right `C[8][3]uc  1 s 24 command_drop_right ]
+"370
+[v make_second_flower_perfect@command_drop_left command_drop_left `C[8][3]uc  1 s 24 command_drop_left ]
+"489
+} 0
+"326
+[v _if_second_flower_perfect if_second_flower_perfect `(uc  1 e 1 0 ]
+{
+"328
+[v if_second_flower_perfect@i i `c  1 a 1 11 ]
+[v if_second_flower_perfect@j j `c  1 a 1 10 ]
+"354
+} 0
+"285
+[v _if_EP if_EP `(uc  1 e 1 0 ]
+{
+[v if_EP@check check `uc  1 a 1 wreg ]
+"287
+[v if_EP@i i `uc  1 a 1 4 ]
+"285
+[v if_EP@check check `uc  1 a 1 wreg ]
+[v if_EP@s_ep s_ep `uc  1 p 1 0 ]
+[v if_EP@e_ep e_ep `uc  1 p 1 1 ]
+"288
+[v if_EP@check check `uc  1 a 1 3 ]
+"296
+} 0
+"779
+[v _make_perfect_white make_perfect_white `(v  1 e 1 0 ]
+{
+"782
+[v make_perfect_white@mark_count mark_count `c  1 a 1 63 ]
+[v make_perfect_white@j j `c  1 a 1 62 ]
+[v make_perfect_white@EPW_count EPW_count `c  1 a 1 61 ]
+[v make_perfect_white@i i `c  1 a 1 60 ]
+"857
+} 0
+"491
+[v _make_flont_green make_flont_green `(uc  1 e 1 0 ]
+{
+"503
+} 0
+"298
+[v _if_perfect_white if_perfect_white `(uc  1 e 1 0 ]
+{
+"300
+[v if_perfect_white@i i `c  1 a 1 94 ]
+[v if_perfect_white@j j `c  1 a 1 93 ]
+"324
+} 0
+"271
+[v _if_CP if_CP `(uc  1 e 1 0 ]
+{
+[v if_CP@check check `uc  1 a 1 wreg ]
+"273
+[v if_CP@i i `uc  1 a 1 5 ]
+[v if_CP@DATA DATA `uc  1 a 1 4 ]
+"271
+[v if_CP@check check `uc  1 a 1 wreg ]
+[v if_CP@s_cp s_cp `uc  1 p 1 0 ]
+[v if_CP@e_cp e_cp `uc  1 p 1 1 ]
+"273
+[v if_CP@check check `uc  1 a 1 3 ]
+"283
+} 0
+"859
+[v _make_justice_axis make_justice_axis `(v  1 e 1 0 ]
+{
+"873
+} 0
+"505
+[v _make_up_white make_up_white `(v  1 e 1 0 ]
+{
+"515
+} 0
+"169
+[v _if_start_step8 if_start_step8 `(uc  1 e 1 0 ]
+{
+"171
+[v if_start_step8@i i `uc  1 a 1 57 ]
+"182
+} 0
+"184
+[v _if_perfect_yellow if_perfect_yellow `(uc  1 e 1 0 ]
+{
+"186
+[v if_perfect_yellow@i i `uc  1 a 1 5 ]
+[v if_perfect_yellow@distortion distortion `uc  1 a 1 4 ]
+"202
+} 0
+"565
+[v _all_yellow all_yellow `(v  1 e 1 0 ]
+{
+"567
+[v all_yellow@j j `uc  1 a 1 56 ]
+[v all_yellow@i i `uc  1 a 1 55 ]
+[v all_yellow@check_CO check_CO `uc  1 a 1 54 ]
+"568
+[v all_yellow@CO CO `C[8][4]uc  1 s 32 CO ]
+"577
+[v all_yellow@step6 step6 `C[7][3]uc  1 s 21 step6 ]
+"604
+} 0
+"892
+[v _operation_setup operation_setup `(uc  1 e 1 0 ]
+{
+"900
+} 0
+"875
+[v _operation_limit operation_limit `(uc  1 e 1 0 ]
+{
+[v operation_limit@count count `Ci  1 p 2 0 ]
+"884
+} 0
+"606
+[v _if_yellow_co if_yellow_co `(uc  1 e 1 0 ]
+{
+"608
+[v if_yellow_co@i i `uc  1 a 1 5 ]
+"606
+[v if_yellow_co@co co `*.25Cuc  1 p 2 0 ]
+"617
+} 0
+"210 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/animation.c
+[v _command_turn_ARRAY_3 command_turn_ARRAY_3 `(v  1 e 1 0 ]
+{
+[v command_turn_ARRAY_3@s s `*.25Cuc  1 p 2 93 ]
+"229
+} 0
+"199 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/operation_CES.c
+[v _command_turn_CE command_turn_CE `(uc  1 e 1 0 ]
+{
+"201
+[v command_turn_CE@i i `i  1 a 2 52 ]
+"199
+[v command_turn_CE@s s `*.25Cuc  1 p 2 50 ]
+"216
+} 0
+"15
+[v _turn_CE turn_CE `(v  1 e 1 0 ]
+{
+[s S108 CE_2 46 `[8]uc 1 cp 8 0 `[8]uc 1 co 8 8 `[12]uc 1 ep 12 16 `[12]uc 1 eo 12 28 `[6]uc 1 sp 6 40 ]
+"20
+[v turn_CE@past past `S108  1 a 46 2 ]
+"17
+[v turn_CE@i i `i  1 a 2 48 ]
+[v turn_CE@j j `i  1 a 2 0 ]
+[s S108 CE_2 46 `[8]uc 1 cp 8 0 `[8]uc 1 co 8 8 `[12]uc 1 ep 12 16 `[12]uc 1 eo 12 28 `[6]uc 1 sp 6 40 ]
+"15
+[s S114 enm 5 `*.35CS108 1 DATA 2 0 `*.25uc 1 name 2 2 `uc 1 CE_count 1 4 ]
+[v turn_CE@change change `*.25CS114  1 p 2 40 ]
+"37
+} 0
+"128 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/animation.c
+[v _command_turn_ARRAY_3_end command_turn_ARRAY_3_end `(v  1 e 1 0 ]
+{
+"129
+[v command_turn_ARRAY_3_end@s2 s2 `[3]uc  1 a 3 90 ]
+"131
+[v command_turn_ARRAY_3_end@s2_2 s2_2 `C[3]uc  1 s 3 s2_2 ]
+"208
+} 0
+"6 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/operation_CES.c
+[v _set_CES set_CES `(v  1 e 1 0 ]
+{
+"13
+} 0
+"246
+[v _set_S set_S `(v  1 e 1 0 ]
+{
+"255
+} 0
+"291
+[v _set_E set_E `(v  1 e 1 0 ]
+{
+"322
+} 0
+"257
+[v _set_C set_C `(v  1 e 1 0 ]
+{
+"289
+} 0
+"315 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/animation.c
+[v _command_turn_ARRAY_2_3 command_turn_ARRAY_2_3 `(v  1 e 1 0 ]
+{
+"318
+[v command_turn_ARRAY_2_3@i i `i  1 a 2 81 ]
+"315
+[v command_turn_ARRAY_2_3@s1 s1 `*.25Cuc  1 p 2 73 ]
+[v command_turn_ARRAY_2_3@s2 s2 `*.25Cuc  1 p 2 75 ]
+[v command_turn_ARRAY_2_3@s3 s3 `*.25Cuc  1 p 2 77 ]
+"343
+} 0
+"275
+[v _command_turn_ARRAY_2_2 command_turn_ARRAY_2_2 `(v  1 e 1 0 ]
+{
+"293
+[v command_turn_ARRAY_2_2@i i `i  1 a 2 84 ]
+"292
+[v command_turn_ARRAY_2_2@j j `i  1 a 2 78 ]
+"276
+[v command_turn_ARRAY_2_2@s2 s2 `[3]uc  1 a 3 81 ]
+"285
+[v command_turn_ARRAY_2_2@mouitido mouitido `uc  1 a 1 80 ]
+"275
+[v command_turn_ARRAY_2_2@s s `*.35Cuc  1 p 2 73 ]
+"313
+} 0
+"41 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/operation_CES.c
+[v _command_turn_ARRAY command_turn_ARRAY `(v  1 e 1 0 ]
+{
+[s S1038 TURN_NUM2 16 `C[4]uc 1 MEN_SURFASE 4 0 `C[12]uc 1 POINT_NUM 12 4 ]
+"80
+[v command_turn_ARRAY@MEN_NUM MEN_NUM `*.25CS1038  1 a 2 39 ]
+"79
+[v command_turn_ARRAY@MOVE_LOW MOVE_LOW `uc  1 a 1 41 ]
+"78
+[v command_turn_ARRAY@for_count_num for_count_num `uc  1 a 1 38 ]
+"82
+[v command_turn_ARRAY@SIDE_SURFACE SIDE_SURFACE `uc  1 a 1 37 ]
+"83
+[v command_turn_ARRAY@SIDE_TURN_FLG SIDE_TURN_FLG `uc  1 a 1 36 ]
+"85
+[v command_turn_ARRAY@for_count_2 for_count_2 `uc  1 a 1 35 ]
+"84
+[v command_turn_ARRAY@for_count for_count `uc  1 a 1 34 ]
+"41
+[v command_turn_ARRAY@s s `*.35Cuc  1 p 2 30 ]
+"43
+[v command_turn_ARRAY@TURN_NUM_R TURN_NUM_R `CS1038  1 s 16 TURN_NUM_R ]
+"47
+[v command_turn_ARRAY@TURN_NUM_U TURN_NUM_U `CS1038  1 s 16 TURN_NUM_U ]
+"51
+[v command_turn_ARRAY@TURN_NUM_F TURN_NUM_F `CS1038  1 s 16 TURN_NUM_F ]
+"56
+[v command_turn_ARRAY@TURN_NUM_L TURN_NUM_L `CS1038  1 s 16 TURN_NUM_L ]
+"59
+[v command_turn_ARRAY@TURN_NUM_D TURN_NUM_D `CS1038  1 s 16 TURN_NUM_D ]
+"62
+[v command_turn_ARRAY@TURN_NUM_B TURN_NUM_B `CS1038  1 s 16 TURN_NUM_B ]
+"66
+[v command_turn_ARRAY@TURN_NUM_M TURN_NUM_M `CS1038  1 s 16 TURN_NUM_M ]
+"69
+[v command_turn_ARRAY@TURN_NUM_S TURN_NUM_S `CS1038  1 s 16 TURN_NUM_S ]
+"73
+[v command_turn_ARRAY@TURN_NUM_E TURN_NUM_E `CS1038  1 s 16 TURN_NUM_E ]
+"81
+[v command_turn_ARRAY@for_count_LIST for_count_LIST `C[4]uc  1 s 4 for_count_LIST ]
+"160
+} 0
+"179
+[v _ARRAY_SIDE_TURN ARRAY_SIDE_TURN `(v  1 e 1 0 ]
+{
+[v ARRAY_SIDE_TURN@surface surface `Cuc  1 a 1 wreg ]
+"182
+[v ARRAY_SIDE_TURN@i i `uc  1 a 1 10 ]
+[v ARRAY_SIDE_TURN@temp temp `uc  1 a 1 8 ]
+"179
+[v ARRAY_SIDE_TURN@surface surface `Cuc  1 a 1 wreg ]
+"181
+[v ARRAY_SIDE_TURN@side_NUM side_NUM `C[8]uc  1 s 8 side_NUM ]
+"183
+[v ARRAY_SIDE_TURN@surface surface `Cuc  1 a 1 9 ]
+"197
+} 0
+"162
+[v _ARRAY_LINE_TURN ARRAY_LINE_TURN `(v  1 e 1 0 ]
+{
+"164
+[v ARRAY_LINE_TURN@i i `uc  1 a 1 29 ]
+[v ARRAY_LINE_TURN@j j `uc  1 a 1 28 ]
+"165
+[v ARRAY_LINE_TURN@SURFASE SURFASE `uc  1 a 1 27 ]
+"164
+[v ARRAY_LINE_TURN@temp temp `uc  1 a 1 26 ]
+[s S1038 TURN_NUM2 16 `C[4]uc 1 MEN_SURFASE 4 0 `C[12]uc 1 POINT_NUM 12 4 ]
+"162
+[v ARRAY_LINE_TURN@MEN_NUM_1 MEN_NUM_1 `CS1038  1 p 16 0 ]
+"177
+} 0
+"38 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/animation.c
+[v _animation_3 animation_3 `(uc  1 e 1 0 ]
+{
+[v animation_3@color color `uc  1 a 1 wreg ]
+"40
+[v animation_3@POWER_change POWER_change `uc  1 a 1 77 ]
+"41
+[v animation_3@flag flag `uc  1 a 1 76 ]
+[v animation_3@animation_count_2 animation_count_2 `uc  1 a 1 75 ]
+"38
+[v animation_3@color color `uc  1 a 1 wreg ]
+[v animation_3@CS CS `uc  1 p 1 73 ]
+"40
+[v animation_3@color color `uc  1 a 1 74 ]
+"71
+} 0
+"97
+[v _set_all_LED_ARRAY set_all_LED_ARRAY `(v  1 e 1 0 ]
+{
+[v set_all_LED_ARRAY@color color `uc  1 a 1 wreg ]
+"99
+[v set_all_LED_ARRAY@j j `ui  1 a 2 11 ]
+"98
+[v set_all_LED_ARRAY@i i `ui  1 a 2 9 ]
+"97
+[v set_all_LED_ARRAY@color color `uc  1 a 1 wreg ]
+[v set_all_LED_ARRAY@color color `uc  1 a 1 8 ]
+"103
+} 0
+"3
+[v _animation_1 animation_1 `(uc  1 e 1 0 ]
+{
+[v animation_1@CS CS `Cuc  1 a 1 wreg ]
+"7
+[v animation_1@j j `uc  1 a 1 78 ]
+"6
+[v animation_1@i i `uc  1 a 1 76 ]
+"4
+[v animation_1@animation_count animation_count `uc  1 a 1 77 ]
+"3
+[v animation_1@CS CS `Cuc  1 a 1 wreg ]
+"5
+[v animation_1@CS CS `Cuc  1 a 1 75 ]
+"20
+} 0
+"109 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/sound.c
+[v _do2 do2 `(v  1 e 1 0 ]
+{
+"113
+[v do2@i i `l  1 a 4 1 ]
+"120
+} 0
+"96
+[v _si1 si1 `(v  1 e 1 0 ]
+{
+"100
+[v si1@i i `l  1 a 4 0 ]
+"107
+} 0
+"83
+[v _ra1 ra1 `(v  1 e 1 0 ]
+{
+"87
+[v ra1@i i `l  1 a 4 1 ]
+"94
+} 0
+"44
+[v _mi1 mi1 `(v  1 e 1 0 ]
+{
+"48
+[v mi1@i i `l  1 a 4 0 ]
+"55
+} 0
+"30
+[v _re1 re1 `(v  1 e 1 0 ]
+{
+"35
+[v re1@i i `l  1 a 4 0 ]
+"42
+} 0
+"4
+[v _do1 do1 `(v  1 e 1 0 ]
+{
+"9
+[v do1@i i `l  1 a 4 0 ]
+"16
+} 0
+"70
+[v _so1 so1 `(v  1 e 1 0 ]
+{
+"74
+[v so1@i i `l  1 a 4 1 ]
+"81
+} 0
+"118 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/animation.c
+[v _convert_ROTtoLED convert_ROTtoLED `(v  1 e 1 0 ]
+{
+"120
+[v convert_ROTtoLED@j j `ui  1 a 2 12 ]
+"119
+[v convert_ROTtoLED@i i `ui  1 a 2 10 ]
+"124
+} 0
+"5 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/CES_SPI_support.c
+[v _SPI_special SPI_special `(uc  1 e 1 0 ]
+{
+[v SPI_special@CS CS `Cuc  1 a 1 wreg ]
+[v SPI_special@CS CS `Cuc  1 a 1 wreg ]
+[v SPI_special@CS CS `Cuc  1 a 1 26 ]
+"20
+} 0
+"57 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/sound.c
+[v _fa1 fa1 `(v  1 e 1 0 ]
+{
+"61
+[v fa1@i i `l  1 a 4 1 ]
+"68
+} 0
+"27 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/CES_SPI_support.c
+[v _SPI_D2S SPI_D2S `(c  1 e 1 0 ]
+{
+[v SPI_D2S@SPI_CS SPI_CS `Cuc  1 a 1 wreg ]
+"28
+[v SPI_D2S@str_SPI str_SPI `[3]uc  1 a 3 23 ]
+"29
+[v SPI_D2S@i i `i  1 a 2 21 ]
+"27
+[v SPI_D2S@SPI_CS SPI_CS `Cuc  1 a 1 wreg ]
+[v SPI_D2S@SPI_DATA SPI_DATA `Cuc  1 p 1 17 ]
+[v SPI_D2S@SPI_CS SPI_CS `Cuc  1 a 1 20 ]
+"210
+} 0
+"232 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/operation_CES.c
+[v _str_cmp_const str_cmp_const `(uc  1 e 1 0 ]
+{
+"234
+[v str_cmp_const@i i `i  1 a 2 15 ]
+"232
+[v str_cmp_const@p1 p1 `*.35Cuc  1 p 2 6 ]
+[v str_cmp_const@p2 p2 `*.25uc  1 p 2 8 ]
+"244
+} 0
+"287 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/CES_SPI_support.c
+[v _SPI5_D2S0 SPI5_D2S0 `(uc  1 e 1 0 ]
+{
+[v SPI5_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 wreg ]
+[v SPI5_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 wreg ]
+[v SPI5_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 2 ]
+"300
+} 0
+"272
+[v _SPI4_D2S0 SPI4_D2S0 `(uc  1 e 1 0 ]
+{
+[v SPI4_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 wreg ]
+[v SPI4_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 wreg ]
+[v SPI4_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 2 ]
+"285
+} 0
+"257
+[v _SPI3_D2S0 SPI3_D2S0 `(uc  1 e 1 0 ]
+{
+[v SPI3_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 wreg ]
+[v SPI3_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 wreg ]
+[v SPI3_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 2 ]
+"270
+} 0
+"242
+[v _SPI2_D2S0 SPI2_D2S0 `(uc  1 e 1 0 ]
+{
+[v SPI2_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 wreg ]
+[v SPI2_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 wreg ]
+[v SPI2_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 2 ]
+"255
+} 0
+"227
+[v _SPI1_D2S0 SPI1_D2S0 `(uc  1 e 1 0 ]
+{
+[v SPI1_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 wreg ]
+[v SPI1_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 wreg ]
+[v SPI1_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 2 ]
+"240
+} 0
+"212
+[v _SPI0_D2S0 SPI0_D2S0 `(uc  1 e 1 0 ]
+{
+[v SPI0_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 wreg ]
+[v SPI0_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 wreg ]
+[v SPI0_D2S0@SPI_DATA SPI_DATA `Cuc  1 a 1 2 ]
+"225
+} 0
+"110 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/SerialLED_PIC18F25K22.c
+[v _OUT_LED_ARRAY OUT_LED_ARRAY `(v  1 e 1 0 ]
+{
+"113
+[v OUT_LED_ARRAY@i i `ui  1 a 2 71 ]
+"117
+[v OUT_LED_ARRAY@i_1494 i `ui  1 a 2 67 ]
+"112
+[v OUT_LED_ARRAY@j j `ui  1 a 2 69 ]
+"111
+[v OUT_LED_ARRAY@LED_COLOR_ARRAY LED_COLOR_ARRAY `[54]uc  1 a 54 13 ]
+"110
+[v OUT_LED_ARRAY@LED_COLOR_ARRAY_2D LED_COLOR_ARRAY_2D `*.39[9]uc  1 p 2 6 ]
+[v OUT_LED_ARRAY@LED_POWER LED_POWER `uc  1 p 1 8 ]
+"121
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"12 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/SerialLED_PIC18F25K22.c
+[v _OUT_NONE OUT_NONE `(v  1 e 1 0 ]
+{
+"16
+} 0
+"50
+[v _OUT_ORANGE OUT_ORANGE `(v  1 e 1 0 ]
+{
+[v OUT_ORANGE@LED_POWER LED_POWER `uc  1 a 1 wreg ]
+[v OUT_ORANGE@LED_POWER LED_POWER `uc  1 a 1 wreg ]
+[v OUT_ORANGE@LED_POWER LED_POWER `uc  1 a 1 3 ]
+"54
+} 0
+"31
+[v _OUT_BLUE OUT_BLUE `(v  1 e 1 0 ]
+{
+[v OUT_BLUE@LED_POWER LED_POWER `uc  1 a 1 wreg ]
+[v OUT_BLUE@LED_POWER LED_POWER `uc  1 a 1 wreg ]
+[v OUT_BLUE@LED_POWER LED_POWER `uc  1 a 1 3 ]
+"35
+} 0
+"18
+[v _OUT_RED OUT_RED `(v  1 e 1 0 ]
+{
+[v OUT_RED@LED_POWER LED_POWER `uc  1 a 1 wreg ]
+[v OUT_RED@LED_POWER LED_POWER `uc  1 a 1 wreg ]
+"20
+[v OUT_RED@LED_POWER LED_POWER `uc  1 a 1 3 ]
+"23
+} 0
+"25
+[v _OUT_GREEN OUT_GREEN `(v  1 e 1 0 ]
+{
+[v OUT_GREEN@LED_POWER LED_POWER `uc  1 a 1 wreg ]
+[v OUT_GREEN@LED_POWER LED_POWER `uc  1 a 1 wreg ]
+[v OUT_GREEN@LED_POWER LED_POWER `uc  1 a 1 3 ]
+"29
+} 0
+"37
+[v _OUT_WHITE OUT_WHITE `(v  1 e 1 0 ]
+{
+[v OUT_WHITE@LED_POWER LED_POWER `uc  1 a 1 wreg ]
+[v OUT_WHITE@LED_POWER LED_POWER `uc  1 a 1 wreg ]
+[v OUT_WHITE@LED_POWER LED_POWER `uc  1 a 1 3 ]
+"42
+} 0
+"44
+[v _OUT_YELLOW OUT_YELLOW `(v  1 e 1 0 ]
+{
+[v OUT_YELLOW@LED_POWER LED_POWER `uc  1 a 1 wreg ]
+[v OUT_YELLOW@LED_POWER LED_POWER `uc  1 a 1 wreg ]
+[v OUT_YELLOW@LED_POWER LED_POWER `uc  1 a 1 3 ]
+"48
+} 0
+"123
+[v _OUT_CHECK OUT_CHECK `(v  1 e 1 0 ]
+{
+[v OUT_CHECK@LED_POWER LED_POWER `uc  1 a 1 wreg ]
+"124
+[v OUT_CHECK@i i `i  1 a 2 1 ]
+"123
+[v OUT_CHECK@LED_POWER LED_POWER `uc  1 a 1 wreg ]
+[v OUT_CHECK@LED_POWER LED_POWER `uc  1 a 1 0 ]
+"132
+} 0
+"80
+[v _OUT_LOW OUT_LOW `(v  1 e 1 0 ]
+{
+"102
+} 0
+"56
+[v _OUT_HIGH OUT_HIGH `(v  1 e 1 0 ]
+{
+"78
+} 0
+"104
+[v _LED_RET LED_RET `(v  1 e 1 0 ]
+{
+"106
+[v LED_RET@i i `i  1 a 2 0 ]
+"108
+} 0
+"55 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/EEROM_WR.c
+[v _EEROM_R_SAVE EEROM_R_SAVE `(v  1 e 1 0 ]
+{
+"85
+[v EEROM_R_SAVE@i_286 i `i  1 a 2 58 ]
+"80
+[v EEROM_R_SAVE@i_285 i `i  1 a 2 56 ]
+"75
+[v EEROM_R_SAVE@i_284 i `i  1 a 2 54 ]
+"70
+[v EEROM_R_SAVE@i_283 i `i  1 a 2 52 ]
+"65
+[v EEROM_R_SAVE@i i `i  1 a 2 50 ]
+"57
+[v EEROM_R_SAVE@READ_ADDRESS READ_ADDRESS `uc  1 a 1 60 ]
+"92
+} 0
+"118
+[v _EEROM_GAME_ON EEROM_GAME_ON `(v  1 e 1 0 ]
+{
+"123
+} 0
+"18 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/IDA_CES.c
+[v _Create_Shoretest_command_Most_deep Create_Shoretest_command_Most_deep `(uc  1 e 1 0 ]
+{
+"21
+[v Create_Shoretest_command_Most_deep@search_flag search_flag `uc  1 a 1 51 ]
+"20
+[v Create_Shoretest_command_Most_deep@check_depth check_depth `uc  1 a 1 50 ]
+"35
+} 0
+"115
+[v _depth_add depth_add `(uc  1 e 1 0 ]
+{
+"120
+[v depth_add@check_depth check_depth `uc  1 a 1 2 ]
+"119
+[v depth_add@NEXT_FLAG NEXT_FLAG `uc  1 a 1 1 ]
+"137
+} 0
+"37
+[v _branch_off branch_off `(uc  1 e 1 0 ]
+{
+"79
+[v branch_off@i i `c  1 a 1 48 ]
+"42
+[v branch_off@check_depth check_depth `uc  1 a 1 49 ]
+"40
+[v branch_off@b b `uc  1 a 1 47 ]
+[v branch_off@d d `uc  1 a 1 46 ]
+[v branch_off@c c `uc  1 a 1 45 ]
+"39
+[v branch_off@return_num return_num `uc  1 a 1 44 ]
+"40
+[v branch_off@a a `uc  1 a 1 43 ]
+"113
+} 0
+"7 C:\Program Files (x86)\Microchip\xc8\v2.05\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 39 ]
+[v ___awmod@counter counter `uc  1 a 1 38 ]
+"7
+[v ___awmod@dividend dividend `i  1 p 2 34 ]
+[v ___awmod@divisor divisor `i  1 p 2 36 ]
+"34
+} 0
+"144 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/IDA_CES.c
+[v _Create_shortest_command_depp_N1 Create_shortest_command_depp_N1 `(uc  1 e 1 0 ]
+{
+[v Create_shortest_command_depp_N1@check_depth check_depth `uc  1 a 1 wreg ]
+"146
+[v Create_shortest_command_depp_N1@return_num return_num `uc  1 a 1 1 ]
+"144
+[v Create_shortest_command_depp_N1@check_depth check_depth `uc  1 a 1 wreg ]
+"147
+[v Create_shortest_command_depp_N1@check_depth check_depth `uc  1 a 1 2 ]
+"159
+} 0
+"98 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/master_SPI.c
+[v _SPI_RET SPI_RET `(v  1 e 1 0 ]
+{
+"99
+[v SPI_RET@i i `uc  1 a 1 9 ]
+"103
+} 0
+"105
+[v _SPI_RET_2 SPI_RET_2 `(v  1 e 1 0 ]
+{
+"106
+[v SPI_RET_2@j j `uc  1 a 1 6 ]
+"109
+} 0
+"32
+[v _SPI_readM_2 SPI_readM_2 `(uc  1 e 1 0 ]
+{
+[v SPI_readM_2@csPIN csPIN `Cuc  1 a 1 wreg ]
+"33
+[v SPI_readM_2@i i `i  1 a 2 4 ]
+"34
+[v SPI_readM_2@data data `uc  1 a 1 3 ]
+"32
+[v SPI_readM_2@csPIN csPIN `Cuc  1 a 1 wreg ]
+[v SPI_readM_2@csPIN csPIN `Cuc  1 a 1 2 ]
+"60
+} 0
+"15
+[v _SPIreadM SPIreadM `(uc  1 e 1 0 ]
+{
+"25
+} 0
+"62
+[v _SPI_M_ioport SPI_M_ioport `(v  1 e 1 0 ]
+{
+"96
+} 0
+"166 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/EEROM_WR.c
+[v _EEROM_W_DEFF EEROM_W_DEFF `(v  1 e 1 0 ]
+{
+"192
+[v EEROM_W_DEFF@i_304 i `i  1 a 2 11 ]
+"187
+[v EEROM_W_DEFF@i_303 i `i  1 a 2 9 ]
+"182
+[v EEROM_W_DEFF@i_302 i `i  1 a 2 7 ]
+"177
+[v EEROM_W_DEFF@i_301 i `i  1 a 2 5 ]
+"172
+[v EEROM_W_DEFF@i i `i  1 a 2 3 ]
+"168
+[v EEROM_W_DEFF@WRITE_ADDRESS WRITE_ADDRESS `uc  1 a 1 13 ]
+"197
+} 0
+"94
+[v _EEROM_WR_ioport EEROM_WR_ioport `(v  1 e 1 0 ]
+{
+"113
+} 0
+"324 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/operation_CES.c
+[v _over_write_CE over_write_CE `(v  1 e 1 0 ]
+{
+"326
+[v over_write_CE@i i `i  1 a 2 48 ]
+[s S108 CE_2 46 `[8]uc 1 cp 8 0 `[8]uc 1 co 8 8 `[12]uc 1 ep 12 16 `[12]uc 1 eo 12 28 `[6]uc 1 sp 6 40 ]
+"324
+[v over_write_CE@write_CE write_CE `CS108  1 p 46 0 ]
+"342
+} 0
+"135 E:\授業資料2回生後期\プロ演\program\master_main_ver5_9.X\master/EEROM_WR.c
+[v _EEROM_R_DEFF EEROM_R_DEFF `(v  1 e 1 0 ]
+{
+"159
+[v EEROM_R_DEFF@i_297 i `i  1 a 2 9 ]
+"154
+[v EEROM_R_DEFF@i_296 i `i  1 a 2 7 ]
+"149
+[v EEROM_R_DEFF@i_295 i `i  1 a 2 5 ]
+"144
+[v EEROM_R_DEFF@i_294 i `i  1 a 2 3 ]
+"139
+[v EEROM_R_DEFF@i i `i  1 a 2 1 ]
+"137
+[v EEROM_R_DEFF@READ_ADDRESS READ_ADDRESS `uc  1 a 1 11 ]
+"164
+} 0
+"221
+[v _DATAEE_ReadByte DATAEE_ReadByte `(uc  1 e 1 0 ]
+{
+[v DATAEE_ReadByte@bAdd bAdd `uc  1 a 1 wreg ]
+[v DATAEE_ReadByte@bAdd bAdd `uc  1 a 1 wreg ]
+"223
+[v DATAEE_ReadByte@bAdd bAdd `uc  1 a 1 0 ]
+"231
+} 0
+"128
+[v _EEROM_GAME_OFF EEROM_GAME_OFF `(v  1 e 1 0 ]
+{
+"133
+} 0
+"6
+[v _EEROM_W_SAVE EEROM_W_SAVE `(v  1 e 1 0 ]
+{
+"48
+[v EEROM_W_SAVE@i_279 i `i  1 a 2 11 ]
+"43
+[v EEROM_W_SAVE@i_278 i `i  1 a 2 9 ]
+"38
+[v EEROM_W_SAVE@i_277 i `i  1 a 2 7 ]
+"33
+[v EEROM_W_SAVE@i_276 i `i  1 a 2 5 ]
+"28
+[v EEROM_W_SAVE@i_275 i `i  1 a 2 3 ]
+"8
+[v EEROM_W_SAVE@i i `i  1 a 2 14 ]
+"24
+[v EEROM_W_SAVE@WRITE_ADDRESS WRITE_ADDRESS `uc  1 a 1 13 ]
+"53
+} 0
+"199
+[v _DATAEE_WriteByte DATAEE_WriteByte `(v  1 e 1 0 ]
+{
+[v DATAEE_WriteByte@bAdd bAdd `uc  1 a 1 wreg ]
+"201
+[v DATAEE_WriteByte@GIEBitValue GIEBitValue `uc  1 a 1 2 ]
+"199
+[v DATAEE_WriteByte@bAdd bAdd `uc  1 a 1 wreg ]
+[v DATAEE_WriteByte@bData bData `uc  1 p 1 0 ]
+"201
+[v DATAEE_WriteByte@bAdd bAdd `uc  1 a 1 1 ]
+"219
+} 0

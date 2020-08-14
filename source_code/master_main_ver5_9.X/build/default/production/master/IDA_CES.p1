@@ -1,0 +1,814 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"12 master/IDA_CES.h
+[; ;master/IDA_CES.h: 12: char depth_add(void);
+[v _depth_add `(uc ~T0 @X0 0 ef ]
+"25
+[; ;master/IDA_CES.h: 25: char Create_shortest_command_depp_N1(char check_depth);
+[v _Create_shortest_command_depp_N1 `(uc ~T0 @X0 0 ef1`uc ]
+"26
+[; ;master/IDA_CES.h: 26: char branch_off(void);
+[v _branch_off `(uc ~T0 @X0 0 ef ]
+"26 master/operation_CES.h
+[; ;master/operation_CES.h: 26: typedef struct CE_2 {
+[s S1 `uc -> 8 `i `uc -> 8 `i `uc -> 12 `i `uc -> 12 `i `uc -> 6 `i ]
+[n S1 CE_2 cp co ep eo sp ]
+"63
+[; ;master/operation_CES.h: 63: typedef struct enm {
+[s S2 `*CS1 1 `*uc 1 `uc 1 ]
+[n S2 enm DATA name CE_count ]
+"18 master/IDA_CES.h
+[; ;master/IDA_CES.h: 18: extern const CE_LISTER CE_IDA_LIST[18 + 1];
+[v _CE_IDA_LIST `CS2 ~T0 @X0 -> 0 `x e ]
+"38 master/operation_CES.h
+[; ;master/operation_CES.h: 38: extern const CE deff_CE;
+[v _deff_CE `CS1 ~T0 @X0 0 e ]
+"40
+[; ;master/operation_CES.h: 40: extern const CE u_CE;
+[v _u_CE `CS1 ~T0 @X0 0 e ]
+"42
+[; ;master/operation_CES.h: 42: extern const CE l_CE;
+[v _l_CE `CS1 ~T0 @X0 0 e ]
+"43
+[; ;master/operation_CES.h: 43: extern const CE f_CE;
+[v _f_CE `CS1 ~T0 @X0 0 e ]
+"41
+[; ;master/operation_CES.h: 41: extern const CE d_CE;
+[v _d_CE `CS1 ~T0 @X0 0 e ]
+"39
+[; ;master/operation_CES.h: 39: extern const CE r_CE;
+[v _r_CE `CS1 ~T0 @X0 0 e ]
+"44
+[; ;master/operation_CES.h: 44: extern const CE b_CE;
+[v _b_CE `CS1 ~T0 @X0 0 e ]
+"3 master/IDA_CES.c
+[; ;master/IDA_CES.c: 3: char shortest_command[2];
+[v _shortest_command `uc ~T0 @X0 -> 2 `i e ]
+"4
+[; ;master/IDA_CES.c: 4: char shortest_depth;
+[v _shortest_depth `uc ~T0 @X0 1 e ]
+"6
+[; ;master/IDA_CES.c: 6: void initialization_shortest_command(void)
+[v _initialization_shortest_command `(v ~T0 @X0 1 ef ]
+"7
+[; ;master/IDA_CES.c: 7: {
+{
+[e :U _initialization_shortest_command ]
+[f ]
+"8
+[; ;master/IDA_CES.c: 8:  char i;
+[v _i `uc ~T0 @X0 1 a ]
+"9
+[; ;master/IDA_CES.c: 9:  shortest_depth = 0;
+[e = _shortest_depth -> -> 0 `i `uc ]
+"10
+[; ;master/IDA_CES.c: 10:  for (i = 0; i < 2; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 2 `i 12  ]
+[e $U 13  ]
+[e :U 12 ]
+"11
+[; ;master/IDA_CES.c: 11:   shortest_command[i] = '\0';
+[e = *U + &U _shortest_command * -> _i `ux -> -> # *U &U _shortest_command `ui `ux -> -> 0 `ui `uc ]
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 2 `i 12  ]
+[e :U 13 ]
+}
+"12
+[; ;master/IDA_CES.c: 12: }
+[e :UE 11 ]
+}
+"18
+[; ;master/IDA_CES.c: 18: char Create_Shoretest_command_Most_deep(void)
+[v _Create_Shoretest_command_Most_deep `(uc ~T0 @X0 1 ef ]
+"19
+[; ;master/IDA_CES.c: 19: {
+{
+[e :U _Create_Shoretest_command_Most_deep ]
+[f ]
+"20
+[; ;master/IDA_CES.c: 20:  char check_depth;
+[v _check_depth `uc ~T0 @X0 1 a ]
+"21
+[; ;master/IDA_CES.c: 21:  char search_flag;
+[v _search_flag `uc ~T0 @X0 1 a ]
+"22
+[; ;master/IDA_CES.c: 22:  check_depth = shortest_depth;
+[e = _check_depth _shortest_depth ]
+"23
+[; ;master/IDA_CES.c: 23:  depth_add();
+[e ( _depth_add ..  ]
+"25
+[; ;master/IDA_CES.c: 25:  search_flag = 1;
+[e = _search_flag -> -> 1 `i `uc ]
+"26
+[; ;master/IDA_CES.c: 26:  while (search_flag == 1)
+[e $U 16  ]
+[e :U 17 ]
+"27
+[; ;master/IDA_CES.c: 27:  {
+{
+"28
+[; ;master/IDA_CES.c: 28:   search_flag = Create_shortest_command_depp_N1(check_depth);
+[e = _search_flag ( _Create_shortest_command_depp_N1 (1 _check_depth ]
+"30
+[; ;master/IDA_CES.c: 30:   check_depth--;
+[e -- _check_depth -> -> 1 `i `uc ]
+"31
+[; ;master/IDA_CES.c: 31:  }
+}
+[e :U 16 ]
+"26
+[; ;master/IDA_CES.c: 26:  while (search_flag == 1)
+[e $ == -> _search_flag `i -> 1 `i 17  ]
+[e :U 18 ]
+"32
+[; ;master/IDA_CES.c: 32:  while (branch_off() == 1)
+[e $U 19  ]
+[e :U 20 ]
+"33
+[; ;master/IDA_CES.c: 33:   ;
+[e :U 19 ]
+"32
+[; ;master/IDA_CES.c: 32:  while (branch_off() == 1)
+[e $ == -> ( _branch_off ..  `i -> 1 `i 20  ]
+[e :U 21 ]
+"34
+[; ;master/IDA_CES.c: 34:  return search_flag;
+[e ) _search_flag ]
+[e $UE 15  ]
+"35
+[; ;master/IDA_CES.c: 35: }
+[e :UE 15 ]
+}
+"37
+[; ;master/IDA_CES.c: 37: char branch_off(void)
+[v _branch_off `(uc ~T0 @X0 1 ef ]
+"38
+[; ;master/IDA_CES.c: 38: {
+{
+[e :U _branch_off ]
+[f ]
+"39
+[; ;master/IDA_CES.c: 39:  char return_num = 0;
+[v _return_num `uc ~T0 @X0 1 a ]
+[e = _return_num -> -> 0 `i `uc ]
+"40
+[; ;master/IDA_CES.c: 40:  char a, b, c = 1, d = 0;
+[v _a `uc ~T0 @X0 1 a ]
+[v _b `uc ~T0 @X0 1 a ]
+[v _c `uc ~T0 @X0 1 a ]
+[e = _c -> -> 1 `i `uc ]
+[v _d `uc ~T0 @X0 1 a ]
+[e = _d -> -> 0 `i `uc ]
+"42
+[; ;master/IDA_CES.c: 42:  char check_depth = 0;
+[v _check_depth `uc ~T0 @X0 1 a ]
+[e = _check_depth -> -> 0 `i `uc ]
+"43
+[; ;master/IDA_CES.c: 43:  if (shortest_depth == 0)
+[e $ ! == -> _shortest_depth `i -> 0 `i 23  ]
+"44
+[; ;master/IDA_CES.c: 44:   return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 22  ]
+[e :U 23 ]
+"45
+[; ;master/IDA_CES.c: 45:  check_depth = 0;
+[e = _check_depth -> -> 0 `i `uc ]
+"46
+[; ;master/IDA_CES.c: 46:  while (check_depth < shortest_depth)
+[e $U 24  ]
+[e :U 25 ]
+"47
+[; ;master/IDA_CES.c: 47:  {
+{
+"48
+[; ;master/IDA_CES.c: 48:   if (check_depth >= 1)
+[e $ ! >= -> _check_depth `i -> 1 `i 27  ]
+"49
+[; ;master/IDA_CES.c: 49:   {
+{
+"50
+[; ;master/IDA_CES.c: 50:    c = (18 + shortest_command[check_depth] - shortest_command[check_depth - 1]) % 3;
+[e = _c -> % - + -> 18 `i -> *U + &U _shortest_command * -> _check_depth `ux -> -> # *U &U _shortest_command `ui `ux `i -> *U + &U _shortest_command * -> -> - -> _check_depth `i -> 1 `i `ui `ux -> -> # *U &U _shortest_command `ui `ux `i -> 3 `i `uc ]
+"51
+[; ;master/IDA_CES.c: 51:    d = CE_IDA_LIST[shortest_command[check_depth - 1]].name[0];
+[e = _d *U + . *U + &U _CE_IDA_LIST * -> *U + &U _shortest_command * -> -> - -> _check_depth `i -> 1 `i `ui `ux -> -> # *U &U _shortest_command `ui `ux `ux -> -> # *U &U _CE_IDA_LIST `ui `ux 1 * -> -> 0 `i `x -> -> # *U . *U + &U _CE_IDA_LIST * -> *U + &U _shortest_command * -> -> - -> _check_depth `i -> 1 `i `ui `ux -> -> # *U &U _shortest_command `ui `ux `ux -> -> # *U &U _CE_IDA_LIST `ui `ux 1 `i `x ]
+"52
+[; ;master/IDA_CES.c: 52:   }
+}
+[e :U 27 ]
+"54
+[; ;master/IDA_CES.c: 54:   a = CE_IDA_LIST[shortest_command[check_depth]].name[0];
+[e = _a *U + . *U + &U _CE_IDA_LIST * -> *U + &U _shortest_command * -> _check_depth `ux -> -> # *U &U _shortest_command `ui `ux `ux -> -> # *U &U _CE_IDA_LIST `ui `ux 1 * -> -> 0 `i `x -> -> # *U . *U + &U _CE_IDA_LIST * -> *U + &U _shortest_command * -> _check_depth `ux -> -> # *U &U _shortest_command `ui `ux `ux -> -> # *U &U _CE_IDA_LIST `ui `ux 1 `i `x ]
+"55
+[; ;master/IDA_CES.c: 55:   b = CE_IDA_LIST[shortest_command[check_depth + 1]].name[0];
+[e = _b *U + . *U + &U _CE_IDA_LIST * -> *U + &U _shortest_command * -> -> + -> _check_depth `i -> 1 `i `ui `ux -> -> # *U &U _shortest_command `ui `ux `ux -> -> # *U &U _CE_IDA_LIST `ui `ux 1 * -> -> 0 `i `x -> -> # *U . *U + &U _CE_IDA_LIST * -> *U + &U _shortest_command * -> -> + -> _check_depth `i -> 1 `i `ui `ux -> -> # *U &U _shortest_command `ui `ux `ux -> -> # *U &U _CE_IDA_LIST `ui `ux 1 `i `x ]
+"56
+[; ;master/IDA_CES.c: 56:   if ((a == b) || (c == 0 && d == b))
+[e $ ! || == -> _a `i -> _b `i && == -> _c `i -> 0 `i == -> _d `i -> _b `i 28  ]
+"59
+[; ;master/IDA_CES.c: 59:   {
+{
+"60
+[; ;master/IDA_CES.c: 60:    return_num = 1;
+[e = _return_num -> -> 1 `i `uc ]
+"75
+[; ;master/IDA_CES.c: 75:    if (shortest_command[check_depth + 1] == 18)
+[e $ ! == -> *U + &U _shortest_command * -> -> + -> _check_depth `i -> 1 `i `ui `ux -> -> # *U &U _shortest_command `ui `ux `i -> 18 `i 29  ]
+"76
+[; ;master/IDA_CES.c: 76:    {
+{
+"79
+[; ;master/IDA_CES.c: 79:     signed char i;
+[v _i `c ~T0 @X0 1 a ]
+"80
+[; ;master/IDA_CES.c: 80:     for (i = check_depth; i >= 0; i--)
+{
+[e = _i -> _check_depth `c ]
+[e $ >= -> _i `i -> 0 `i 30  ]
+[e $U 31  ]
+[e :U 30 ]
+"81
+[; ;master/IDA_CES.c: 81:     {
+{
+"82
+[; ;master/IDA_CES.c: 82:      if (shortest_command[i] != 18)
+[e $ ! != -> *U + &U _shortest_command * -> -> _i `uc `ux -> -> # *U &U _shortest_command `ui `ux `i -> 18 `i 33  ]
+"83
+[; ;master/IDA_CES.c: 83:      {
+{
+"84
+[; ;master/IDA_CES.c: 84:       break;
+[e $U 31  ]
+"85
+[; ;master/IDA_CES.c: 85:      }
+}
+[e :U 33 ]
+"86
+[; ;master/IDA_CES.c: 86:     }
+}
+[e -- _i -> -> 1 `i `c ]
+[e $ >= -> _i `i -> 0 `i 30  ]
+[e :U 31 ]
+}
+"88
+[; ;master/IDA_CES.c: 88:     if (i == -1)
+[e $ ! == -> _i `i -U -> 1 `i 34  ]
+"89
+[; ;master/IDA_CES.c: 89:     {
+{
+"90
+[; ;master/IDA_CES.c: 90:      shortest_depth++;
+[e ++ _shortest_depth -> -> 1 `i `uc ]
+"91
+[; ;master/IDA_CES.c: 91:      shortest_command[0] = 1;
+[e = *U + &U _shortest_command * -> -> -> 0 `i `ui `ux -> -> # *U &U _shortest_command `ui `ux -> -> 1 `i `uc ]
+"92
+[; ;master/IDA_CES.c: 92:     }
+}
+[e $U 35  ]
+"93
+[; ;master/IDA_CES.c: 93:     else
+[e :U 34 ]
+"94
+[; ;master/IDA_CES.c: 94:     {
+{
+"95
+[; ;master/IDA_CES.c: 95:      shortest_command[i]++;
+[e ++ *U + &U _shortest_command * -> -> _i `uc `ux -> -> # *U &U _shortest_command `ui `ux -> -> 1 `i `uc ]
+"96
+[; ;master/IDA_CES.c: 96:     }
+}
+[e :U 35 ]
+"97
+[; ;master/IDA_CES.c: 97:     for (check_depth = i + 1; check_depth <= shortest_depth; check_depth++)
+{
+[e = _check_depth -> + -> _i `i -> 1 `i `uc ]
+[e $U 39  ]
+[e :U 36 ]
+"98
+[; ;master/IDA_CES.c: 98:      shortest_command[check_depth] = 1;
+[e = *U + &U _shortest_command * -> _check_depth `ux -> -> # *U &U _shortest_command `ui `ux -> -> 1 `i `uc ]
+[e ++ _check_depth -> -> 1 `i `uc ]
+[e :U 39 ]
+[e $ <= -> _check_depth `i -> _shortest_depth `i 36  ]
+[e :U 37 ]
+}
+"99
+[; ;master/IDA_CES.c: 99:    }
+}
+[e $U 40  ]
+"100
+[; ;master/IDA_CES.c: 100:    else
+[e :U 29 ]
+"101
+[; ;master/IDA_CES.c: 101:    {
+{
+"102
+[; ;master/IDA_CES.c: 102:     shortest_command[check_depth + 1]++;
+[e ++ *U + &U _shortest_command * -> -> + -> _check_depth `i -> 1 `i `ui `ux -> -> # *U &U _shortest_command `ui `ux -> -> 1 `i `uc ]
+"104
+[; ;master/IDA_CES.c: 104:     for (check_depth = check_depth + 2; check_depth <= shortest_depth; check_depth++)
+{
+[e = _check_depth -> + -> _check_depth `i -> 2 `i `uc ]
+[e $U 44  ]
+[e :U 41 ]
+"105
+[; ;master/IDA_CES.c: 105:      shortest_command[check_depth] = 1;
+[e = *U + &U _shortest_command * -> _check_depth `ux -> -> # *U &U _shortest_command `ui `ux -> -> 1 `i `uc ]
+[e ++ _check_depth -> -> 1 `i `uc ]
+[e :U 44 ]
+[e $ <= -> _check_depth `i -> _shortest_depth `i 41  ]
+[e :U 42 ]
+}
+"106
+[; ;master/IDA_CES.c: 106:    }
+}
+[e :U 40 ]
+"108
+[; ;master/IDA_CES.c: 108:    break;
+[e $U 26  ]
+"109
+[; ;master/IDA_CES.c: 109:   }
+}
+[e :U 28 ]
+"110
+[; ;master/IDA_CES.c: 110:   check_depth++;
+[e ++ _check_depth -> -> 1 `i `uc ]
+"111
+[; ;master/IDA_CES.c: 111:  }
+}
+[e :U 24 ]
+"46
+[; ;master/IDA_CES.c: 46:  while (check_depth < shortest_depth)
+[e $ < -> _check_depth `i -> _shortest_depth `i 25  ]
+[e :U 26 ]
+"112
+[; ;master/IDA_CES.c: 112:  return return_num;
+[e ) _return_num ]
+[e $UE 22  ]
+"113
+[; ;master/IDA_CES.c: 113: }
+[e :UE 22 ]
+}
+"115
+[; ;master/IDA_CES.c: 115: char depth_add(void)
+[v _depth_add `(uc ~T0 @X0 1 ef ]
+"116
+[; ;master/IDA_CES.c: 116: {
+{
+[e :U _depth_add ]
+[f ]
+"117
+[; ;master/IDA_CES.c: 117:  if (shortest_command[shortest_depth] >= 18)
+[e $ ! >= -> *U + &U _shortest_command * -> _shortest_depth `ux -> -> # *U &U _shortest_command `ui `ux `i -> 18 `i 46  ]
+"118
+[; ;master/IDA_CES.c: 118:  {
+{
+"119
+[; ;master/IDA_CES.c: 119:   char NEXT_FLAG = 1;
+[v _NEXT_FLAG `uc ~T0 @X0 1 a ]
+[e = _NEXT_FLAG -> -> 1 `i `uc ]
+"120
+[; ;master/IDA_CES.c: 120:   char check_depth;
+[v _check_depth `uc ~T0 @X0 1 a ]
+"121
+[; ;master/IDA_CES.c: 121:   for (check_depth = 0; check_depth < shortest_depth; check_depth++)
+{
+[e = _check_depth -> -> 0 `i `uc ]
+[e $U 50  ]
+[e :U 47 ]
+"122
+[; ;master/IDA_CES.c: 122:   {
+{
+"123
+[; ;master/IDA_CES.c: 123:    if (shortest_command[check_depth] != 18)
+[e $ ! != -> *U + &U _shortest_command * -> _check_depth `ux -> -> # *U &U _shortest_command `ui `ux `i -> 18 `i 51  ]
+"124
+[; ;master/IDA_CES.c: 124:    {
+{
+"125
+[; ;master/IDA_CES.c: 125:     NEXT_FLAG = 0;
+[e = _NEXT_FLAG -> -> 0 `i `uc ]
+"126
+[; ;master/IDA_CES.c: 126:    }
+}
+[e :U 51 ]
+"127
+[; ;master/IDA_CES.c: 127:   }
+}
+[e ++ _check_depth -> -> 1 `i `uc ]
+[e :U 50 ]
+[e $ < -> _check_depth `i -> _shortest_depth `i 47  ]
+[e :U 48 ]
+}
+"128
+[; ;master/IDA_CES.c: 128:   if (NEXT_FLAG)
+[e $ ! != -> _NEXT_FLAG `i -> 0 `i 52  ]
+"129
+[; ;master/IDA_CES.c: 129:   {
+{
+"130
+[; ;master/IDA_CES.c: 130:    shortest_depth++;
+[e ++ _shortest_depth -> -> 1 `i `uc ]
+"131
+[; ;master/IDA_CES.c: 131:    shortest_command[shortest_depth] = 1;
+[e = *U + &U _shortest_command * -> _shortest_depth `ux -> -> # *U &U _shortest_command `ui `ux -> -> 1 `i `uc ]
+"132
+[; ;master/IDA_CES.c: 132:    return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 45  ]
+"133
+[; ;master/IDA_CES.c: 133:   }
+}
+[e :U 52 ]
+"134
+[; ;master/IDA_CES.c: 134:   return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 45  ]
+"135
+[; ;master/IDA_CES.c: 135:  }
+}
+[e :U 46 ]
+"136
+[; ;master/IDA_CES.c: 136:  return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 45  ]
+"137
+[; ;master/IDA_CES.c: 137: }
+[e :UE 45 ]
+}
+"144
+[; ;master/IDA_CES.c: 144: char Create_shortest_command_depp_N1(char check_depth)
+[v _Create_shortest_command_depp_N1 `(uc ~T0 @X0 1 ef1`uc ]
+"145
+[; ;master/IDA_CES.c: 145: {
+{
+[e :U _Create_shortest_command_depp_N1 ]
+"144
+[; ;master/IDA_CES.c: 144: char Create_shortest_command_depp_N1(char check_depth)
+[v _check_depth `uc ~T0 @X0 1 r1 ]
+"145
+[; ;master/IDA_CES.c: 145: {
+[f ]
+"146
+[; ;master/IDA_CES.c: 146:  char return_num;
+[v _return_num `uc ~T0 @X0 1 a ]
+"147
+[; ;master/IDA_CES.c: 147:  return_num = 0;
+[e = _return_num -> -> 0 `i `uc ]
+"148
+[; ;master/IDA_CES.c: 148:  if (shortest_command[check_depth] == 18)
+[e $ ! == -> *U + &U _shortest_command * -> _check_depth `ux -> -> # *U &U _shortest_command `ui `ux `i -> 18 `i 54  ]
+"149
+[; ;master/IDA_CES.c: 149:  {
+{
+"150
+[; ;master/IDA_CES.c: 150:   shortest_command[check_depth] = 1;
+[e = *U + &U _shortest_command * -> _check_depth `ux -> -> # *U &U _shortest_command `ui `ux -> -> 1 `i `uc ]
+"152
+[; ;master/IDA_CES.c: 152:   return_num = 1;
+[e = _return_num -> -> 1 `i `uc ]
+"153
+[; ;master/IDA_CES.c: 153:  }
+}
+[e $U 55  ]
+"154
+[; ;master/IDA_CES.c: 154:  else
+[e :U 54 ]
+"155
+[; ;master/IDA_CES.c: 155:  {
+{
+"156
+[; ;master/IDA_CES.c: 156:   shortest_command[check_depth]++;
+[e ++ *U + &U _shortest_command * -> _check_depth `ux -> -> # *U &U _shortest_command `ui `ux -> -> 1 `i `uc ]
+"157
+[; ;master/IDA_CES.c: 157:  }
+}
+[e :U 55 ]
+"158
+[; ;master/IDA_CES.c: 158:  return return_num;
+[e ) _return_num ]
+[e $UE 53  ]
+"159
+[; ;master/IDA_CES.c: 159: }
+[e :UE 53 ]
+}
+"161
+[; ;master/IDA_CES.c: 161: const CE_LISTER CE_IDA_LIST[18 + 1] = {
+[v _CE_IDA_LIST `CS2 ~T0 @X0 -> 19 `i e ]
+[i _CE_IDA_LIST
+:U ..
+:U ..
+&U _deff_CE
+:s 1C
+-> -> 0 `i `uc
+..
+:U ..
+&U _u_CE
+:s 2C
+-> -> 1 `i `uc
+..
+:U ..
+&U _l_CE
+:s 3C
+-> -> 1 `i `uc
+..
+:U ..
+&U _f_CE
+:s 4C
+-> -> 1 `i `uc
+..
+:U ..
+&U _d_CE
+:s 5C
+-> -> 1 `i `uc
+..
+:U ..
+&U _r_CE
+:s 6C
+-> -> 1 `i `uc
+..
+:U ..
+&U _b_CE
+:s 7C
+-> -> 1 `i `uc
+..
+:U ..
+&U _u_CE
+:s 8C
+-> -> 3 `i `uc
+..
+:U ..
+&U _l_CE
+:s 9C
+-> -> 3 `i `uc
+..
+:U ..
+&U _f_CE
+:s 10C
+-> -> 3 `i `uc
+..
+:U ..
+&U _d_CE
+:s 11C
+-> -> 3 `i `uc
+..
+:U ..
+&U _r_CE
+:s 12C
+-> -> 3 `i `uc
+..
+:U ..
+&U _b_CE
+:s 13C
+-> -> 3 `i `uc
+..
+:U ..
+&U _u_CE
+:s 14C
+-> -> 2 `i `uc
+..
+:U ..
+&U _l_CE
+:s 15C
+-> -> 2 `i `uc
+..
+:U ..
+&U _f_CE
+:s 16C
+-> -> 2 `i `uc
+..
+:U ..
+&U _d_CE
+:s 17C
+-> -> 2 `i `uc
+..
+:U ..
+&U _r_CE
+:s 18C
+-> -> 2 `i `uc
+..
+:U ..
+&U _b_CE
+:s 19C
+-> -> 2 `i `uc
+..
+..
+]
+"200
+[; ;master/IDA_CES.c: 200: const CE m_CE_IDA = {
+[v _m_CE_IDA `CS1 ~T0 @X0 1 e ]
+[i _m_CE_IDA
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 8 `i `uc
+-> -> 5 `i `uc
+-> -> 4 `i `uc
+-> -> 7 `i `uc
+-> -> 10 `i `uc
+-> -> 9 `i `uc
+-> -> 6 `i `uc
+-> -> 11 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 5 `i `uc
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+..
+..
+..
+]
+"207
+[; ;master/IDA_CES.c: 207: const CE s_CE_IDA = {
+[v _s_CE_IDA `CS1 ~T0 @X0 1 e ]
+[i _s_CE_IDA
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 7 `i `uc
+-> -> 6 `i `uc
+-> -> 11 `i `uc
+-> -> 8 `i `uc
+-> -> 5 `i `uc
+-> -> 10 `i `uc
+-> -> 9 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+..
+:U ..
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 3 `i `uc
+-> -> 5 `i `uc
+-> -> 2 `i `uc
+..
+..
+..
+]
+"214
+[; ;master/IDA_CES.c: 214: const CE e_CE_IDA = {
+[v _e_CE_IDA `CS1 ~T0 @X0 1 e ]
+[i _e_CE_IDA
+:U ..
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 5 `i `uc
+-> -> 6 `i `uc
+-> -> 7 `i `uc
+-> -> 8 `i `uc
+-> -> 9 `i `uc
+-> -> 10 `i `uc
+-> -> 11 `i `uc
+..
+:U ..
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 1 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+:U ..
+-> -> 0 `i `uc
+-> -> 4 `i `uc
+-> -> 1 `i `uc
+-> -> 2 `i `uc
+-> -> 3 `i `uc
+-> -> 5 `i `uc
+..
+..
+..
+]
+[a 1C 100 101 102 102 0 ]
+[a 2C 85 0 ]
+[a 6C 82 0 ]
+[a 3C 76 0 ]
+[a 4C 70 0 ]
+[a 5C 68 0 ]
+[a 7C 66 0 ]
+[a 14C 85 50 0 ]
+[a 18C 82 50 0 ]
+[a 15C 76 50 0 ]
+[a 16C 70 50 0 ]
+[a 17C 68 50 0 ]
+[a 19C 66 50 0 ]
+[a 8C 85 39 0 ]
+[a 12C 82 39 0 ]
+[a 9C 76 39 0 ]
+[a 10C 70 39 0 ]
+[a 11C 68 39 0 ]
+[a 13C 66 39 0 ]
