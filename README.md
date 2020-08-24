@@ -14,7 +14,7 @@ LEDの光を主役としたきれいで楽しいデバイスを作りたいと�
 ![basic_operation](./image/basic_operation.png)  
 ### 中央列操作
 中央の列を回転させます。
-こちらも通常操作と同じように，本体表面を専用のペンで専用のペンで図の細い矢印のようになぞることでLEDのパターンが変移します。  
+こちらも通常操作と同じように，本体表面を専用のペンで図の細い矢印のようになぞることでLEDのパターンが変移します。  
 ![center_operarion](./image/center_operarion.png)  
 ### 特殊操作
 ElectronicCubePuzzleは各面に1つ，計6個の特殊機能を搭載しています。  
